@@ -1,0 +1,222 @@
+[
+    {
+      "pattern": "constraint expression does not have type 'bool'",
+      "replacement": "约束表达式不具有 'bool' 类型"
+    },
+    {
+      "pattern": "function concept must be called",
+      "replacement": "函数概念必须被调用"
+    },
+    {
+      "pattern": "function call of variable concept '(.+?)'",
+      "replacement": "对变量概念 '$1' 的函数调用"
+    },
+    {
+      "pattern": "'(.+?)' does not match original declaration",
+      "replacement": "'$1' 与其原始声明不匹配"
+    },
+    {
+      "pattern": "original template declaration here",
+      "replacement": "原始模板声明在此"
+    },
+    {
+      "pattern": "no matching concepts for '(.+?)'",
+      "replacement": "'$1' 没有匹配的概念"
+    },
+    {
+      "pattern": "'(.+?)' cannot be introduced with an ellipsis '...'",
+      "replacement": "'$1' 不能带省略号 '...' 引入"
+    },
+    {
+      "pattern": "prototype declared here",
+      "replacement": "原型在此声明"
+    },
+    {
+      "pattern": "all template parameters of '(.+?)' must be introduced",
+      "replacement": "所有 '$1' 的模板形参必须被引入"
+    },
+    {
+      "pattern": "cannot deduce template parameters from introduction list",
+      "replacement": "不能推导来自引入列表的模板形参"
+    },
+    {
+      "pattern": "the required expression '(.+?)' is invalid, because",
+      "replacement": "约束表达式 '$1' 无效，因为"
+    },
+    {
+      "pattern": "the required expression '(.+?)' is invalid",
+      "replacement": "约束表达式 '$1' 无效"
+    },
+    {
+      "pattern": "the required type '(.+?)' is invalid, because",
+      "replacement": "约束类型 '$1' 无效，因为"
+    },
+    {
+      "pattern": "the required type '(.+?)' is invalid",
+      "replacement": "约束类型 '$1' 无效"
+    },
+    {
+      "pattern": "cannot convert '(.+?)' to '(.+?)'",
+      "replacement": "不能转换 '$1' 到 '$2'"
+    },
+    {
+      "pattern": "'(.+?)' is not 'noexcept'",
+      "replacement": "'$1' 不是 'noexcept'"
+    },
+    {
+      "pattern": "'(.+?)' does not satisfy return-type-requirement, because",
+      "replacement": "'$1' 不满足返回类型要求，因为"
+    },
+    {
+      "pattern": "'(.+?)' does not satisfy return-type-requirement",
+      "replacement": "'$1' 不满足返回类型要求"
+    },
+    {
+      "pattern": "cannot convert '(.+?)' to '(.+?)' because",
+      "replacement": "不能转换 '$1' 到 '$2'，因为"
+    },
+    {
+      "pattern": "nested requirement '(.+?)' is not satisfied, because",
+      "replacement": "嵌套约束 '$1' 不满足，因为"
+    },
+    {
+      "pattern": "nested requirement '(.+?)' is not satisfied",
+      "replacement": "嵌套约束 '$1' 不满足"
+    },
+    {
+      "pattern": "satisfaction of atomic constraint '(.+?)' depends on itself",
+      "replacement": "原子约束 '$1' 的满足依赖于其自身"
+    },
+    {
+      "pattern": "satisfaction value of atomic constraint '(.+?)' changed from '(.+?)' to '(.+?)'",
+      "replacement": "原子约束 '$1' 的满足值从 '$2' 变化到 '$3"
+    },
+    {
+      "pattern": "satisfaction value first evaluated to '(.+?)' from here",
+      "replacement": "满足值在此处被首次求值为 '$1'"
+    },
+    {
+      "pattern": "no operand of the disjunction is satisfied",
+      "replacement": "没有析取中的操作数被满足"
+    },
+    {
+      "pattern": "the operand '(.+?)' is unsatisfied because",
+      "replacement": "操作数 '$1' 不满足，因为"
+    },
+    {
+      "pattern": "definition of concept '(.+?)' is empty",
+      "replacement": "概念 '$1' 的定义是空的"
+    },
+    {
+      "pattern": "definition of concept '(.+?)' has multiple statements",
+      "replacement": "概念 '$1' 的定义含有多条语句"
+    },
+    {
+      "pattern": "constrained friend does not depend on template parameters",
+      "replacement": "约束的友元不依赖于模板形参"
+    },
+    {
+      "pattern": "  '(.+?)' is not 'nothrow' copy assignable",
+      "replacement": "  '$1' 不可 'nothrow' 复制赋值"
+    },
+    {
+      "pattern": "  '(.+?)' is not 'nothrow' default constructible",
+      "replacement": "  '$1' 不可 'nothrow' 默认构造"
+    },
+    {
+      "pattern": "  '(.+?)' is not 'nothrow' copy constructible",
+      "replacement": "  '$1' 不可 'nothrow' 复制构造"
+    },
+    {
+      "pattern": "  '(.+?)' is not trivially copy assignable",
+      "replacement": "  '$1' 不可平凡复制赋值"
+    },
+    {
+      "pattern": "  '(.+?)' is not trivially default constructible",
+      "replacement": "  '$1' 不可平凡默认构造"
+    },
+    {
+      "pattern": "  '(.+?)' is not trivially copy constructible",
+      "replacement": "  '$1' 不可平凡复制构造"
+    },
+    {
+      "pattern": "  '(.+?)' is not trivially destructible",
+      "replacement": "  '$1' 不可平凡析构"
+    },
+    {
+      "pattern": "  '(.+?)' does not have a virtual destructor",
+      "replacement": "  '$1' 没有虚析构函数"
+    },
+    {
+      "pattern": "  '(.+?)' is not an abstract class",
+      "replacement": "  '$1' 不是抽象类"
+    },
+    {
+      "pattern": "  '(.+?)' is not a base of '(.+?)'",
+      "replacement": "  '$1' 不是 '$2' 的基类"
+    },
+    {
+      "pattern": "  '(.+?)' is not a class",
+      "replacement": "  '$1' 不是类"
+    },
+    {
+      "pattern": "  '(.+?)' is not an empty class",
+      "replacement": "  '$1' 不是空类"
+    },
+    {
+      "pattern": "  '(.+?)' is not an enum",
+      "replacement": "  '$1' 不是枚举"
+    },
+    {
+      "pattern": "  '(.+?)' is not a final class",
+      "replacement": "  '$1' 不是最终类"
+    },
+    {
+      "pattern": "  '(.+?)' is not a literal type",
+      "replacement": "  '$1' 不是字面类型"
+    },
+    {
+      "pattern": "  '(.+?)' is not a POD type",
+      "replacement": "  '$1' 不是 POD 类型"
+    },
+    {
+      "pattern": "  '(.+?)' is not a polymorphic type",
+      "replacement": "  '$1' 不是多态类型"
+    },
+    {
+      "pattern": "  '(.+?)' is not the same as '(.+?)'",
+      "replacement": "  '$1' 与 '$2' 不同"
+    },
+    {
+      "pattern": "  '(.+?)' is not an standard layout type",
+      "replacement": "  '$1' 不是标准布局类型"
+    },
+    {
+      "pattern": "  '(.+?)' is not a trivial type",
+      "replacement": "  '$1' 不是平凡类型"
+    },
+    {
+      "pattern": "  '(.+?)' is not a union",
+      "replacement": "  '$1' 不是联合体类型"
+    },
+    {
+      "pattern": "invalid constraints",
+      "replacement": "约束无效"
+    },
+    {
+      "pattern": "constraint '(.+?)' has type '(.+?)', not 'bool'",
+      "replacement": "约束 '$1' 拥有 '$2' 类型，而非 'bool'"
+    },
+    {
+      "pattern": "the expression '(.+?)' evaluated to 'false'",
+      "replacement": "表达式 '$1' 求值为 'false'"
+    },
+    {
+      "pattern": "constraints not satisfied",
+      "replacement": "约束未满足"
+    },
+    {
+      "pattern": "set '(.*?)' to at least (\\d+) for more detail -fconcepts-diagnostics-depth=",
+      "replacement": "设置 '$1' 到至少 '$2'。详情参见 -fconcepts-diagnostics-path="
+    }
+]

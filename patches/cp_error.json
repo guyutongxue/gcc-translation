@@ -1,0 +1,18 @@
+[
+    {
+        "pattern": "required by the constraints of '(.+?)'",
+        "replacement": "被 '$1' 的约束要求"
+    },
+    {
+        "pattern": "required for the satisfaction of '(.+?)'",
+        "replacement": "为满足 '$1' 而要求"
+    },
+    {
+        "pattern": "required for constraint satisfaction",
+        "replacement": "为满足约束而要求"
+    },
+    {
+        "pattern": "in requirements ",
+        "replacement": "要求"
+    }
+]

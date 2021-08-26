@@ -1,0 +1,409 @@
+temp.cpp: In function 'int main()':
+temp.cpp:3:15: error: no match for 'operator<<' (operand types are 'std::ostream' {aka 'std::basic_ostream<char>'} and 'std::ostream' {aka 'std::basic_ostream<char>'})
+    3 |     std::cout << std::cout;
+      |     ~~~~~~~~~ ^~ ~~~~~~~~~
+      |          |            |
+      |          |            basic_ostream<[...]>
+      |          basic_ostream<[...]>
+temp.cpp:3:15: note: candidate: 'operator<<(int, int)' (built-in)
+    3 |     std::cout << std::cout;
+      |     ~~~~~~~~~~^~~~~~~~~~~~
+temp.cpp:3:15: note:   no known conversion for argument 2 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'int'
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:108:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  108 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:108:36: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)' {aka 'std::basic_ostream<char>& (*)(std::basic_ostream<char>&)'}
+  108 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:117:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]'
+  117 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:117:32: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  117 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:127:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  127 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:127:30: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'std::ios_base& (*)(std::ios_base&)'
+  127 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:166:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  166 |       operator<<(long __n)
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:166:23: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'long int'
+  166 |       operator<<(long __n)
+      |                  ~~~~~^~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:170:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  170 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:170:32: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'long unsigned int'
+  170 |       operator<<(unsigned long __n)
+      |                  ~~~~~~~~~~~~~~^~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:174:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  174 |       operator<<(bool __n)
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:174:23: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'bool'
+  174 |       operator<<(bool __n)
+      |                  ~~~~~^~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:826,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc:91:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]'
+   91 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc:92:22: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'short int'
+   92 |     operator<<(short __n)
+      |                ~~~~~~^~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:181:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  181 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:181:33: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'short unsigned int'
+  181 |       operator<<(unsigned short __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:826,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc:105:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]'
+  105 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc:106:20: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'int'
+  106 |     operator<<(int __n)
+      |                ~~~~^~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:192:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  192 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:192:31: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'unsigned int'
+  192 |       operator<<(unsigned int __n)
+      |                  ~~~~~~~~~~~~~^~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:201:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  201 |       operator<<(long long __n)
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:201:28: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'long long int'
+  201 |       operator<<(long long __n)
+      |                  ~~~~~~~~~~^~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:205:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  205 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:205:37: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'long long unsigned int'
+  205 |       operator<<(unsigned long long __n)
+      |                  ~~~~~~~~~~~~~~~~~~~^~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:220:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  220 |       operator<<(double __f)
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:220:25: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'double'
+  220 |       operator<<(double __f)
+      |                  ~~~~~~~^~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:224:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  224 |       operator<<(float __f)
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:224:24: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'float'
+  224 |       operator<<(float __f)
+      |                  ~~~~~~^~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:232:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  232 |       operator<<(long double __f)
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:232:30: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'long double'
+  232 |       operator<<(long double __f)
+      |                  ~~~~~~~~~~~~^~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:245:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  245 |       operator<<(const void* __p)
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:245:30: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'const void*'
+  245 |       operator<<(const void* __p)
+      |                  ~~~~~~~~~~~~^~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:250:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::nullptr_t) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::nullptr_t = std::nullptr_t]'
+  250 |       operator<<(nullptr_t)
+      |       ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:250:18: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'std::nullptr_t'
+  250 |       operator<<(nullptr_t)
+      |                  ^~~~~~~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:826,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc:119:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]'
+  119 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc:120:34: note:   no known conversion for argument 1 from 'std::ostream' {aka 'std::basic_ostream<char>'} to 'std::basic_ostream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  120 |     operator<<(__streambuf_type* __sbin)
+      |                ~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h:48,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string:55,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h:40,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h:41,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios:42,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:38,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string_view:666:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::basic_string_view<_CharT, _Traits>)'
+  666 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string_view:666:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   'std::basic_ostream<char>' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+    3 |     std::cout << std::cout;
+      |                       ^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string:55,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h:40,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h:41,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios:42,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:38,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h:6530:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6530 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h:6530:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   'std::ostream' {aka 'std::basic_ostream<char>'} is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>'
+    3 |     std::cout << std::cout;
+      |                       ^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h:46,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios:42,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:38,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error:263:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)'
+  263 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error:263:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'const std::error_code&'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:506:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)'
+  506 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:506:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   deduced conflicting types for parameter '_CharT' ('char' and 'std::basic_ostream<char>')
+    3 |     std::cout << std::cout;
+      |                       ^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:511:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)'
+  511 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:511:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'char'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:517:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)'
+  517 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:517:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'char'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:523:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)'
+  523 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:523:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'signed char'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:528:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)'
+  528 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:528:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'unsigned char'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:538:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, wchar_t)' (deleted)
+  538 |     operator<<(basic_ostream<char, _Traits>&, wchar_t) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:538:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'wchar_t'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:544:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char8_t)' (deleted)
+  544 |     operator<<(basic_ostream<char, _Traits>&, char8_t) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:544:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'char8_t'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:549:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char16_t)' (deleted)
+  549 |     operator<<(basic_ostream<char, _Traits>&, char16_t) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:549:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'char16_t'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:553:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char32_t)' (deleted)
+  553 |     operator<<(basic_ostream<char, _Traits>&, char32_t) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:553:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'char32_t'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:559:5: note: candidate: 'template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(std::basic_ostream<wchar_t, _Traits>&, char8_t)' (deleted)
+  559 |     operator<<(basic_ostream<wchar_t, _Traits>&, char8_t) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:559:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   mismatched types 'wchar_t' and 'char'
+    3 |     std::cout << std::cout;
+      |                       ^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:564:5: note: candidate: 'template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(std::basic_ostream<wchar_t, _Traits>&, char16_t)' (deleted)
+  564 |     operator<<(basic_ostream<wchar_t, _Traits>&, char16_t) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:564:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   mismatched types 'wchar_t' and 'char'
+    3 |     std::cout << std::cout;
+      |                       ^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:568:5: note: candidate: 'template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(std::basic_ostream<wchar_t, _Traits>&, char32_t)' (deleted)
+  568 |     operator<<(basic_ostream<wchar_t, _Traits>&, char32_t) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:568:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   mismatched types 'wchar_t' and 'char'
+    3 |     std::cout << std::cout;
+      |                       ^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:589:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)'
+  589 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:589:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   mismatched types 'const _CharT*' and 'std::basic_ostream<char>'
+    3 |     std::cout << std::cout;
+      |                       ^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:826,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc:321:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)'
+  321 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'const char*'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:606:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)'
+  606 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:606:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'const char*'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:619:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)'
+  619 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:619:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'const signed char*'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:624:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)'
+  624 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:624:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'const unsigned char*'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:634:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const wchar_t*)' (deleted)
+  634 |     operator<<(basic_ostream<char, _Traits>&, const wchar_t*) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:634:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'const wchar_t*'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:640:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char8_t*)' (deleted)
+  640 |     operator<<(basic_ostream<char, _Traits>&, const char8_t*) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:640:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'const char8_t*'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:645:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char16_t*)' (deleted)
+  645 |     operator<<(basic_ostream<char, _Traits>&, const char16_t*) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:645:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'const char16_t*'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:649:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char32_t*)' (deleted)
+  649 |     operator<<(basic_ostream<char, _Traits>&, const char32_t*) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:649:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   cannot convert 'std::cout' (type 'std::ostream' {aka 'std::basic_ostream<char>'}) to type 'const char32_t*'
+    3 |     std::cout << std::cout;
+      |                  ~~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:655:5: note: candidate: 'template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(std::basic_ostream<wchar_t, _Traits>&, const char8_t*)' (deleted)
+  655 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char8_t*) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:655:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   mismatched types 'wchar_t' and 'char'
+    3 |     std::cout << std::cout;
+      |                       ^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:660:5: note: candidate: 'template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(std::basic_ostream<wchar_t, _Traits>&, const char16_t*)' (deleted)
+  660 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char16_t*) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:660:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   mismatched types 'wchar_t' and 'char'
+    3 |     std::cout << std::cout;
+      |                       ^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:664:5: note: candidate: 'template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(std::basic_ostream<wchar_t, _Traits>&, const char32_t*)' (deleted)
+  664 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char32_t*) = delete;
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:664:5: note:   template argument deduction/substitution failed:
+temp.cpp:3:23: note:   mismatched types 'wchar_t' and 'char'
+    3 |     std::cout << std::cout;
+      |                       ^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:39,
+                 from temp.cpp:1:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:747:5: note: candidate: 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)'
+  747 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:747:5: note:   template argument deduction/substitution failed:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream: In substitution of 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = std::basic_ostream<char>]':
+temp.cpp:3:23:   required from here
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:747:5: error: template constraint failure for 'template<class _Os, class _Tp>  requires (__derived_from_ios_base<_Os>) && requires(_Os& __os, const _Tp& __t) {__os << __t;} using __rvalue_stream_insertion_t = _Os&&'
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:747:5: note: constraints not satisfied
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream: In substitution of 'template<class _Os, class _Tp>  requires (__derived_from_ios_base<_Os>) && requires(_Os& __os, const _Tp& __t) {__os << __t;} using __rvalue_stream_insertion_t = _Os&& [with _Os = std::basic_ostream<char>&; _Tp = std::basic_ostream<char>]':
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:747:5:   required by substitution of 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = std::basic_ostream<char>]'
+temp.cpp:3:23:   required from here
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:714:13:   required for the satisfaction of '__derived_from_ios_base<_Os>' [with _Os = std::basic_ostream<char, std::char_traits<char> >&]
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:714:39: note: the expression 'is_class_v<_Tp> [with _Tp = std::basic_ostream<char, std::char_traits<char> >&]' evaluated to 'false'
+  714 |     concept __derived_from_ios_base = is_class_v<_Tp>
+      |                                       ^~~~~~~~~~~~~~~

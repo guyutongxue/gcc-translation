@@ -3166,8 +3166,8 @@
   },
   {
     "id": "argument to be formatted is not %<...%>",
-    "pattern": "argument to be formatted is not '(.+?)'",
-    "replacement": "待格式化的实参不是 '$1'"
+    "pattern": "argument to be formatted is not '\\.\\.\\.'",
+    "replacement": "待格式化的实参不是 '...'"
   },
   {
     "id": "strftime formats cannot format arguments",
@@ -6776,23 +6776,23 @@
   },
   {
     "id": "scoped enum %qT passed through %<...%> as %qT before %<-fabi-version=6%>, %qT after",
-    "pattern": "scoped enum '(.+?)' passed through '(.+?)' as '(.+?)' before '-fabi-version=6', '(.+?)' after",
-    "replacement": "在 '-fabi-version=6' 之前，有作用域的枚举 '$1' 通过 '$2' 时将作为 '$3'；之后将作为 '$4'"
+    "pattern": "scoped enum '(.+?)' passed through '\\.\\.\\.' as '(.+?)' before '-fabi-version=6', '(.+?)' after",
+    "replacement": "在 '-fabi-version=6' 之前，有作用域的枚举 '$1' 通过 '...' 时将作为 '$2'；之后将作为 '$3'"
   },
   {
     "id": "passing objects of non-trivially-copyable type %q#T through %<...%> is conditionally supported",
-    "pattern": "passing objects of non-trivially-copyable type '(.+?)' through '(.+?)' is conditionally supported",
-    "replacement": "通过 '$2' 传递有非平凡复制的类型 '$1' 是条件性支持的"
+    "pattern": "passing objects of non-trivially-copyable type '(.+?)' through '\\.\\.\\.' is conditionally supported",
+    "replacement": "通过 '...' 传递有非平凡复制的类型 '$1' 是条件性支持的"
   },
   {
     "id": "cannot receive reference type %qT through %<...%>",
-    "pattern": "cannot receive reference type '(.+?)' through '(.+?)'",
-    "replacement": "不能通过 '$2' 接受引用类型 '$1'"
+    "pattern": "cannot receive reference type '(.+?)' through '\\.\\.\\.'",
+    "replacement": "不能通过 '...' 接受引用类型 '$1'"
   },
   {
     "id": "receiving objects of non-trivially-copyable type %q#T through %<...%> is conditionally-supported",
-    "pattern": "receiving objects of non-trivially-copyable type '(.+?)' through '(.+?)' is conditionally-supported",
-    "replacement": "通过 '$2' 接受非平凡复制的类型 '$1' 是条件性支持的"
+    "pattern": "receiving objects of non-trivially-copyable type '(.+?)' through '\\.\\.\\.' is conditionally-supported",
+    "replacement": "通过 '...' 接受非平凡复制的类型 '$1' 是条件性支持的"
   },
   {
     "id": "recursive evaluation of default argument for %q#D",
@@ -11726,8 +11726,8 @@
   },
   {
     "id": "converting lambda that uses %<...%> to function pointer",
-    "pattern": "converting lambda that uses '(.+?)' to function pointer",
-    "replacement": "将使用了 '$1' 的 lambda 转换为函数指针"
+    "pattern": "converting lambda that uses '\\.\\.\\.' to function pointer",
+    "replacement": "将使用了 '...' 的 lambda 转换为函数指针"
   },
   {
     "id": "use of deleted function %qD",
@@ -11896,8 +11896,8 @@
   },
   {
     "id": "%<...%> handler must be the last handler for its try block",
-    "pattern": "'(.+?)' handler must be the last handler for its try block",
-    "replacement": "'$1' 处理代码必须是其 try 块中的最后一个处理代码"
+    "pattern": "'\\.\\.\\.' handler must be the last handler for its try block",
+    "replacement": "'...' 处理代码必须是其 try 块中的最后一个处理代码"
   },
   {
     "id": "noexcept-expression evaluates to %<false%> because of a call to %qD",
@@ -13356,7 +13356,7 @@
   },
   {
     "id": "expected ...",
-    "pattern": "expected ...",
+    "pattern": "expected \\.\\.\\.",
     "replacement": "期望 ..."
   },
   {
@@ -13666,8 +13666,8 @@
   },
   {
     "id": "%<&%> should come before %<...%>",
-    "pattern": "'&' should come before '(.+?)'",
-    "replacement": "'&' 应当出现在 '$1' 后"
+    "pattern": "'&' should come before '\\.\\.\\.'",
+    "replacement": "'&' 应当出现在 '...' 后"
   },
   {
     "id": "lambda capture initializers only available with %<-std=c++14%> or %<-std=gnu++14%>",
@@ -13691,8 +13691,8 @@
   },
   {
     "id": "too many %<...%> in lambda capture",
-    "pattern": "too many '(.+?)' in lambda capture",
-    "replacement": "lambda 捕获中出现太多的 '$1'"
+    "pattern": "too many '\\.\\.\\.' in lambda capture",
+    "replacement": "lambda 捕获中出现太多的 '...'"
   },
   {
     "id": "explicit by-copy capture of %qD redundant with by-copy capture default",
@@ -14246,8 +14246,8 @@
   },
   {
     "id": "expected parameter pack before %<...%>",
-    "pattern": "expected parameter pack before '(.+?)'",
-    "replacement": "'$1' 前期望形参包"
+    "pattern": "expected parameter pack before '\\.\\.\\.'",
+    "replacement": "'...' 前期望形参包"
   },
   {
     "id": "expected template-argument",
@@ -14706,8 +14706,8 @@
   },
   {
     "id": "expected %<,%> or %<...%>",
-    "pattern": "expected ',' or '(.+?)'",
-    "replacement": "期望 ',' 或 '$1'"
+    "pattern": "expected ',' or '\\.\\.\\.'",
+    "replacement": "期望 ',' 或 '...'"
   },
   {
     "id": "types may not be defined in parameter types",
@@ -14766,13 +14766,13 @@
   },
   {
     "id": "%<...%> not allowed in designated initializer list",
-    "pattern": "'(.+?)' not allowed in designated initializer list",
-    "replacement": "指派初始化器列表中不允许 '$1'"
+    "pattern": "'\\.\\.\\.' not allowed in designated initializer list",
+    "replacement": "指派初始化器列表中不允许 '...'"
   },
   {
     "id": "%<.%s%> designator used multiple times in the same initializer list",
     "pattern": "'.(.*?)' designator used multiple times in the same initializer list",
-    "replacement": "同一初始化器列表中 '$1' 指派符出现了多次"
+    "replacement": "同一初始化器列表中 '.$1' 指派符出现了多次"
   },
   {
     "id": "expected class-name",
@@ -14996,8 +14996,8 @@
   },
   {
     "id": "expected attribute before %<...%>",
-    "pattern": "expected attribute before '(.+?)'",
-    "replacement": "'$1 前期望特性"
+    "pattern": "expected attribute before '\\.\\.\\.'",
+    "replacement": "'...' 前期望特性"
   },
   {
     "id": "attribute using prefix only available with %<-std=c++17%> or %<-std=gnu++17%>",
@@ -15266,8 +15266,8 @@
   },
   {
     "id": "expected %<...%>",
-    "pattern": "expected '(.+?)'",
-    "replacement": "期望 '$1'"
+    "pattern": "expected '\\.\\.\\.'",
+    "replacement": "期望 '...'"
   },
   {
     "id": "expected %<*%>",
@@ -15801,8 +15801,8 @@
   },
   {
     "id": "parameter packs not expanded with %<...%>:",
-    "pattern": "parameter packs not expanded with '(.+?)':",
-    "replacement": "形参包在 '$1' 中未展开"
+    "pattern": "parameter packs not expanded with '\\.\\.\\.':",
+    "replacement": "形参包在 '...' 中未展开"
   },
   {
     "id": "declaration of template parameter %q+D shadows template parameter",
@@ -16526,8 +16526,8 @@
   },
   {
     "id": "use %<...%> to expand argument pack",
-    "pattern": "use '(.+?)' to expand argument pack",
-    "replacement": "使用 '$1' 来展开实参包"
+    "pattern": "use '\\.\\.\\.' to expand argument pack",
+    "replacement": "使用 '...' 来展开实参包"
   },
   {
     "id": "empty initializer in lambda init-capture",
@@ -17891,7 +17891,7 @@
   },
   {
     "id": "must use %<.*%> or %<->*%> to call pointer-to-member function in %<%E (...)%>, e.g. %<(... ->* %E) (...)%>",
-    "pattern": "must use '.\\*' or '->\\*' to call pointer-to-member function in '(.+?) \\(...\\)', e.g. '\\(... ->\\* (.+?)\\) \\(...\\)'",
+    "pattern": "must use '\\.\\*' or '->\\*' to call pointer-to-member function in '(.+?) \\(\\.\\.\\.\\)', e.g. '\\(\\.\\.\\. ->\\* (.+?)\\) \\(\\.\\.\\.\\)'",
     "replacement": "必须用 '.*' 或 '->*' 调用 '$1 (...)' 中的成员函数指针，例如 '(... ->* $2) (...)'"
   },
   {

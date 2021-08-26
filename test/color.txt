@@ -1,0 +1,8 @@
+[01m[Ktemp.cpp:5:2:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K;[m[K' after struct definition
+    5 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[Ktemp.cpp:[m[K In function '[01m[Kint main()[m[K':
+[01m[Ktemp.cpp:7:7:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Ka[m[K' [[01;35m[K-Wunused-variable[m[K]
+    7 |     A [01;35m[Ka[m[K;
+      |       [01;35m[K^[m[K

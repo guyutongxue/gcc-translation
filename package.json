@@ -2,6 +2,7 @@
     "name": "gcc-translation",
     "version": "0.0.1",
     "main": "index.js",
+    "types": "index.d.ts",
     "author": "Guyutongxue <guyutongxue@163.com>",
     "repository": "https://github.com/Guyutongxue/gcc-translation",
     "engines": {

@@ -6,6 +6,14 @@
 
 仅考虑 g++ 11.2.0 在编译 C++ 源文件时的输出。未来可能增加新版本支持，但也可能不增加。
 
+## 效果
+
+#### 原文
+![](https://z3.ax1x.com/2021/08/26/hueyi4.png)
+
+#### 翻译后
+![](https://z3.ax1x.com/2021/08/26/hue6JJ.png)
+
 ## 翻译过程介绍
 
 基于 gcc 的 NLS （本地语言支持），首先获取该版本的 `zh_CN.po`。此文件内存放了数万个可以被本地化的字符串，并提供了其中一部分的中文翻译。通过 Python 脚本将这数万个字符串整理，筛选可能会出现在 C++ 编译诊断信息的字符串，一共约四千余条。将这四千余条英文手动翻译为中文。对于使用了格式化字符串的，使用正则表达式代替。此为 `main_11.2.0.json`。
@@ -25,24 +33,32 @@
 | attribute           | 属性           | 特性     |
 | catch               | 捕获           | 捕捉     |
 | const               | 常（量）       | 只读     |
-| dereference         | 提领，逆向引用 | 解地址   |
 | deallocate          | 解分配         | 释放     |
+| dereference         | 提领，逆向引用 | 解地址   |
 | overload resolution | 重载决议       | 重载解析 |
 | trait               | 特性           | 特征     |
-| union               | 联合           | 联合体   |
 
 大量术语采取了和 CppReference 相同的翻译：
 
 | 英文              | 翻译             |
 | ----------------- | ---------------- |
+| access            | （可）访问（性） |
 | aggregate         | 聚合类型，聚合体 |
-| defaulted         | 默认化（的）     |
+| binary            | 二元             |
+| brace             | 花括号           |
+| copy              | 复制             |
+| defaulted         | 预置（的）       |
 | explicit          | 显式的           |
+| ...-id            | ...标识          |
+| identifier        | 标识符           |
 | initializer       | 初始化器         |
 | linkage           | 连接             |
 | literal           | 字面类型，字面量 |
 | mutable           | 可变的           |
 | specifier         | 说明符           |
+| override          | 覆盖             |
 | pointer-to-member | 成员指针         |
 | qualifier         | 限定符           |
+| unary             | 一元             |
+| union             | 联合体           |
 | volatile          | 易变的           |

@@ -2,7 +2,20 @@
     5 | }
       |  [01;31m[K^[m[K
       |  [32m[K;[m[K
-[01m[Ktemp.cpp:[m[K In function '[01m[Kint main()[m[K':
-[01m[Ktemp.cpp:7:7:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Ka[m[K' [[01;35m[K-Wunused-variable[m[K]
-    7 |     A [01;35m[Ka[m[K;
-      |       [01;35m[K^[m[K
+[01m[Ktemp.cpp:[m[K In function '[01m[Kvoid f(const T&)[m[K':
+[01m[Ktemp.cpp:9:5:[m[K [01;31m[Kerror: [m[Kneed '[01m[Ktypename[m[K' before '[01m[KT::type[m[K' because '[01m[KT[m[K' is a dependent scope
+    9 |     [01;31m[KT[m[K::type i;
+      |     [01;31m[K^[m[K
+[01m[Ktemp.cpp:9:12:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K;[m[K' before '[01m[Ki[m[K'
+    9 |     T::type[01;31m[K [m[K[32m[Ki[m[K;
+      |            [01;31m[K^[m[K[32m[K~[m[K
+      |            [32m[K;[m[K
+temp.cpp: In instantiation of '[01m[Kvoid f(const T&) [with T = A][m[K':
+[01m[Ktemp.cpp:14:6:[m[K   required from here
+[01m[Ktemp.cpp:9:8:[m[K [01;31m[Kerror: [m[Kdependent-name '[01m[KT::type[m[K' is parsed as a non-type, but instantiation yields a type
+    9 |     T::[01;31m[Ktype[m[K i;
+      |        [01;31m[K^~~~[m[K
+[01m[Ktemp.cpp:9:8:[m[K [01;36m[Knote: [m[Ksay '[01m[Ktypename T::type[m[K' if a type is meant
+[01m[Ktemp.cpp:8:17:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[Kt[m[K' [[01;35m[K-Wunused-parameter[m[K]
+    8 | void f([01;35m[Kconst T& t[m[K) {
+      |        [01;35m[K~~~~~~~~~^[m[K

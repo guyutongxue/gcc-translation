@@ -166,8 +166,8 @@
   },
   {
     "id": "format",
-    "pattern": "format",
-    "replacement": "格式"
+    "pattern": "format ",
+    "replacement": "格式 "
   },
   {
     "id": "field width specifier",
@@ -622,7 +622,7 @@
   {
     "id": "<template arguments error>",
     "pattern": "<template arguments error>",
-    "replacement": "<模板参数数错误>"
+    "replacement": "<模板实参错误>"
   },
   {
     "id": "<enumerator>",
@@ -637,7 +637,7 @@
   {
     "id": "<template parameter error>",
     "pattern": "<template parameter error>",
-    "replacement": "<模板参数错误>"
+    "replacement": "<模板形参错误>"
   },
   {
     "id": "<statement>",
@@ -867,22 +867,22 @@
   {
     "id": "wrong type argument to bit-complement",
     "pattern": "wrong type argument to bit-complement",
-    "replacement": "按位取反的参数类型错误"
+    "replacement": "按位取反的实参类型错误"
   },
   {
     "id": "wrong type argument to abs",
     "pattern": "wrong type argument to abs",
-    "replacement": "不能对该类型的参数求绝对值"
+    "replacement": "不能对该类型的实参求绝对值"
   },
   {
     "id": "wrong type argument to conjugation",
     "pattern": "wrong type argument to conjugation",
-    "replacement": "不能对该类型的参数求共轭"
+    "replacement": "不能对该类型的实参求共轭"
   },
   {
     "id": "in argument to unary !",
     "pattern": "in argument to unary !",
-    "replacement": "一元 ! 的参数中"
+    "replacement": "一元 ! 的实参中"
   },
   {
     "id": "no pre-increment operator for type",
@@ -1012,7 +1012,7 @@
   {
     "id": "invalid fn spec attribute \\\"%s\\\" arg %i",
     "pattern": "invalid fn spec attribute \"(.*?)\" arg (\\d+)",
-    "replacement": "无效的函数特性 \"$1\" 参数 $2"
+    "replacement": "无效的函数特性 \"$1\" 实参 $2"
   },
   {
     "id": "%G%qs pointer is null",
@@ -1027,7 +1027,7 @@
   {
     "id": "%Gargument %u null where non-null expected",
     "pattern": "argument (\\d+) null where non-null expected",
-    "replacement": "参数 $1 为空，但期望非空"
+    "replacement": "实参 $1 为空，但期望非空"
   },
   {
     "id": "in a call to built-in function %qD",
@@ -1052,7 +1052,7 @@
   {
     "id": "%<l1-cache-size%> parameter is not a power of two %d",
     "pattern": "'l1-cache-size' parameter is not a power of two",
-    "replacement": "'l1-cache-size' 参数不是 2 的幂"
+    "replacement": "'l1-cache-size' 形参不是 2 的幂"
   },
   {
     "id": "virtual definition of statement not up to date",
@@ -1147,7 +1147,7 @@
   {
     "id": "%G%qD specified bound depends on the length of the source argument",
     "pattern": "specified bound depends on the length of the source argument",
-    "replacement": "指定边界依赖于源参数的长度"
+    "replacement": "指定边界依赖于源实参的长度"
   },
   {
     "id": "length computed here",
@@ -1947,22 +1947,22 @@
   {
     "id": "attribute %qs positional argument 1 references non-pointer argument type %qT",
     "pattern": "attribute '(.+?)' positional argument 1 references non-pointer argument type '(.+?)'",
-    "replacement": "'$1' 特性的第 1 个位置参数使用了非指针实参类型 '$2'"
+    "replacement": "'$1' 特性的第 1 个位置实参使用了非指针实参类型 '$2'"
   },
   {
     "id": "attribute %qs positional argument 1 references argument of function type %qT",
     "pattern": "attribute '(.+?)' positional argument 1 references argument of function type '(.+?)'",
-    "replacement": "'$1' 特性的第 1 个位置参数使用了函数类型 '$2' 的实参"
+    "replacement": "'$1' 特性的第 1 个位置实参使用了函数类型 '$2' 的实参"
   },
   {
     "id": "attribute %qs positional argument 1 references %qs-qualified argument type %qT",
     "pattern": "attribute '(.+?)' positional argument 1 references '(.+?)'-qualified argument type '(.+?)'",
-    "replacement": "'$1' 特性的第 1 个位置参数使用了 '$2'-限定的实参类型 '$3'"
+    "replacement": "'$1' 特性的第 1 个位置实参使用了 '$2'-限定的实参类型 '$3'"
   },
   {
     "id": "attribute %qs positional argument 2 references non-integer argument type %qT",
     "pattern": "attribute '(.+?)' positional argument 2 references non-integer argument type '(.+?)'",
-    "replacement": "'$1' 特性的第 2 个位置参数使用了非整数实参类型 '$2'"
+    "replacement": "'$1' 特性的第 2 个位置实参使用了非整数实参类型 '$2'"
   },
   {
     "id": "cleanup argument not an identifier",
@@ -1982,7 +1982,7 @@
   {
     "id": "%qE attribute only applies to variadic functions",
     "pattern": "'(.+?)' attribute only applies to variadic functions",
-    "replacement": "'$1' 特性只能应用于带可变参数函数"
+    "replacement": "'$1' 特性只能应用于带变长实参函数"
   },
   {
     "id": "requested position is not an integer constant",
@@ -2022,7 +2022,7 @@
   {
     "id": "%qE attribute argument %qE exceeds %u",
     "pattern": "'(.+?)' attribute argument '(.+?)' exceeds (\\d+)",
-    "replacement": "'$1' 特性的参数 '$2' 超过 $3"
+    "replacement": "'$1' 特性的实参 '$2' 超过 $3"
   },
   {
     "id": "%qE attribute may be put on a typedef only; attribute is ignored",
@@ -2267,7 +2267,7 @@
   {
     "id": "first argument to %<va_arg%> not of type %<va_list%>",
     "pattern": "first argument to 'va_arg' not of type 'va_list'",
-    "replacement": "给 'va_arg' 的第一个参数的类型不是 'va_list'"
+    "replacement": "给 'va_arg' 的第一个实参的类型不是 'va_list'"
   },
   {
     "id": "cannot disable built-in function %qs",
@@ -2497,7 +2497,7 @@
   {
     "id": "incorrect number of arguments to function %qE",
     "pattern": "incorrect number of arguments to function '(.+?)'",
-    "replacement": "提供给函数 '$1' 的实参数量不正确"
+    "replacement": "提供给函数 '$1' 的实参个数不正确"
   },
   {
     "id": "argument 1 of %qE must be a non-void pointer type",
@@ -3982,7 +3982,7 @@
   {
     "id": "wrong type argument to %s",
     "pattern": "wrong type argument to (.*?)",
-    "replacement": "$1 的错误类型参数"
+    "replacement": "$1 的错误类型实参"
   },
   {
     "id": "overflow in constant expression",
@@ -4332,7 +4332,7 @@
   {
     "id": "switch missing default case",
     "pattern": "switch missing default case",
-    "replacement": "switch 没有默认 case"
+    "replacement": "switch 缺少 default case"
   },
   {
     "id": "switch condition has boolean value",
@@ -4517,32 +4517,32 @@
   {
     "id": "invalid type argument (have %qT)",
     "pattern": "invalid type argument \\(have '(.+?)'\\)",
-    "replacement": "参数类型无效（有 '$1'）"
+    "replacement": "实参类型 '$1' 无效"
   },
   {
     "id": "invalid type argument of array indexing (have %qT)",
     "pattern": "invalid type argument of array indexing \\(have '(.+?)'\\)",
-    "replacement": "数组索引参数类型无效（有 '$1'）"
+    "replacement": "数组索引实参类型 '$1' 无效"
   },
   {
     "id": "invalid type argument of unary %<*%> (have %qT)",
-    "pattern": "invalid type argument of unary '*' \\(have '(.+?)'\\)",
-    "replacement": "一元 '*' 参数类型无效（有 '$1'） "
+    "pattern": "invalid type argument of unary '\\*' \\(have '(.+?)'\\)",
+    "replacement": "一元 '*' 实参类型 '$1' 无效"
   },
   {
     "id": "invalid type argument of %<->%> (have %qT)",
     "pattern": "invalid type argument of '->' \\(have '(.+?)'\\)",
-    "replacement": "'->' 参数类型无效（有 '$1'）"
+    "replacement": "'->' 实参类型 '$1' 无效"
   },
   {
     "id": "invalid type argument of %<->*%> (have %qT)",
-    "pattern": "invalid type argument of '->*' \\(have '(.+?)'\\)",
-    "replacement": "'->*' 参数类型无效（有 '$1'）"
+    "pattern": "invalid type argument of '->\\*' \\(have '(.+?)'\\)",
+    "replacement": "'->*' 实参类型 '$1' 无效"
   },
   {
     "id": "invalid type argument of implicit conversion (have %qT)",
     "pattern": "invalid type argument of implicit conversion \\(have '(.+?)'\\)",
-    "replacement": "隐式转换参数类型无效（有 '$1'）"
+    "replacement": "隐式转换实参类型 '$1' 无效"
   },
   {
     "id": "array subscript has type %<char%>",
@@ -4687,7 +4687,7 @@
   {
     "id": "unused parameter %qD",
     "pattern": "unused parameter '(.+?)'",
-    "replacement": "未使用的参数 '$1'"
+    "replacement": "未使用的形参 '$1'"
   },
   {
     "id": "typedef %qD locally defined but not used",
@@ -6322,7 +6322,7 @@
   {
     "id": "%<linear%> clause step is a parameter %qD not specified in %<uniform%> clause",
     "pattern": "'linear' clause step is a parameter '(.+?)' not specified in 'uniform' clause",
-    "replacement": "'linear' 子句步进是一个未在 'uniform' 子句中指明的 '$1' 参数"
+    "replacement": "'linear' 子句步进是一个未在 'uniform' 子句中指明的 '$1' 形参"
   },
   {
     "id": "%<nogroup%> clause must not be used together with %<reduction%> clause",
@@ -6352,7 +6352,7 @@
   {
     "id": "  conversion of argument %d would be ill-formed:",
     "pattern": "  conversion of argument (\\d+) would be ill-formed:",
-    "replacement": "  第 $1 个参数的转换是非良构的："
+    "replacement": "  第 $1 个实参的转换是非良构的："
   },
   {
     "id": "  no known conversion from %qH to %qI",
@@ -6597,7 +6597,7 @@
   {
     "id": "in C++20 this comparison calls the current function recursively with reversed arguments",
     "pattern": "in C\\+\\+20 this comparison calls the current function recursively with reversed arguments",
-    "replacement": "在 C++20 中，此比较会递归地、以相反参数调用当前函数"
+    "replacement": "在 C++20 中，此比较会递归地、以相反实参调用当前函数"
   },
   {
     "id": "return type of %qD is not %qs",
@@ -8927,12 +8927,12 @@
   {
     "id": "comparison operator %q+D defaulted after its first declaration",
     "pattern": "comparison operator '(.+?)' defaulted after its first declaration",
-    "replacement": "比较运算符 '$1' 在其第一次声明后才设置为默认化的"
+    "replacement": "比较运算符 '$1' 在其第一次声明后才设置为预置的"
   },
   {
     "id": "redeclaration of friend %q#D may not have default template arguments",
     "pattern": "redeclaration of friend '(.+?)' may not have default template arguments",
-    "replacement": "友元 '(.+?)' 的重声明不能拥有默认模板参数"
+    "replacement": "友元 '(.+?)' 的重声明不能拥有默认模板实参"
   },
   {
     "id": "thread-local declaration of %q#D follows non-thread-local declaration",
@@ -9357,7 +9357,7 @@
   {
     "id": "constructor is not user-provided because it is explicitly defaulted in the class body",
     "pattern": "constructor is not user-provided because it is explicitly defaulted in the class body",
-    "replacement": "构造函数不是用户提供的，因为它在类声明中显式指明为默认化的"
+    "replacement": "构造函数不是用户提供的，因为它在类声明中显式指明为预置的"
   },
   {
     "id": "and the implicitly-defined constructor does not initialize %q#D",
@@ -9492,7 +9492,7 @@
   {
     "id": "%<declare variant%> on defaulted %qD",
     "pattern": "'declare variant' on defaulted '(.+?)'",
-    "replacement": "默认化的 '$1' 上的 'declare variant'"
+    "replacement": "预置的 '$1' 上的 'declare variant'"
   },
   {
     "id": "%<declare variant%> on deleted %qD",
@@ -9892,12 +9892,12 @@
   {
     "id": "definition of explicitly-defaulted %q+D",
     "pattern": "definition of explicitly-defaulted '(.+?)'",
-    "replacement": "'$1' 的显式默认化声明"
+    "replacement": "'$1' 的显式预置的声明"
   },
   {
     "id": "%q#D explicitly defaulted here",
     "pattern": "'(.+?)' explicitly defaulted here",
-    "replacement": "'$1' 在此处显式默认化"
+    "replacement": "'$1' 在此处显式预置"
   },
   {
     "id": "no %q#D member function declared in class %qT",
@@ -11092,12 +11092,12 @@
   {
     "id": "postfix %qD must have %<int%> as its argument",
     "pattern": "postfix '(.+?)' must have 'int' as its argument",
-    "replacement": "后缀 '$1' 必须使用 'int' 作为它的参数"
+    "replacement": "后缀 '$1' 必须使用 'int' 作为它的实参"
   },
   {
     "id": "postfix %qD must have %<int%> as its second argument",
     "pattern": "postfix '(.+?)' must have 'int' as its second argument",
-    "replacement": "后缀 '$1' 必须使用 'int' 作为它的第二个参数"
+    "replacement": "后缀 '$1' 必须使用 'int' 作为它的第二个实参"
   },
   {
     "id": "%qD must have no arguments",
@@ -11117,7 +11117,7 @@
   {
     "id": "%qD cannot have default arguments",
     "pattern": "'(.+?)' cannot have default arguments",
-    "replacement": "'$1' 不能有默认参数"
+    "replacement": "'$1' 不能有默认实参"
   },
   {
     "id": "converting %qT to %<void%> will never use a type conversion operator",
@@ -11147,7 +11147,7 @@
   {
     "id": "user-defined %qD always evaluates both arguments",
     "pattern": "user-defined '(.+?)' always evaluates both arguments",
-    "replacement": "用户定义的 '$1' 总是计算所有两个参数"
+    "replacement": "用户定义的 '$1' 总是计算所有两个实参"
   },
   {
     "id": "prefix %qD should return %qT",
@@ -11572,7 +11572,7 @@
   {
     "id": "the first parameter of %<operator new%> cannot have a default argument",
     "pattern": "the first parameter of 'operator new' cannot have a default argument",
-    "replacement": "'operator new' 的第一个形参不能有默认参数"
+    "replacement": "'operator new' 的第一个形参不能有默认实参"
   },
   {
     "id": "%<operator new%> takes type %<size_t%> (%qT) as first parameter",
@@ -11747,7 +11747,7 @@
   {
     "id": "(no argument)",
     "pattern": "\\(no argument\\)",
-    "replacement": "（没有参数）"
+    "replacement": "（没有实参）"
   },
   {
     "id": "extended initializer lists only available with %<-std=c++11%> or %<-std=gnu++11%>",
@@ -11782,7 +11782,7 @@
   {
     "id": "defaulted and deleted functions only available with %<-std=c++11%> or %<-std=gnu++11%>",
     "pattern": "defaulted and deleted functions only available with '-std=c\\+\\+11' or '-std=gnu\\+\\+11'",
-    "replacement": "默认化和被删除的函数仅在 '-std=c++11' 或 '-std=gnu++11' 下可用"
+    "replacement": "预置的和被删除的函数仅在 '-std=c++11' 或 '-std=gnu++11' 下可用"
   },
   {
     "id": "inline namespaces only available with %<-std=c++11%> or %<-std=gnu++11%>",
@@ -12512,12 +12512,12 @@
   {
     "id": "non-static const member %q#D, cannot use default assignment operator",
     "pattern": "non-static const member '(.+?)', cannot use default assignment operator",
-    "replacement": "非静态的只读成员 '$1'，不能使用默认的赋值运算符"
+    "replacement": "非静态的只读成员 '$1'，不能使用预置的赋值运算符"
   },
   {
     "id": "non-static reference member %q#D, cannot use default assignment operator",
     "pattern": "non-static reference member '(.+?)', cannot use default assignment operator",
-    "replacement": "非静态的引用成员 '$1'，不能使用默认的赋值运算符"
+    "replacement": "非静态的引用成员 '$1'，不能使用预置的赋值运算符"
   },
   {
     "id": "%qD is not a static data member",
@@ -12537,62 +12537,62 @@
   {
     "id": "defaulted %qD only available with %<-std=c++20%> or %<-std=gnu++20%>",
     "pattern": "defaulted '(.+?)' only available with '-std=c\\+\\+20' or '-std=gnu\\+\\+20'",
-    "replacement": "默认化的 '$1' 仅在 '-std=c++20' 或 'std=gnu++20' 下可用"
+    "replacement": "预置的 '$1' 仅在 '-std=c++20' 或 'std=gnu++20' 下可用"
   },
   {
     "id": "defaulted %qD must return %<bool%>",
     "pattern": "defaulted '(.+?)' must return 'bool'",
-    "replacement": "默认化的 '$1' 必须返回 'bool'"
+    "replacement": "预置的 '$1' 必须返回 'bool'"
   },
   {
     "id": "defaulted %qD must be %<const%>",
     "pattern": "defaulted '(.+?)' must be 'const'",
-    "replacement": "默认化的 '$1' 必须为 'const'"
+    "replacement": "预置的 '$1' 必须为 'const'"
   },
   {
     "id": "defaulted %qD must not have %<&&%> ref-qualifier",
     "pattern": "defaulted '(.+?)' must not have '&&' ref-qualifier",
-    "replacement": "默认化的 '$1' 不能有 '&&' 引用限定符"
+    "replacement": "预置的 '$1' 不能有 '&&' 引用限定符"
   },
   {
     "id": "defaulted %qD is not a friend of %qT",
     "pattern": "defaulted '(.+?)' is not a friend of '(.+?)'",
-    "replacement": "默认化的 '$1' 不是 '$2' 的友元"
+    "replacement": "预置的 '$1' 不是 '$2' 的友元"
   },
   {
     "id": "defaulted member %qD must have parameter type %<const %T&%>",
     "pattern": "defaulted member '(.+?)' must have parameter type 'const (.+?)&'",
-    "replacement": "默认化成员 '$1' 的形参类型必须为 'const $2&'"
+    "replacement": "预置成员 '$1' 的形参类型必须为 'const $2&'"
   },
   {
     "id": "defaulted %qD must have parameters of either type %<const %T&%> or %qT",
     "pattern": "defaulted '(.+?)' must have parameters of either type 'const (.+?)&' or '(.+?)'",
-    "replacement": "默认化的 '$1' 的形参类型必须为 'const $2&' 或 '$2'"
+    "replacement": "预置的 '$1' 的形参类型必须为 'const $2&' 或 '$2'"
   },
   {
     "id": "defaulted %qD must have parameters of either type %<const %T&%> or %qT, not both",
     "pattern": "defaulted '(.+?)' must have parameters of either type 'const (.+?)&' or '(.+?)', not both",
-    "replacement": "默认化的 '$1' 的形参类型要么是 'const $2&'，要么是 '$2'，不能同时是"
+    "replacement": "预置的 '$1' 的形参类型要么是 'const $2&'，要么是 '$2'，不能同时是"
   },
   {
     "id": "cannot default compare union %qT",
     "pattern": "cannot default compare union '(.+?)'",
-    "replacement": "不能默认化联合体 '$1' 的比较"
+    "replacement": "不能预置联合体 '$1' 的比较"
   },
   {
     "id": "cannot default compare reference member %qD",
     "pattern": "cannot default compare reference member '(.+?)'",
-    "replacement": "不能默认化引用成员 '$1' 的比较"
+    "replacement": "不能预置引用成员 '$1' 的比较"
   },
   {
     "id": "cannot default compare anonymous union member",
     "pattern": "cannot default compare anonymous union member",
-    "replacement": "不能默认化匿名联合体成员的比较"
+    "replacement": "不能预置匿名联合体成员的比较"
   },
   {
     "id": "cannot default compare flexible array member",
     "pattern": "cannot default compare flexible array member",
-    "replacement": "不能默认化柔性数组成员的比较"
+    "replacement": "不能预置柔性数组成员的比较"
   },
   {
     "id": "changing the return type from %qs to a comparison category type will allow the comparison to use %qs and %qs",
@@ -12622,12 +12622,12 @@
   {
     "id": "defaulted destructor calls non-%<constexpr%> %qD",
     "pattern": "defaulted destructor calls non-'constexpr' '(.+?)'",
-    "replacement": "默认化的析构函数调用了非 'constexpr' '$1'"
+    "replacement": "预置的析构函数调用了非 'constexpr' '$1'"
   },
   {
     "id": "defaulted constructor calls non-%<constexpr%> %qD",
     "pattern": "defaulted constructor calls non-'constexpr' '(.+?)'",
-    "replacement": "默认化的构造函数调用了非 'constexpr' '$1'"
+    "replacement": "预置的构造函数调用了非 'constexpr' '$1'"
   },
   {
     "id": "initializer for %q#D is invalid",
@@ -12637,7 +12637,7 @@
   {
     "id": "defaulted default constructor does not initialize %q#D",
     "pattern": "defaulted default constructor does not initialize '(.+?)'",
-    "replacement": "默认化的默认构造函数并不初始化 '$1'"
+    "replacement": "预置的默认构造函数并不初始化 '$1'"
   },
   {
     "id": "copying non-static data member %q#D of rvalue reference type",
@@ -12647,12 +12647,12 @@
   {
     "id": "defaulted default constructor does not initialize any non-static data member",
     "pattern": "defaulted default constructor does not initialize any non-static data member",
-    "replacement": "默认化的默认构造函数并不初始化任何非静态数据成员"
+    "replacement": "预置的默认构造函数并不初始化任何非静态数据成员"
   },
   {
     "id": "defaulted move assignment for %qT calls a non-trivial move assignment operator for virtual base %qT",
     "pattern": "defaulted move assignment for '(.+?)' calls a non-trivial move assignment operator for virtual base '(.+?)'",
-    "replacement": "'$1' 默认化的移动赋值调用了虚基类 '$2' 的非平凡移动赋值运算符"
+    "replacement": "'$1' 预置的移动赋值调用了虚基类 '$2' 的非平凡移动赋值运算符"
   },
   {
     "id": "a lambda closure type has a deleted default constructor",
@@ -12677,7 +12677,7 @@
   {
     "id": "%q#D is implicitly deleted because the default definition would be ill-formed:",
     "pattern": "'(.+?)' is implicitly deleted because the default definition would be ill-formed:",
-    "replacement": "'$1' 被隐式删除，因为其默认定义不是良构的："
+    "replacement": "'$1' 被隐式删除，因为其预置定义不是良构的："
   },
   {
     "id": "%q#F is implicitly deleted because its exception-specification does not match the implicit exception-specification %qX",
@@ -12687,7 +12687,7 @@
   {
     "id": "defaulted declaration %q+D does not match the expected signature",
     "pattern": "defaulted declaration '(.+?)' does not match the expected signature",
-    "replacement": "默认化的声明 '$1' 不匹配异常签名"
+    "replacement": "预置的声明 '$1' 不匹配异常签名"
   },
   {
     "id": "expected signature: %qD",
@@ -12697,22 +12697,22 @@
   {
     "id": "explicitly defaulted function %q+D cannot be declared %qs because the implicit declaration is not %qs:",
     "pattern": "explicitly defaulted function '(.+?)' cannot be declared '(.+?)' because the implicit declaration is not '(.+?)':",
-    "replacement": "显式默认化的函数 '$1' 不能声明为 '$2'，因为其隐式声明不是 '$3'："
+    "replacement": "显式预置的函数 '$1' 不能声明为 '$2'，因为其隐式声明不是 '$3'："
   },
   {
     "id": "a template cannot be defaulted",
     "pattern": "a template cannot be defaulted",
-    "replacement": "模板不能被默认化"
+    "replacement": "模板不能被预置"
   },
   {
     "id": "%qD cannot be defaulted",
     "pattern": "'(.+?)' cannot be defaulted",
-    "replacement": "'$1' 不能被默认化"
+    "replacement": "'$1' 不能被预置"
   },
   {
     "id": "defaulted function %q+D with default argument",
     "pattern": "defaulted function %q+D with default argument",
-    "replacement": "默认化函数 '$1' 拥有默认实参"
+    "replacement": "预置的函数 '$1' 拥有默认实参"
   },
   {
     "id": "redeclaration of %q#D with different template parameters",
@@ -13337,7 +13337,7 @@
   {
     "id": "unable to find string literal operator %qD with %qT, %qT arguments",
     "pattern": "unable to find string literal operator '(.+?)' with '(.+?)', '(.+?)' arguments",
-    "replacement": "无法找到带有 '$2'，'$3' 参数的字符串字面量运算符 '$1' "
+    "replacement": "无法找到带有 '$2'，'$3' 实参的字符串字面量运算符 '$1' "
   },
   {
     "id": "global module fragment contents must be from preprocessor inclusion",
@@ -15347,7 +15347,7 @@
   {
     "id": "file ends in default argument",
     "pattern": "file ends in default argument",
-    "replacement": "文件在默认参数处结束"
+    "replacement": "文件在默认实参处结束"
   },
   {
     "id": "misplaced %<@%D%> Objective-C++ construct",
@@ -15362,7 +15362,7 @@
   {
     "id": "objective-c++ message argument(s) are expected",
     "pattern": "objective-c\\+\\+ message argument(s) are expected",
-    "replacement": "期望 objective-c++ 消息参数"
+    "replacement": "期望 objective-c++ 消息实参"
   },
   {
     "id": "%<@encode%> must specify a type as an argument",
@@ -15892,7 +15892,7 @@
   {
     "id": "no default argument for %qD",
     "pattern": "no default argument for '(.+?)'",
-    "replacement": "'$1' 没有默认参数"
+    "replacement": "'$1' 没有默认实参"
   },
   {
     "id": "parameter pack %q+D must be at the end of the template parameter list",
@@ -15902,12 +15902,12 @@
   {
     "id": "default template arguments may not be used in function template friend re-declaration",
     "pattern": "default template arguments may not be used in function template friend re-declaration",
-    "replacement": "默认参数不能用在函数模板友元重声明中"
+    "replacement": "默认模板实参不能用在函数模板友元重声明中"
   },
   {
     "id": "default template arguments may not be used in template friend declarations",
     "pattern": "default template arguments may not be used in template friend declarations",
-    "replacement": "默认参数不能用在模板友元声明中"
+    "replacement": "默认模板实参不能用在模板友元声明中"
   },
   {
     "id": "default template arguments may not be used in function templates without %<-std=c++11%> or %<-std=gnu++11%>",
@@ -15952,12 +15952,12 @@
   {
     "id": "expected %d levels of template parms for %q#D, got %d",
     "pattern": "expected (\\d+) levels of template parms for '(.+?)', got (\\d+)",
-    "replacement": "需要 $1 级的 '$2' 模板参数，却给出了 $3 级"
+    "replacement": "需要 $1 级的 '$2' 模板形参，却给出了 $3 级"
   },
   {
     "id": "got %d template parameters for %q#D",
     "pattern": "got (\\d+) template parameters for '(.+?)'",
-    "replacement": "为 '$2' 得到 $1 个模板参数"
+    "replacement": "为 '$2' 得到 $1 个模板形参"
   },
   {
     "id": "  but %d required",
@@ -15987,12 +15987,12 @@
   {
     "id": "redeclared with %d template parameter",
     "pattern": "redeclared with (\\d+) template parameters?",
-    "replacement": "重声明为具有 $1 个模板参数"
+    "replacement": "重声明为具有 $1 个模板形参"
   },
   {
     "id": "previous declaration %qD used %d template parameter",
     "pattern": "previous declaration '(.+?)' used (\\d+) template parameters?",
-    "replacement": "先前的声明 '$1' 使用了 $2 个模板参数"
+    "replacement": "先前的声明 '$1' 使用了 $2 个模板形参"
   },
   {
     "id": "template parameter %q+#D",
@@ -16032,7 +16032,7 @@
   {
     "id": "%qE is not a valid template argument for type %qT",
     "pattern": "'(.+?)' is not a valid template argument for type '(.+?)'",
-    "replacement": "'$1' 不是类型 '$2' 的有效模板参数"
+    "replacement": "'$1' 不是类型 '$2' 的有效模板实参"
   },
   {
     "id": "it must be the address of a function with external linkage",
@@ -16222,7 +16222,7 @@
   {
     "id": "%q#D is not a valid template argument for type %qT because a reference variable does not have a constant address",
     "pattern": "'(.+?)' is not a valid template argument for type '(.+?)' because a reference variable does not have a constant address",
-    "replacement": "'$1' 不是类型 '$2' 的有效模板参数，因为一个引用变量没有常量地址"
+    "replacement": "'$1' 不是类型 '$2' 的有效模板实参，因为一个引用变量没有常量地址"
   },
   {
     "id": "%qE is not a valid template argument for type %qT because it is a pointer",
@@ -16307,22 +16307,22 @@
   {
     "id": "could not convert template argument %qE from %qT to %qT",
     "pattern": "could not convert template argument '(.+?)' from '(.+?)' to '(.+?)'",
-    "replacement": "不能将模板参数 '$1' 从 '$2' 转换到 '$3'"
+    "replacement": "不能将模板实参 '$1' 从 '$2' 转换到 '$3'"
   },
   {
     "id": "template argument %d is invalid",
     "pattern": "template argument (\\d+) is invalid",
-    "replacement": "模板第 $1 个参数无效"
+    "replacement": "模板第 $1 个实参无效"
   },
   {
     "id": "wrong number of template arguments (%d, should be %d)",
     "pattern": "wrong number of template arguments \\((\\d+), should be (\\d+)\\)",
-    "replacement": "模板参数数目错误（不应是 $1 个而应是 $2 个）"
+    "replacement": "模板实参个数错误（不应是 $1 个而应是 $2 个）"
   },
   {
     "id": "wrong number of template arguments (%d, should be at least %d)",
     "pattern": "wrong number of template arguments \\((\\d+), should be at least (\\d+)\\)",
-    "replacement": "模板参数数目错误（不应是 $1 个而应是至少 $2 个）"
+    "replacement": "模板实参个数错误（不应是 $1 个而应是至少 $2 个）"
   },
   {
     "id": "provided for %qD",
@@ -16502,7 +16502,7 @@
   {
     "id": "dependent-name %qE is parsed as a non-type, but instantiation yields a type",
     "pattern": "dependent-name '(.+?)' is parsed as a non-type, but instantiation yields a type",
-    "replacement": "依赖名 '$1' 被解析为非类型，但实例化却产生了一个类型"
+    "replacement": "待决名 '$1' 被解析为非类型，但实例化却产生了一个类型"
   },
   {
     "id": "say %<typename %E%> if a type is meant",
@@ -17052,7 +17052,7 @@
   {
     "id": "definition of %q#T inside template parameter list",
     "pattern": "definition of '(.+?)' inside template parameter list",
-    "replacement": "在模板参数列表中定义了 '$1'"
+    "replacement": "在模板形参列表中定义了 '$1'"
   },
   {
     "id": "invalid definition of qualified type %qT",
@@ -17747,7 +17747,7 @@
   {
     "id": "%<alignas%> argument has non-integral type %qT",
     "pattern": "'alignas' argument has non-integral type '(.+?)'",
-    "replacement": "'alignas' 参数具有非整数类型 '$1'"
+    "replacement": "'alignas' 实参具有非整数类型 '$1'"
   },
   {
     "id": "invalid use of non-static member function of type %qT",
@@ -18397,7 +18397,7 @@
   {
     "id": "cannot convert %qH to %qI in argument passing",
     "pattern": "cannot convert '(.+?)' to '(.+?)' in argument passing",
-    "replacement": "不能在参数传递时将 '$1' 转换为 '$2'"
+    "replacement": "不能在实参传递时将 '$1' 转换为 '$2'"
   },
   {
     "id": "cannot convert %qH to %qI in initialization",

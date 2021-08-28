@@ -1,1 +1,1 @@
-export function replaceGccDiagnostics(val: string, options?: { color: boolean });
+export function replaceGccDiagnostics(val: string, options?: { color: boolean }): string;

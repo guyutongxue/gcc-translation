@@ -166,18 +166,18 @@
   },
   {
     "id": "format",
-    "pattern": "format ",
-    "replacement": "格式 "
+    "pattern": "format '",
+    "replacement": "格式 '"
   },
   {
     "id": "field width specifier",
-    "pattern": "field width specifier",
-    "replacement": "字段宽度限定符"
+    "pattern": "field width specifier '",
+    "replacement": "字段宽度限定符 '"
   },
   {
     "id": "field precision specifier",
-    "pattern": "field precision specifier",
-    "replacement": "字段精度限定符"
+    "pattern": "field precision specifier '",
+    "replacement": "字段精度限定符 '"
   },
   {
     "id": "' ' flag",
@@ -3121,13 +3121,13 @@
   },
   {
     "id": "%s %<%s%.*s%> expects argument of type %<%s%s%>, but argument %d has type %qT",
-    "pattern": "(.*?) '(.+?)' expects argument of type '(.+?)', but argument (\\d+) has type '(.+?)'",
-    "replacement": "$1 '$2' 期望实参类型 '$3'，但第 $4 个实参的类型为 '$5'"
+    "pattern": "(.+?)' expects argument of type '(.+?)', but argument (\\d+) has type '(.+?)'",
+    "replacement": "$1' 期望实参类型 '$2'，但第 $3 个实参的类型为 '$4'"
   },
   {
     "id": "%s %<%s%.*s%> expects a matching %<%s%s%> argument",
-    "pattern": "(.*?) '(.+?)' expects a matching '(.+?)' argument",
-    "replacement": "$1 '$2' 期望一个吻合的 '$3' 实参"
+    "pattern": "(.+?)' expects a matching '(.+?)' argument",
+    "replacement": "$1' 期望一个吻合的 '$2' 实参"
   },
   {
     "id": "%<__gcc_host_wide_int__%> is not defined as a type",

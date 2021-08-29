@@ -31,7 +31,10 @@ function replaceGccDiagnostics(
 
     val = val.replace(/ __AKA@(.+?)@AKA__'/g, "' {即 '$1'}");
     if (options.color === true) {
-        val = val.replace(/'(.+?)'/g, "'\x1b[01m\x1b[K$1\x1b[m\x1b[K'")
+        // (?<!^ *\d* \|.*) means that quote's line should not start with
+        // "   \d | "
+        // which is a pretty-printed source code
+        val = val.replace(/(?<!^ *\d* \|.*)'(.*?)'/gm, "'\x1b[01m\x1b[K$1\x1b[m\x1b[K'")
     }
 
     return val;

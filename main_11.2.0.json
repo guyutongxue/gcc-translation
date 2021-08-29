@@ -32,7 +32,7 @@
   {
     "id": "compilation terminated.\\n",
     "pattern": "compilation terminated.\\n",
-    "replacement": "编译中断。\\n"
+    "replacement": "编译中止。\\n"
   },
   {
     "id": "                 from",
@@ -3217,7 +3217,7 @@
   {
     "id": "missing terminating %c character",
     "pattern": "missing terminating (.) character",
-    "replacement": "缺少结尾的 $1 字符"
+    "replacement": "缺少结束的 $1 字符"
   },
   {
     "id": "stray %qc in program",
@@ -5167,7 +5167,7 @@
   {
     "id": "setter method names must terminate with %<:%>",
     "pattern": "setter method names must terminate with ':'",
-    "replacement": "setter 的名字必须以 ':' 结尾"
+    "replacement": "setter 的名字必须以 ':' 结束"
   },
   {
     "id": "%<#pragma GCC unroll%> requires an assignment-expression that evaluates to a non-negative integral constant less than %u",
@@ -8202,7 +8202,7 @@
   {
     "id": "%<throw%> will always call %<terminate%>",
     "pattern": "'throw' will always call 'terminate'",
-    "replacement": "'(.+?)'的地址总是等价为'true'"
+    "replacement": "'throw' 总是会调用 'terminate'"
   },
   {
     "id": "in C++11 destructors default to %<noexcept%>",

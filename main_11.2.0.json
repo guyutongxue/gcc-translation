@@ -8171,7 +8171,7 @@
   },
   {
     "id": "%<delete[]%> is not a constant expression",
-    "pattern": "'delete[]' is not a constant expression",
+    "pattern": "'delete\\[\\]' is not a constant expression",
     "replacement": "'delete[]' 不是常量表达式"
   },
   {
@@ -14376,7 +14376,7 @@
   },
   {
     "id": "expected %<;%> or %<{%>",
-    "pattern": "expected ';' or '{'",
+    "pattern": "expected ';' or '\\{'",
     "replacement": "期望 ';' 或 '{'"
   },
   {
@@ -14796,7 +14796,7 @@
   },
   {
     "id": "expected %<{%> or %<:%>",
-    "pattern": "expected '{' or ':'",
+    "pattern": "expected '\\{' or ':'",
     "replacement": "期望 '{' 或 ':'"
   },
   {
@@ -16786,7 +16786,7 @@
   },
   {
     "id": "for deduction to %<std::initializer_list%>, use copy-list-initialization (i.e. add %<=%> before the %<{%>)",
-    "pattern": "for deduction to 'std::initializer_list', use copy-list-initialization \\(i.e. add '=' before the '{'\\)",
+    "pattern": "for deduction to 'std::initializer_list', use copy-list-initialization \\(i.e. add '=' before the '\\{'\\)",
     "replacement": "使用复制列表初始化来推导到 'std::initializer_list'（即在 '{' 后添加 '='）"
   },
   {

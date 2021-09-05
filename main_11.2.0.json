@@ -962,7 +962,7 @@
   {
     "id": "cannot use %<-%> as input filename for a precompiled header",
     "pattern": "cannot use '-' as input filename for a precompiled header",
-    "replacement": "在预编译头中不能使用 '-' 作为输入文件名"
+    "replacement": "在预编译头文件中不能使用 '-' 作为输入文件名"
   },
   {
     "id": "%G%qD specified bound %E equals destination size",
@@ -3197,7 +3197,7 @@
   {
     "id": "badly nested C headers from preprocessor",
     "pattern": "badly nested C headers from preprocessor",
-    "replacement": "预处理器生成了错误的嵌套 C 头"
+    "replacement": "预处理器生成了错误的嵌套 C 头文件"
   },
   {
     "id": "ignoring %<#pragma %s %s%>",
@@ -3567,7 +3567,7 @@
   {
     "id": "the %qs debug format cannot be used with pre-compiled headers",
     "pattern": "the '(.+?)' debug format cannot be used with pre-compiled headers",
-    "replacement": "'$1' 调试格式不能在预编译头上使用"
+    "replacement": "'$1' 调试格式不能在预编译头文件上使用"
   },
   {
     "id": "opening dependency file %s: %m",
@@ -3612,7 +3612,7 @@
   {
     "id": "cannot create precompiled header %s: %m",
     "pattern": "cannot create precompiled header",
-    "replacement": "无法创建预编译头"
+    "replacement": "无法创建预编译头文件"
   },
   {
     "id": "cannot write to %s: %m",
@@ -9521,7 +9521,7 @@
   },
   {
     "id": "initializer for %<decltype(auto) %D%> has function type; did you forget the %<()%>?",
-    "pattern": "initializer for 'decltype\\(auto\\) (.+?)' has function type; did you forget the '\\(\\)'?",
+    "pattern": "initializer for 'decltype\\(auto\\) (.+?)' has function type; did you forget the '\\(\\)'\\?",
     "replacement": "'decltype auto $1' 的初始化器具有函数类型；你是否忘记了 '()'？"
   },
   {
@@ -12886,8 +12886,8 @@
   },
   {
     "id": "%<std::%s%> is defined in header %qs; did you forget to %<#include %s%>?",
-    "pattern": "'std::(.*?)' is defined in header '(.+?)'; did you forget to '#include (.*?)'?",
-    "replacement": "'std::$1' 定义于头 '$2'；你是否忘记了 '#include $2'？"
+    "pattern": "'std::(.*?)' is defined in header '(.+?)'; did you forget to '#include (.*?)'\\?",
+    "replacement": "'std::$1' 定义于头文件 '$2'；你是否忘记了 '#include $2'？"
   },
   {
     "id": "%<std::%s%> is only available from %s onwards",
@@ -18957,7 +18957,7 @@
   {
     "id": "missing header name",
     "pattern": "missing header name",
-    "replacement": "缺少头名"
+    "replacement": "缺少头文件名"
   },
   {
     "id": "missing module name",

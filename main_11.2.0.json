@@ -4997,7 +4997,7 @@
   {
     "id": "left shift of negative value",
     "pattern": "left shift of negative value",
-    "replacement": "左移次数为负"
+    "replacement": "左移负数"
   },
   {
     "id": "left shift count is negative",

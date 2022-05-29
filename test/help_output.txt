@@ -1,0 +1,402 @@
+The following options control compiler warning messages:
+  --all-warnings              Same as -Wall.
+  --extra-warnings            Same as -Wextra.
+  -W                          This switch is deprecated; use -Wextra instead.  Same as -Wextra.
+  -WNSObject-attribute        应用 NSObject 特性到非类型定义时警告。
+  -Wabi                       结果与 ABI 相容的编译器的编译结果不同时给出警告
+  -Wabi-tag                   子对象有 abi_tag 特性但完整对象类型没有时给出警告。
+  -Wabi=                      当前 -fabi-version 和指定的版本不同时给出警告。
+  -Wabsolute-value            用可疑的标准函数调用计算绝对值时给出警告。
+  -Waddress                   使用可疑的内存地址时给出警告
+  -Waddress-of-packed-member  当对结构体或联合中的紧凑型成员取地址时给出警告。
+  -Waggregate-return          Warn about returning structures, unions or arrays.
+  -Waggressive-loop-optimizations Warn if a loop with constant number of iterations triggers undefined behavior.
+  -Waliasing                  Warn about possible aliasing of dummy arguments.
+  -Walign-commons             Warn about alignment of COMMON blocks.
+  -Waligned-new=[none|global|all] Warn even if 'new' uses a class member allocation function.
+  -Wall                       启用大部分警告信息。
+  -Walloc-size-larger-than=<bytes> Warn for calls to allocation functions that attempt to allocate objects larger than the specified number of bytes.
+  -Walloc-zero                以 0 字节调用分配函数时给出警告。
+  -Walloca                    使用任何 alloca 时给出警告。
+  -Walloca-larger-than=<number> Warn on unbounded uses of alloca, and on bounded uses of alloca whose bound can be larger than <number> bytes.
+  -Wampersand                 Warn about missing ampersand in continued character constants.
+  -Wanalyzer-double-fclose    Warn about code paths in which a stdio FILE can be closed more than once.
+  -Wanalyzer-double-free      Warn about code paths in which a pointer can be freed more than once.
+  -Wanalyzer-exposure-through-output-file Warn about code paths in which sensitive data is written to a file.
+  -Wanalyzer-file-leak        Warn about code paths in which a stdio FILE is not closed.
+  -Wanalyzer-free-of-non-heap Warn about code paths in which a non-heap pointer is freed.
+  -Wanalyzer-malloc-leak      Warn about code paths in which a heap-allocated pointer leaks.
+  -Wanalyzer-mismatching-deallocation Warn about code paths in which the wrong deallocation function is called.
+  -Wanalyzer-null-argument    Warn about code paths in which NULL is passed to a must-not-be-NULL function argument.
+  -Wanalyzer-null-dereference Warn about code paths in which a NULL pointer is dereferenced.
+  -Wanalyzer-possible-null-argument Warn about code paths in which a possibly- NULL value is passed to a must-not-be-NULL function argument.
+  -Wanalyzer-possible-null-dereference Warn about code paths in which a possibly-NULL pointer is dereferenced.
+  -Wanalyzer-shift-count-negative Warn about code paths in which a shift with negative count is attempted.
+  -Wanalyzer-shift-count-overflow Warn about code paths in which a shift with count >= width of type is attempted.
+  -Wanalyzer-stale-setjmp-buffer Warn about code paths in which a longjmp rewinds to a jmp_buf saved in a stack frame that has returned.
+  -Wanalyzer-tainted-allocation-size Warn about code paths in which an unsanitized value is used as an allocation size.
+  -Wanalyzer-tainted-array-index Warn about code paths in which an unsanitized value is used as an array index.
+  -Wanalyzer-tainted-divisor  Warn about code paths in which an unsanitized value is used as a divisor.
+  -Wanalyzer-tainted-offset   Warn about code paths in which an unsanitized value is used as a pointer offset.
+  -Wanalyzer-tainted-size     Warn about code paths in which an unsanitized value is used as a size.
+  -Wanalyzer-too-complex      Warn if the code is too complicated for the analyzer to fully explore.
+  -Wanalyzer-unsafe-call-within-signal-handler Warn about code paths in which an async-signal-unsafe function is called from a signal handler.
+  -Wanalyzer-use-after-free   Warn about code paths in which a freed value is used.
+  -Wanalyzer-use-of-pointer-in-stale-stack-frame Warn about code paths in which a pointer to a stale stack frame is used.
+  -Wanalyzer-use-of-uninitialized-value Warn about code paths in which an uninitialized value is used.
+  -Wanalyzer-write-to-const   Warn about code paths which attempt to write to a const object.
+  -Wanalyzer-write-to-string-literal Warn about code paths which attempt to write to a string literal.
+  -Warith-conversion          
+  -Warray-bounds              Warn if an array is accessed out of bounds.
+  -Warray-bounds=<0,2>        Warn if an array is accessed out of bounds.
+  -Warray-compare             比较两个数组类型操作数时给出警告。
+  -Warray-parameter           对不匹配的数组实参声明或不安全的数组访问给出警告。  Same as -Warray-parameter=.
+  -Warray-parameter=<0,2>     对不匹配的数组实参声明或不安全的数组访问给出警告。
+  -Warray-temporaries         Warn about creation of array temporaries.
+  -Wassign-intercept          当 Objective-C 赋值可能为垃圾回收所介入时给出警告。
+  -Wattribute-alias           Warn about type safety and similar errors and mismatches in declarations with alias attributes. Same as -Wattribute-alias=.
+  -Wattribute-alias=<0,2>     Warn about type safety and similar errors and mismatches in declarations with alias attributes.
+  -Wattribute-warning         Warn about uses of __attribute__((warning)) declarations.
+  -Wattributes                Warn about inappropriate attribute usage.
+  -Wbad-function-cast         当把函数转换为不兼容类型时给出警告。
+  -Wbidi-chars                Same as -Wbidi-chars=any (or, in negated form, -Wbidi-chars=none).
+  -Wbidi-chars=               -Wbidi-chars=\[none\|unpaired\|any\|ucn\]\t给出 UTF-8 双向控制字符警告。
+  -Wbool-compare              当比较布尔表达式与非 true/false 整数值时给出警告。
+  -Wbool-operation            当操作布尔表达式时给出警告。
+  -Wbuiltin-declaration-mismatch 当使用错误的签名声明内建函数时给出警告。
+  -Wbuiltin-macro-redefined   当内建预处理宏未定义或重定义时给出警告。
+  -Wc++-compat                对不处于 C 和 C++ 公共交集内的 C 结构体时给出警告。
+  -Wc++0x-compat              Same as -Wc++11-compat.
+  -Wc++11-compat              对 ISO C++ 1998 和 ISO C++ 2011 中含义不同的 C++ 结构体给出警告。
+  -Wc++11-extensions          当使用较旧的标准编译代码中的 C++11 结构体时给出警告。
+  -Wc++14-compat              对 ISO C++ 2011 和 ISO C++ 2014 中含义不同的 C++ 结构体给出警告。
+  -Wc++14-extensions          当使用较旧的标准编译代码中的 C++14 结构体时给出警告。
+  -Wc++17-compat              对 ISO C++ 2014 和 ISO C++ 2017 中含义不同的 C++ 结构体给出警告。
+  -Wc++17-extensions          当使用较旧的标准编译代码中的 C++17 结构体时给出警告。
+  -Wc++1z-compat              Same as -Wc++17-compat.
+  -Wc++20-compat              对 ISO C++ 2017 和 ISO C++ 2020 中含义不同的 C++ 结构体给出警告。
+  -Wc++20-extensions          当使用较旧的标准编译代码中的 C++20 结构体时给出警告。
+  -Wc++23-extensions          当使用较旧的标准编译代码中的 C++23 结构体时给出警告。
+  -Wc++2a-compat              Same as -Wc++20-compat.
+  -Wc-binding-type            Warn if the type of a variable might be not interoperable with C.
+  -Wc11-c2x-compat            对 ISO C11 中不存在但 ISO C2x 中存在的特性给出警告。
+  -Wc90-c99-compat            对 ISO C90 中不存在但 ISO C99 中存在的特性给出警告。
+  -Wc99-c11-compat            对 ISO C99 中不存在但 ISO C11 中存在的特性给出警告。
+  -Wcannot-profile            Warn when profiling instrumentation was requested, but could not be applied to a certain function.
+  -Wcast-align                Warn about pointer casts which increase alignment.
+  -Wcast-align=strict         Warn about pointer casts which increase alignment.
+  -Wcast-function-type        对不兼容的函数类型之间的转换给出警告。
+  -Wcast-qual                 当类型转换丢失限定信息时给出警告。
+  -Wcast-result               Warn about casts that will produce a null result.
+  -Wcatch-value               当捕获的处理器类型不是引用类型时给出警告。  Same as -Wcatch-value=.
+  -Wcatch-value=<0,3>         当捕获的处理器类型不是引用类型时给出警告。
+  -Wchar-subscripts           当下标类型为 "char" 时给出警告。
+  -Wcharacter-truncation      Warn about truncated character expressions.
+  -Wchkp                      Removed in GCC 9.  This switch has no effect.
+  -Wclass-conversion          向 void 的转换永远不会用到类型转换运算符
+  -Wclass-memaccess           
+  -Wclobbered                 对能被 "longjmp" 或 "vfork" 所篡改的变量给出警告。
+  -Wcomma-subscript           当下标表达式中使用逗号运算符时给出警告。
+  -Wcomment                   对可能嵌套的注释和长度超过一个物理行长的 C++ 注释给出警告。
+  -Wcomments                  -Wcomment 的同义词。  Same as -Wcomment.
+  -Wcompare-reals             Warn about equality comparisons involving REAL or COMPLEX expressions.
+  -Wconditionally-supported   对有条件支持的结构体给出警告。
+  -Wconversion                当隐式类型转换可能改变值时给出警告。
+  -Wconversion-extra          Warn about most implicit conversions.
+  -Wconversion-null           将 NULL 转换为非指针类型，或自其转换时给出警告。
+  -Wcoverage-invalid-line-number Warn in case a function ends earlier than it begins due to an invalid linenum macros.
+  -Wcoverage-mismatch         Warn in case profiles in -fprofile-use do not match.
+  -Wcpp                       Warn when a #warning directive is encountered.
+  -Wctad-maybe-unsupported    当对没有推导指引的类模板实参进行推导时给出警告。
+  -Wctor-dtor-privacy         当所有构造函数和析构函数都是私有时给出警告。
+  -Wdangling-else             对悬垂 else 给出警告。
+  -Wdangling-pointer          当使用指向自动变量的指针，且该变量生存期已结束时给出警告。  Same as -Wdangling-pointer=.
+  -Wdangling-pointer=<0,2>    当使用指向自动变量的指针，且该变量生存期已结束时给出警告。
+  -Wdate-time                 当使用 __TIME__、__DATE__ 和 __TIMESTAMP__ 时给出警告。
+  -Wdeclaration-after-statement 当声明出现在语句后时给出警告。
+  -Wdelete-incomplete         当删除指向不完整类型的指针时给出警告。
+  -Wdelete-non-virtual-dtor   Warn about deleting polymorphic objects with non- virtual destructors.
+  -Wdeprecated                Warn if a deprecated compiler feature, class, method, or field is used.
+  -Wdeprecated-copy           当类有用户提供的复制操作时，隐式声明的复制操作被弃用。
+  -Wdeprecated-copy-dtor      当类有用户提供的复制操作或析构函数时，隐式声明的复制操作被弃用。
+  -Wdeprecated-declarations   Warn about uses of __attribute__((deprecated)) declarations.
+  -Wdeprecated-enum-enum-conversion 对操作数为枚举类型的算术类型转换这一弃用行为给出警告。
+  -Wdeprecated-enum-float-conversion Warn about deprecated arithmetic conversions on operands where one is of enumeration type and the other is of a floating- point type.
+  -Wdesignated-init           对需要指派初始化器的部分初始化结构体给出警告
+  -Wdisabled-optimization     Warn when an optimization pass is disabled.
+  -Wdiscarded-array-qualifiers 当指针类型构成的数组上的限定符被丢弃时给出警告。
+  -Wdiscarded-qualifiers      当指针上的类型限定符被丢弃时给出警告。
+  -Wdiv-by-zero               对编译时除以零操作给出警告
+  -Wdo-subscript              Warn about possibly incorrect subscripts in do loops.
+  -Wdouble-promotion          对从 "float" 到 "double" 的隐式转换给出警告
+  -Wduplicate-decl-specifier  当声明未指定类型时给出警告
+  -Wduplicated-branches       当 if-else 语句中出现重复的分支时给出警告。
+  -Wduplicated-cond           当 if-else-if 链中出现重复的条件时给出警告。
+  -Weffc++                    对不遵循《Effetive C++》的风格给出警告。
+  -Wempty-body                当 if 或 else 语句体为空时给出警告。
+  -Wendif-labels              对 #else 和 #endif 后出现的游离字符给出警告。
+  -Wenum-compare              对不同枚举类型之间的比较给出警告。
+  -Wenum-conversion           对枚举类型的隐式转换给出警告。
+  -Werror-implicit-function-declaration 已弃用此开关；请改用 -Werror=implicit-function-declaration。  Same as -Werror=.
+  -Wexceptions                当异常处理器被另一个处理器覆盖时给出警告。
+  -Wexpansion-to-defined      当 "defined" 被用在 #if 块外时给出警告。
+  -Wextra                     Print extra (possibly unwanted) warnings.
+  -Wextra-semi                当在类中函数定义中出现分号时给出警告。
+  -Wfloat-conversion          当隐式类型转换导致浮点数精度丢失时给出警告。
+  -Wfloat-equal               当比较浮点数是否相等时给出警告。
+  -Wformat                    对 printf/scanf/strftime/strfmon 中的格式字符串异常给出警告。  Same as -Wformat=.
+  -Wformat-contains-nul       当格式字符串包含 NUL 字节时给出警告。
+  -Wformat-diag               当 GCC 格式字符串中包含不适合诊断的字符串时给出警告。
+  -Wformat-extra-args         当传递给格式字符串对应函数过多的实参时给出警告。
+  -Wformat-nonliteral         当格式字符串不是字面量时给出警告。
+  -Wformat-overflow<0,2>      若格式字符串对应函数被调用时写入目标区域超出范围，则给出警告。与 -Wformat-overflow=1 相同。  Same as -Wformat-overflow=.
+  -Wformat-overflow=<0,2>     当格式字符串对应函数被调用时写入目标区域超出范围时给出警告。
+  -Wformat-security           当使用格式字符串的函数可能导致安全问题时给出警告。
+  -Wformat-signedness         当格式函数的符号与格式字符串中的符号不同时给出警告。
+  -Wformat-truncation         当调用 snprintf 等输出会被截断的函数时给出警告。 Same as -Wformat- truncation=1.  Same as -Wformat-truncation=.
+  -Wformat-truncation=<0,2>   当调用 snprintf 等输出会被截断的函数时给出警告。
+  -Wformat-y2k                当 strftime 格式给出 2 位记年时给出警告。
+  -Wformat-zero-length        对长度为 0 的格式字符串给出警告。
+  -Wformat=<0,2>              对 printf/scanf/strftime/strfmon 中的格式字符串异常给出警告。
+  -Wframe-address             当使用不安全的 __builtin_frame_address 或 __builtin_return_address 时给出警告。
+  -Wframe-larger-than=<byte-size> Warn if a function's stack frame %qT作为重复的%qs被引用 in excess of <byte-size>.
+  -Wfree-nonheap-object       Warn when attempting to free a non-heap object.
+  -Wfunction-elimination      Warn about function call elimination.
+  -Whsa                       Does nothing.  Preserved for backward compatibility.
+  -Wif-not-aligned            当结构体中的字段不对齐时给出警告。
+  -Wignored-attributes        当忽略特性时给出警告。
+  -Wignored-qualifiers        当类型限定符被忽略时给出警告。
+  -Wimplicit                  对隐式声明给出警告。
+  -Wimplicit-fallthrough      Same as -Wimplicit-fallthrough=3 (or, in negated form, -Wimplicit-fallthrough=0).
+  -Wimplicit-fallthrough=<0,5> Warn when a switch case falls through.
+  -Wimplicit-function-declaration 对隐式函数声明给出警告。
+  -Wimplicit-int              当声明未指定类型时给出警告。
+  -Wimplicit-interface        Warn about calls with implicit interface.
+  -Wimplicit-procedure        Warn about called procedures not explicitly declared.
+  -Winaccessible-base         当基类由于歧义性而不能被访问时给出警告。
+  -Wincompatible-pointer-types 当存在不兼容指针类型之间的转换时给出警告。
+  -Winfinite-recursion        当函数调用无限递归时给出警告。
+  -Winherited-variadic-ctor   基类有变长构造函数时，对 C++11 继承构造函数给出警告。
+  -Winit-list-lifetime        当使用 std::initializer_list 导致悬空指针时给出警告。
+  -Winit-self                 对初始化为自身的变量给出警告。
+  -Winline                    Warn when an inlined function cannot be inlined.
+  -Wint-conversion            对指针到不兼容整数类型的转换给出警告。
+  -Wint-in-bool-context       对布尔语境中的可疑整数表达式给出警告。
+  -Wint-to-pointer-cast       当将一个大小不同的整数转换为指针时给出警告。
+  -Winteger-division          Warn about constant integer divisions with truncated results.
+  -Winterference-size         Warn about nonsensical values of --param destructive-interference-size or constructive- interference-size.
+  -Wintrinsic-shadow          Warn if a user-procedure has the same name as an intrinsic.
+  -Wintrinsics-std            Warn on intrinsics not part of the selected standard.
+  -Winvalid-imported-macros   对隐式函数声明给出警告
+  -Winvalid-memory-model      Warn when an atomic memory model parameter is known to be outside the valid range.
+  -Winvalid-offsetof          当使用无效的 "offsetof" 时给出警告。
+  -Winvalid-pch               对被找到但未使用的 PCH 文件给出警告。
+  -Wjump-misses-init          当跳转略过变量初始化时给出警告。
+  -Wlarger-than-              Same as -Wlarger-than=.
+  -Wlarger-than=<byte-size>   Warn if an object's size exceeds <byte-size>.
+  -Wline-truncation           Warn about truncated source lines.
+  -Wliteral-suffix            当字符串或字符字面量带有用户定义后缀，且该后缀不以下划线开头时给出警告。
+  -Wlogical-not-parentheses   当逻辑非被用于比较操作数左侧操作数时给出警告。
+  -Wlogical-op                当逻辑运算符可疑地总是求值为 true 或 false 时给出警告
+  -Wlong-long                 当使用 -pedantic 时不对 "long long" 给出警告。
+  -Wlto-type-mismatch         During link time optimization warn about mismatched types of global declarations.
+  -Wmain                      对可疑的 "main" 声明给出警告。
+  -Wmaybe-uninitialized       Warn about maybe uninitialized automatic variables.
+  -Wmemset-elt-size           当调用可疑的 memset（其中第三个实参包含元素数量，而没有乘以元素大小）时给出警告。
+  -Wmemset-transposed-args    当调用可疑的 memset（其中第三个实参为常量零，而第二个实参不是）时给出警告。
+  -Wmisleading-indentation    当代码缩进不符合块结构时给出警告。
+  -Wmismatched-dealloc        当解分配函数的实参返回自不匹配的分配函数时给出警告。
+  -Wmismatched-new-delete     当 operator new 或 delete 的调用与相应的分配或解分配函数的调用不匹配时给出警告。
+  -Wmismatched-tags           当类使用不匹配的类关键字重新声明或引用时给出警告。
+  -Wmissing-attributes        
+  -Wmissing-braces            对可能缺少花括号的初始化器给出警告。
+  -Wmissing-declarations      当全局函数没有前置声明时给出警告
+  -Wmissing-field-initializers 当结构体初始化器中缺少字段时给出警告。
+  -Wmissing-format-attribute  Same as -Wsuggest-attribute=format.
+  -Wmissing-include-dirs      当用户给定的包含目录不存在时给出警告
+  -Wmissing-noreturn          Same as -Wsuggest-attribute=noreturn.
+  -Wmissing-parameter-type    K&R 风格函数参数声明中未指定类型限定符时给出警告
+  -Wmissing-profile           Warn in case profiles in -fprofile-use do not exist.
+  -Wmissing-prototypes        全局函数没有原型时给出警告
+  -Wmissing-%qT作为重复的%qs被引用          当可能缺少 %qT作为重复的%qs被引用 关键字时给出警告。
+  -Wmissing-template-keyword  当成员访问表达式中成员访问符后缺少 template 关键字，且该成员是模板时给出警告。
+  -Wmultichar                 使用多字节字符集的字符常量时给出警告
+  -Wmultiple-inheritance      对直接多重继承给出警告。
+  -Wmultistatement-macros     当宏定义展开为多个语句，并且用作 if、else、while、switch 或 for 等语句的子句时给出警告。
+  -Wnamespaces                对命名空间定义给出警告。
+  -Wnarrowing                 警告关于 narrowing 转换在之内 {} 所不当形式的在中 C++11
+  -Wnested-externs            当“extern”声明不在文件作用域时给出警告
+  -Wno-alloc-size-larger-than 禁用 Walloc-size-larger-than= 警告。等价于 Walloc-size-larger-than=<SIZE_MAX> 或更大。  Same as -Walloc-size-larger-than=.
+  -Wno-alloca-larger-than     禁用 Walloca-larger-than= 警告。等价于 Walloca-larger-than=<SIZE_MAX> 或更大。  Same as -Walloca-larger-than=.
+  -Wno-frame-larger-than      Disable -Wframe-larger-than= warning.  Equivalent to -Wframe-larger-than=<SIZE_MAX> or larger.  Same as -Wframe-larger-than=.
+  -Wno-larger-than            Disable -Wlarger-than= warning.  Equivalent to -Wlarger-than=<SIZE_MAX> or larger.  Same as -Wlarger-than=.
+  -Wno-stack-usage            Disable Wstack-usage= warning.  Equivalent to Wstack-usage=<SIZE_MAX> or larger.  Same as -Wstack-usage=.
+  -Wno-vla-larger-than          Same as -Wvla-larger-than=.
+  -Wnoexcept                  警告时 noexcept 运算式评估到假甚至虽然运算式无法实际的丢掷
+  -Wnoexcept-type             
+  -Wnon-template-friend       在模板内声明未模板化的友元函数时给出警告
+  -Wnon-virtual-dtor          当析构函数不是虚函数时给出警告
+  -Wnonnull                   当将 NULL 传递给需要非 NULL 的参数的函数时给出警告
+  -Wnonnull-compare           Warn if comparing pointer parameter with nonnull attribute with NULL.
+  -Wnormalized                Same as -Wnormalized=nfc (or, in negated form, -Wnormalized=none).
+  -Wnormalized=[none|id|nfc|nfkc] Warn about non-normalized Unicode strings.
+  -Wnull-dereference          Warn if dereferencing a NULL pointer may lead to erroneous or undefined behavior.
+  -Wobjc-root-class           
+  -Wodr                       Warn about some C++ One Definition Rule violations during link time optimization.
+  -Wold-style-cast            程序使用 C 风格的类型转换时给出警告
+  -Wold-style-declaration     对声明中的过时用法给出警告
+  -Wold-style-definition      使用旧式形参定义时给出警告
+  -Wopenacc-parallelism       
+  -Wopenmp-simd               
+  -Woverflow                  Warn about overflow in arithmetic expressions.
+  -Woverlength-strings        当字符串长度超过标准规定的可移植的最大长度时给出警告
+  -Woverloaded-virtual        重载虚函数名时给出警告
+  -Woverride-init             覆盖无副作用的初始值设定时给出警告
+  -Woverride-init-side-effects 覆盖无副作用的初始值设定时给出警告
+  -Woverwrite-recursive       Warn that -fno-automatic may break recursion.
+  -Wpacked                    Warn when the packed attribute has no effect on struct layout.
+  -Wpacked-bitfield-compat    当紧实位段的偏移量因 GCC 4.4 而改变时给出警告
+  -Wpacked-not-aligned        当带有 packed 属性的结构体字段不对齐时给出警告。
+  -Wpadded                    Warn when padding is required to align structure members.
+  -Wparentheses               可能缺少括号的情况下给出警告
+  -Wpedantic                  Issue warnings needed for strict compliance to the standard.
+  -Wpedantic-ms-format        Warn about none ISO msvcrt scanf/printf width extensions.
+  -Wpessimizing-move          
+  -Wplacement-new               Same as -Wplacement-new=.
+  -Wplacement-new=<0,2>       
+  -Wpmf-conversions           当改变成员函数指针的类型时给出警告
+  -Wpointer-arith             当在算术表达式中使用函数指针时给出警告
+  -Wpointer-compare           使用多字节字符集的字符常量时给出警告
+  -Wpointer-sign              赋值时如指针符号不一致则给出警告
+  -Wpointer-to-int-cast       将一个指针转换为大小不同的整数时给出警告
+  -Wpragmas                   对错误使用的 pragma 加以警告
+  -Wprio-ctor-dtor            
+  -Wproperty-assign-default   警告如果内容用于 Objective-C 对象没有任何指派语意指定的
+  -Wprotocol                  当继承来的方法未被实现时给出警告
+  -Wpsabi                     This option lacks documentation.
+  -Wrange-loop-construct      当基于范围的 for 循环创建不必要的副本时给出警告。
+  -Wreal-q-constant           Warn about real-literal-constants with 'q' exponent-letter.
+  -Wrealloc-lhs               Warn when a left-hand-side array variable is reallocated.
+  -Wrealloc-lhs-all           Warn when a left-hand-side variable is reallocated.
+  -Wredundant-decls           对同一个对象多次声明时给出警告
+  -Wredundant-move            
+  -Wredundant-tags            当使用类或枚举类型时出现多余的类关键字时给出警告。
+  -Wregister                  对错误使用的 pragma 加以警告
+  -Wreorder                   编译器将代码重新排序时给出警告
+  -Wrestrict                  Warn when an argument passed to a restrict- qualified parameter aliases with another argument.
+  -Wreturn-local-addr         Warn about returning a pointer/reference to a local or temporary variable.
+  -Wreturn-type               当 C 函数的返回值默认为“int”，或者 C++ 函数的返回类型不一致时给出警告
+  -Wscalar-storage-order      
+  -Wselector                  当选择子有多个方法时给出警告
+  -Wsequence-point            当可能违反定序点规则时给出警告
+  -Wshadow                    Warn when one variable shadows another.  Same as -Wshadow=global.
+  -Wshadow-compatible-local   Same as -Wshadow=compatible-local.
+  -Wshadow-ivar               %qE的局部声明隐藏了实例变量
+  -Wshadow-local              Same as -Wshadow=local.
+  -Wshadow=compatible-local   Warn when one local variable shadows another local variable or parameter of compatible type.
+  -Wshadow=global             Warn when one variable shadows another (globally).  Same as -Wshadow.
+  -Wshadow=local              Warn when one local variable shadows another local variable or parameter.
+  -Wshift-count-negative      右移次数为负
+  -Wshift-count-overflow      右移次数大于或等于类型宽度
+  -Wshift-negative-value      右移次数为负
+  -Wshift-overflow              Same as -Wshift-overflow=.
+  -Wshift-overflow=<0,2>      
+  -Wsign-compare              在有符号和无符号数间进行比较时给出警告
+  -Wsign-conversion           为有符号和无符号整数间的隐式类型转换给出警告
+  -Wsign-promo                当重载将无符号数提升为有符号数时给出警告
+  -Wsized-deallocation        对缺少大小的解分配函数给出警告。
+  -Wsizeof-array-argument     当 sizeof 被应用于声明为数组的形参时给出警告。
+  -Wsizeof-array-div          当两个 sizeof 表达式做除法，其中第一个 sizeof 表达式应用于数组但除数不等于数组元素的大小时给出警告。
+  -Wsizeof-pointer-div        对两个 sizeof 表达式的可疑的除法（对于指针不能正确工作）给出警告。
+  -Wsizeof-pointer-memaccess  当某些字符串函数的长度形参传入了可疑的 sizeof 作为实参时给出警告。
+  -Wstack-protector           Warn when not issuing stack smashing protection for some reason.
+  -Wstack-usage=<byte-size>   Warn if stack usage might exceed <byte-size>.
+  -Wstrict-aliasing           Warn about code which might break strict aliasing rules.
+  -Wstrict-aliasing=<0,3>     Warn about code which might break strict aliasing rules.
+  -Wstrict-null-sentinel      将未作转换的 NULL 用作哨兵时给出警告
+  -Wstrict-overflow           Warn about optimizations that assume that signed overflow is undefined.
+  -Wstrict-overflow=<0,5>     Warn about optimizations that assume that signed overflow is undefined.
+  -Wstrict-prototypes         使用了非原型的函数声明时给出警告
+  -Wstrict-selector-match     当备选方法的类型签字不完全匹配时给出警告
+  -Wstring-compare            
+  -Wstringop-overflow           Same as -Wstringop-overflow=.
+  -Wstringop-overflow=<0,4>   
+  -Wstringop-overread         
+  -Wstringop-truncation       
+  -Wsubobject-linkage         
+  -Wsuggest-attribute=cold    Warn about functions which might be candidates for __attribute__((cold)).
+  -Wsuggest-attribute=const   Warn about functions which might be candidates for __attribute__((const)).
+  -Wsuggest-attribute=format  当函数可能是 format 属性的备选时给出警告
+  -Wsuggest-attribute=malloc  Warn about functions which might be candidates for __attribute__((malloc)).
+  -Wsuggest-attribute=noreturn Warn about functions which might be candidates for __attribute__((noreturn)).
+  -Wsuggest-attribute=pure    Warn about functions which might be candidates for __attribute__((pure)).
+  -Wsuggest-final-methods     Warn about C++ virtual methods where adding final keyword would improve code quality.
+  -Wsuggest-final-types       Warn about C++ polymorphic types where adding final keyword would improve code quality.
+  -Wsuggest-override          
+  -Wsurprising                Warn about "suspicious" constructs.
+  -Wswitch                    当使用枚举类型作为开关变量，没有提供 default 分支，但又缺少某个 case 时给出警告
+  -Wswitch-bool               对被截断的字符表达式给出警告
+  -Wswitch-default            当使用枚举类型作为开关变量，但没有提供“default”分支时给出警告
+  -Wswitch-enum               当使用枚举类型作为开关变量但又缺少某个 case 时给出警告
+  -Wswitch-outside-range      
+  -Wswitch-unreachable        Warn about statements between switch's controlling expression and the first case.
+  -Wsync-nand                 当 __sync_fetch_and_nand 和 __sync_nand_and_fetch 内建函数被使用时给出警告
+  -Wsynth                     已弃用。此开关不起作用。
+  -Wsystem-headers            Do not suppress warnings from system headers.
+  -Wtabs                      Permit nonconforming uses of the tab character.
+  -Wtarget-lifetime           Warn if the pointer in a pointer assignment might outlive its target.
+  -Wtautological-compare      当逻辑操作结果似乎总为真或假时给出警告
+  -Wtemplates                 对于模板声明%q+D
+  -Wterminate                 
+  -Wtraditional               使用了传统 C 不支持的特性时给出警告
+  -Wtraditional-conversion    原型导致的类型转换与无原型时的类型转换不同时给出警告
+  -Wtrampolines               Warn whenever a trampoline is generated.
+  -Wtrigraphs                 当三字母序列可能影响程序意义时给出警告
+  -Wtrivial-auto-var-init     Warn about cases where -ftrivial-auto-var-init cannot initialize an auto variable.
+  -Wtsan                      Warn about unsupported features in ThreadSanitizer.
+  -Wtype-limits               Warn if a comparison is always true or always false due to the limited range of the data type.
+  -Wundeclared-selector       当使用 @selector() 却不作事先声明时给出警告
+  -Wundef                     当 #if 指令中用到未定义的宏时给出警告
+  -Wundefined-do-loop         Warn about an invalid DO loop.
+  -Wunderflow                 Warn about underflow of numerical constant expressions.
+  -Wuninitialized             Warn about uninitialized automatic variables.
+  -Wunknown-pragmas           对无法识别的 pragma 加以警告
+  -Wunreachable-code          Does nothing. Preserved for backward compatibility.
+  -Wunsafe-loop-optimizations Does nothing. Preserved for backward compatibility.
+  -Wunsuffixed-float-constants 对不带后缀的浮点常量给出警告
+  -Wunused                    Enable all -Wunused- warnings.
+  -Wunused-but-set-parameter  Warn when a function parameter is only set, otherwise unused.
+  -Wunused-but-set-variable   Warn when a variable is only set, otherwise unused.
+  -Wunused-const-variable     有未使用的变量时警告  Same as -Wunused-const-variable=.
+  -Wunused-const-variable=<0,2> 有未使用的变量时警告
+  -Wunused-dummy-argument     Warn about unused dummy arguments.
+  -Wunused-function           Warn when a function is unused.
+  -Wunused-label              Warn when a label is unused.
+  -Wunused-local-typedefs     当定义在主文件中的宏未被使用时给出警告
+  -Wunused-macros             当定义在主文件中的宏未被使用时给出警告
+  -Wunused-parameter          Warn when a function parameter is unused.
+  -Wunused-result             当一个带有 warn_unused_result 属性的函数的调用者未使用前者的返回值时给出警告
+  -Wunused-value              Warn when an expression value is unused.
+  -Wunused-variable           Warn when a variable is unused.
+  -Wuse-after-free            Warn for uses of pointers to deallocated storage.
+  -Wuse-after-free=<0,3>      Warn for uses of pointers to deallocated storage.
+  -Wuse-without-only          Warn about USE statements that have no ONLY qualifier.
+  -Wuseless-cast              当类型转换丢失限定信息时给出警告
+  -Wvarargs                   
+  -Wvariadic-macros           当定义在主文件中的宏未被使用时给出警告
+  -Wvector-operation-performance Warn when a vector operation is compiled outside the SIMD.
+  -Wvexing-parse              
+  -Wvirtual-inheritance       
+  -Wvirtual-move-assign       %qT 有虚拟基底，缺省移动指派运算符无法产生
+  -Wvla                       使用变长数组时警告
+  -Wvla-larger-than=<number>  Warn on unbounded uses of variable-length arrays, and on bounded uses of variable-length arrays whose bound can be larger than <number> bytes.
+  -Wvla-parameter             对同一个对象多次声明时给出警告
+  -Wvolatile                  遇到已弃用的‘vector long ...’AltiVec 类型时给出警告
+  -Wvolatile-register-var     当一个寄存器变量被声明为 volatile 时给出警告
+  -Wwrite-strings             在 C++ 中，非零值表示将字面字符串转换为‘char *’时给出警告。在 C 中，给出相似的警告，但这种类型转换是符合 ISO C 标准的。
+  -Wzero-as-null-pointer-constant 有未使用的标号时警告
+  -Wzero-length-bounds        对内部零长度数组成员的访问给出警告。
+  -Wzerotrip                  Warn about zero-trip DO loops.
+  -frequire-return-statement  Functions which return values must end with return statements.
+
+

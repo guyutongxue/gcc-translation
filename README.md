@@ -28,37 +28,41 @@
 
 部分翻译为了防止混淆，夹带了私货：
 
-| 英文                | 通常翻译       | 选用翻译 |
-| ------------------- | -------------- | -------- |
-| attribute           | 属性           | 特性     |
-| catch               | 捕获           | 捕捉     |
-| const               | 常（量）       | 只读     |
-| deallocate          | 解分配         | 释放     |
-| dereference         | 提领，逆向引用 | 解地址   |
-| overload resolution | 重载决议       | 重载解析 |
-| trait               | 特性           | 特征     |
+| 英文        | 通常翻译       | 选用翻译 |
+| ----------- | -------------- | -------- |
+| attribute   | 属性           | 特性     |
+| catch       | 捕获           | 捕捉     |
+| const       | 常（量）       | 只读     |
+| deallocate  | 解分配         | 释放     |
+| dereference | 提领，逆向引用 | 解地址   |
+| promise     | 承诺           | 期约     |
+| trait       | 特性           | 特征     |
 
 大量术语采取了和 CppReference 相同的翻译：
 
-| 英文              | 翻译             |
-| ----------------- | ---------------- |
-| access            | （可）访问（性） |
-| aggregate         | 聚合类型，聚合体 |
-| binary            | 二元             |
-| brace             | 花括号           |
-| copy              | 复制             |
-| defaulted         | 预置（的）       |
-| explicit          | 显式的           |
-| ...-id            | ...标识          |
-| identifier        | 标识符           |
-| initializer       | 初始化器         |
-| linkage           | 连接             |
-| literal           | 字面类型，字面量 |
-| mutable           | 可变的           |
-| specifier         | 说明符           |
-| override          | 覆盖             |
-| pointer-to-member | 成员指针         |
-| qualifier         | 限定符           |
-| unary             | 一元             |
-| union             | 联合体           |
-| volatile          | 易变的           |
+| 英文                    | 翻译             |
+| ----------------------- | ---------------- |
+| access                  | （可）访问（性） |
+| aggregate               | 聚合类型，聚合体 |
+| argument                | 实参             |
+| binary                  | 二元             |
+| brace                   | 花括号           |
+| copy                    | 复制             |
+| defaulted               | 预置（的）       |
+| exception specification | 异常说明         |
+| explicit                | 显式的           |
+| ...-id                  | ...标识          |
+| identifier              | 标识符           |
+| initializer             | 初始化器         |
+| linkage                 | 连接             |
+| literal                 | 字面类型，字面量 |
+| mutable                 | 可变的           |
+| specifier               | 说明符           |
+| overload resolution     | 重载决议         |
+| override                | 覆盖             |
+| parameter               | 形参             |
+| pointer-to-member       | 成员指针         |
+| qualifier               | 限定符           |
+| unary                   | 一元             |
+| union                   | 联合体           |
+| volatile                | 易变的           |

@@ -5492,12 +5492,12 @@
   {
     "id": "%<#pragma acc routine%> not immediately followed by function declaration or definition",
     "pattern": "'#pragma acc routine' not immediately followed by function declaration or definition",
-    "replacement": "'#pragma acc routine' 不得立即出现在函数声明或定义后"
+    "replacement": "'#pragma acc routine' 没有立即出现在函数声明或定义后"
   },
   {
     "id": "%<#pragma acc routine%> not immediately followed by a single function declaration or definition",
     "pattern": "'#pragma acc routine' not immediately followed by a single function declaration or definition",
-    "replacement": "'#pragma acc routine' 不得立即出现在单个函数声明或定义后"
+    "replacement": "'#pragma acc routine' 没有立即出现在单个函数声明或定义后"
   },
   {
     "id": "%<#pragma acc routine%> must be applied before use",
@@ -5767,7 +5767,7 @@
   {
     "id": "%<#pragma omp declare %s%> not immediately followed by a single function declaration or definition",
     "pattern": "'#pragma omp declare (.*?)' not immediately followed by a single function declaration or definition",
-    "replacement": "'#pragma omp declare $1' 不得立即跟随单个函数声明或定义"
+    "replacement": "'#pragma omp declare $1' 没有立即跟随单个函数声明或定义"
   },
   {
     "id": "%qD specified both in declare target %<link%> and %<to%> clauses",
@@ -7022,7 +7022,7 @@
   {
     "id": "default argument mismatch in overload resolution",
     "pattern": "default argument mismatch in overload resolution",
-    "replacement": "重载解析时默认实参不匹配"
+    "replacement": "重载决议中默认实参不匹配"
   },
   {
     "id": " candidate 1: %q#F",
@@ -12987,7 +12987,7 @@
   {
     "id": "%<#pragma omp declare %s%> not immediately followed by function declaration or definition",
     "pattern": "'#pragma omp declare (.*?)' not immediately followed by function declaration or definition",
-    "replacement": "'#pragma omp declare $1' 不允许立即跟随在函数声明或定义后"
+    "replacement": "'#pragma omp declare $1' 没有立即跟随在函数声明或定义后"
   },
   {
     "id": "%<#pragma%> is not allowed here",

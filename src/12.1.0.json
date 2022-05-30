@@ -377,7 +377,7 @@
   {
     "id": "Removed in GCC 9.  This switch has no effect.",
     "pattern": "Removed in GCC 9\\.  This switch has no effect\\.",
-    "replacement": "GCC 9 中移除。此开关不起作用。"
+    "replacement": "GCC 9 中移除。此选项无效。"
   },
   {
     "id": "Warn about variables that might be changed by \\\"longjmp\\\" or \\\"vfork\\\".",
@@ -662,7 +662,7 @@
   {
     "id": "Warn about uses of std::initializer_list that can result in dangling pointers.",
     "pattern": "Warn about uses of std::initializer_list that can result in dangling pointers\\.",
-    "replacement": "当使用 std::initializer_list 导致悬空指针时给出警告。"
+    "replacement": "当使用 std::initializer_list 导致悬垂指针时给出警告。"
   },
   {
     "id": "Warn about nonsensical values of --param destructive-interference-size or constructive-interference-size.",
@@ -772,12 +772,12 @@
   {
     "id": "Warn for deallocation calls with arguments returned from mismatched allocation functions.",
     "pattern": "Warn for deallocation calls with arguments returned from mismatched allocation functions\\.",
-    "replacement": "当解分配函数的实参返回自不匹配的分配函数时给出警告。"
+    "replacement": "当释放函数的实参返回自不匹配的分配函数时给出警告。"
   },
   {
     "id": "Warn for mismatches between calls to operator new or delete and the corresponding call to the allocation or deallocation function.",
     "pattern": "Warn for mismatches between calls to operator new or delete and the corresponding call to the allocation or deallocation function\\.",
-    "replacement": "当 operator new 或 delete 的调用与相应的分配或解分配函数的调用不匹配时给出警告。"
+    "replacement": "当 operator new 或 delete 的调用与相应的分配或释放函数的调用不匹配时给出警告。"
   },
   {
     "id": "Warn when a class is redeclared or referenced using a mismatched class-key.",
@@ -842,7 +842,7 @@
   {
     "id": "Warn about missing sized deallocation functions.",
     "pattern": "Warn about missing sized deallocation functions\\.",
-    "replacement": "对缺少大小的解分配函数给出警告。"
+    "replacement": "对缺少大小的释放函数给出警告。"
   },
   {
     "id": "Warn about suspicious divisions of two sizeof expressions that don't work correctly with pointers.",
@@ -867,7 +867,7 @@
   {
     "id": "Warn about calls to strcmp and strncmp used in equality expressions that are necessarily true or false due to the length of one and size of the other argument.",
     "pattern": "Warn about calls to strcmp and strncmp used in equality expressions that are necessarily true or false due to the length of one and size of the other argument\\.",
-    "replacement": "当 strcmp 和 strncmp 被用于等式表达式，并且因为一个参数的长度和另一个参数的大小而导致结果必定为真或必定为假时给出警告。"
+    "replacement": "当 strcmp 和 strncmp 被用于等式表达式，并且因为一个实参的长度和另一个实参的大小而导致结果必定为真或假时给出警告。"
   },
   {
     "id": "Warn about buffer overflow in string manipulation functions like memcpy and strcpy.",
@@ -942,7 +942,7 @@
   {
     "id": "Warn about function parameters declared without a type specifier in K&R-style functions.",
     "pattern": "Warn about function parameters declared without a type specifier in K&R-style functions\\.",
-    "replacement": "K&R 风格函数参数声明中未指定类型限定符时给出警告。"
+    "replacement": "K&R 风格函数中，形参声明未指定类型限定符时给出警告。"
   },
   {
     "id": "Warn about global functions without prototypes.",
@@ -1442,7 +1442,7 @@
   {
     "id": "Removed in GCC 8.  This switch has no effect.",
     "pattern": "Removed in GCC 8\\.  This switch has no effect\\.",
-    "replacement": "GCC 8 中移除。此开关不起作用。"
+    "replacement": "GCC 8 中移除。此选项无效。"
   },
   {
     "id": "Enable support for C++ concepts.",
@@ -1507,77 +1507,77 @@
   {
     "id": "Factor complex constructors and destructors to favor space over speed.",
     "pattern": "Factor complex constructors and destructors to favor space over speed\\.",
-    "replacement": ""
+    "replacement": "将复杂的构造和析构分解为优先节约空间而不是提升速度。"
   },
   {
     "id": "Print hierarchical comparisons when template types are mismatched.",
     "pattern": "Print hierarchical comparisons when template types are mismatched\\.",
-    "replacement": ""
+    "replacement": "当模板类型不匹配时，打印层次化比较。"
   },
   {
     "id": "Preprocess directives only.",
     "pattern": "Preprocess directives only\\.",
-    "replacement": "仅预处理指示。"
+    "replacement": "仅对预处理指令做预处理。"
   },
   {
     "id": "Permit '$' as an identifier character.",
     "pattern": "Permit '\\$' as an identifier character\\.",
-    "replacement": "允许‘$’作为标识符的一部分"
+    "replacement": "允许 '$' 作为标识符的一部分。"
   },
   {
     "id": "-fmacro-prefix-map=<old>=<new>\\tMap one directory name to another in __FILE__, __BASE_FILE__, and __builtin_FILE().",
-    "pattern": "-fmacro-prefix-map=<old>=<new>\\tMap one directory name to another in __FILE__, __BASE_FILE__, and __builtin_FILE\\(\\)\\.",
-    "replacement": "在调试信息中将一个目录名映射到另一个"
+    "pattern": "Map one directory name to another in __FILE__, __BASE_FILE__, and __builtin_FILE\\(\\)\\.",
+    "replacement": "在 __FILE__、__BASE_FILE__ 和 __builtin_FILE() 中映射一个目录名称。"
   },
   {
     "id": "Write all declarations as Ada code transitively.",
     "pattern": "Write all declarations as Ada code transitively\\.",
-    "replacement": ""
+    "replacement": "将所有声明过渡地写入 Ada 代码中。"
   },
   {
     "id": "Write all declarations as Ada code for the given file only.",
     "pattern": "Write all declarations as Ada code for the given file only\\.",
-    "replacement": ""
+    "replacement": "仅将给定文件的声明写入 Ada 代码中。"
   },
   {
     "id": "Do not elide common elements in template comparisons.",
     "pattern": "Do not elide common elements in template comparisons\\.",
-    "replacement": "展开宏时不丢弃注释"
+    "replacement": "不在模板比较中消除共同元素。"
   },
   {
     "id": "Generate code to check exception specifications.",
     "pattern": "Generate code to check exception specifications\\.",
-    "replacement": "生成检查异常规范的代码"
+    "replacement": "为检查异常说明生成代码。"
   },
   {
     "id": "-fexec-charset=<cset>\\tConvert all strings and character constants to character set <cset>.",
-    "pattern": "-fexec-charset=<cset>\\tConvert all strings and character constants to character set <cset>\\.",
-    "replacement": "-fexec-charset=<字符集>\\t将所有字符串和字符常量转换到字符集"
+    "pattern": "Convert all strings and character constants to character set <cset>\\.",
+    "replacement": "将所有字符串和字符常量转换到字符集 <cset>。"
   },
   {
     "id": "Permit universal character names (\\\\u and \\\\U) in identifiers.",
     "pattern": "Permit universal character names \\(\\\\u and \\\\U\\) in identifiers\\.",
-    "replacement": "允许标识符中出现 Unicode 字符名(\\\\u 和 \\\\U)"
+    "replacement": "允许标识符中出现 Unicode 字符名（\\u 和 \\U）。"
   },
   {
     "id": "-finput-charset=<cset>\\tSpecify the default character set for source files.",
-    "pattern": "-finput-charset=<cset>\\tSpecify the default character set for source files\\.",
-    "replacement": "-finput-charset=<字符集>\\t指定源代码的默认字符集"
+    "pattern": "Specify the default character set for source files\\.",
+    "replacement": "指定源代码的默认字符集。"
   },
   {
     "id": "Support dynamic initialization of thread-local variables in a different translation unit.",
     "pattern": "Support dynamic initialization of thread-local variables in a different translation unit\\.",
-    "replacement": ""
+    "replacement": "在不同的翻译单元中支持动态初始化线程局部变量。"
   },
   {
     "id": "Fold calls to simple inline functions.",
     "pattern": "Fold calls to simple inline functions\\.",
-    "replacement": "内部函数"
+    "replacement": "折叠调用简单的内联函数。"
   },
   {
     "id": "Do not assume that standard C libraries and \\\"main\\\" exist.",
     "pattern": "Do not assume that standard C libraries and \"main\" exist\\.",
-    "replacement": "不假定标准 C 库和“main”存在"
+    "replacement": "不假定 C 标准库和 \"main\" 存在。"
   },
   {
     "id": "Recognize GNU-defined keywords.",
@@ -1587,162 +1587,162 @@
   {
     "id": "Generate code for GNU runtime environment.",
     "pattern": "Generate code for GNU runtime environment\\.",
-    "replacement": "为 GNU 运行时环境生成代码"
+    "replacement": "为 GNU 运行时环境生成代码。"
   },
   {
     "id": "Use traditional GNU semantics for inline functions.",
     "pattern": "Use traditional GNU semantics for inline functions\\.",
-    "replacement": "为内联函数使用传统的 GNU 语义"
+    "replacement": "对内联函数使用传统的 GNU 语义。"
   },
   {
     "id": "Assume normal C execution environment.",
     "pattern": "Assume normal C execution environment\\.",
-    "replacement": "假定一般的 C 执行环境"
+    "replacement": "假定一般的 C 执行环境。"
   },
   {
     "id": "Export functions even if they can be inlined.",
     "pattern": "Export functions even if they can be inlined\\.",
-    "replacement": "导出被内联的函数"
+    "replacement": "导出被内联的函数。"
   },
   {
     "id": "Make inline functions constexpr by default.",
     "pattern": "Make inline functions constexpr by default\\.",
-    "replacement": "使“char”类型默认为无符号。"
+    "replacement": "默认将内联函数设置为 constexpr。"
   },
   {
     "id": "Emit implicit instantiations of inline templates.",
     "pattern": "Emit implicit instantiations of inline templates\\.",
-    "replacement": "允许内联模板隐式实例化"
+    "replacement": "触发内联模板的隐式实例化。"
   },
   {
     "id": "Emit implicit instantiations of templates.",
     "pattern": "Emit implicit instantiations of templates\\.",
-    "replacement": "允许模板隐式实例化"
+    "replacement": "触发模板的隐式实例化。"
   },
   {
     "id": "Implement C++17 inheriting constructor semantics.",
     "pattern": "Implement C\\+\\+17 inheriting constructor semantics\\.",
-    "replacement": ""
+    "replacement": "实现 C++17 的继承构造函数语义。"
   },
   {
     "id": "Don't emit dllexported inline functions unless needed.",
     "pattern": "Don't emit dllexported inline functions unless needed\\.",
-    "replacement": "除非必需，不生成 DLL 导出的内联函数"
+    "replacement": "除非必需，否则不生成 DLL 导出的内联函数。"
   },
   {
     "id": "Allow implicit conversions between vectors with differing numbers of subparts and/or differing element types.",
     "pattern": "Allow implicit conversions between vectors with differing numbers of subparts and/or differing element types\\.",
-    "replacement": "允许具有不同元素数量和/或元素类型的向量间的转换"
+    "replacement": "允许在各个子部分数量和元素类型不同的向量之间进行隐式转换。"
   },
   {
     "id": "Enable C++ modules-ts (experimental).",
     "pattern": "Enable C\\+\\+ modules-ts \\(experimental\\)\\.",
-    "replacement": ""
+    "replacement": "启用 C++ 模块 TS（实验性）。"
   },
   {
     "id": "Enable C++ header module (experimental).",
     "pattern": "Enable C\\+\\+ header module \\(experimental\\)\\.",
-    "replacement": ""
+    "replacement": "启用 C++ 头文件模块（实验性）。"
   },
   {
     "id": "Member functions defined within their class are inline in module purview.",
     "pattern": "Member functions defined within their class are inline in module purview\\.",
-    "replacement": ""
+    "replacement": "在模块范围内定义在类中的成员函数是内联的。"
   },
   {
     "id": "Only emit Compiled Module Interface.",
     "pattern": "Only emit Compiled Module Interface\\.",
-    "replacement": ""
+    "replacement": "只生成已编译模块接口（CMI）。"
   },
   {
     "id": "Mapper for module to CMI files.",
     "pattern": "Mapper for module to CMI files\\.",
-    "replacement": ""
+    "replacement": "模块到 CMI 文件的映射器。"
   },
   {
     "id": "Enable lazy module importing.",
     "pattern": "Enable lazy module importing\\.",
-    "replacement": "删除死存储"
+    "replacement": "启用懒模块导入。"
   },
   {
     "id": "Warn about macros that have conflicting header units definitions.",
     "pattern": "Warn about macros that have conflicting header units definitions\\.",
-    "replacement": "对隐式函数声明给出警告"
+    "replacement": "警告具有冲突的头文件单元定义的宏。"
   },
   {
     "id": "Note #include directives translated to import declarations.",
     "pattern": "Note #include directives translated to import declarations\\.",
-    "replacement": ""
+    "replacement": "标记该 #include 指令被转换为导入声明。"
   },
   {
     "id": "Note #include directives not translated to import declarations, and not known to be textual.",
     "pattern": "Note #include directives not translated to import declarations, and not known to be textual\\.",
-    "replacement": ""
+    "replacement": "标记该 #include 指令不被转换为导入声明，并且不被认为是文本。"
   },
   {
     "id": "Note a #include translation of a specific header.",
     "pattern": "Note a #include translation of a specific header\\.",
-    "replacement": ""
+    "replacement": "标记某个特定头文件的 #include 转换。"
   },
   {
     "id": "Note Compiled Module Interface pathnames.",
     "pattern": "Note Compiled Module Interface pathnames\\.",
-    "replacement": ""
+    "replacement": "标记已编译模块接口（CMI）路径。"
   },
   {
     "id": "Note Compiled Module Interface pathname of a specific module or header-unit.",
     "pattern": "Note Compiled Module Interface pathname of a specific module or header-unit\\.",
-    "replacement": ""
+    "replacement": "标记某个特定模块或头文件单元的已编译模块接口（CMI）路径。"
   },
   {
     "id": "fmax-include-depth=<number> Set the maximum depth of the nested #include.",
-    "pattern": "fmax-include-depth=<number> Set the maximum depth of the nested #include\\.",
-    "replacement": ""
+    "pattern": "Set the maximum depth of the nested #include\\.",
+    "replacement": "设置嵌套 #include 的最大深度。"
   },
   {
     "id": "Don't warn about uses of Microsoft extensions.",
     "pattern": "Don't warn about uses of Microsoft extensions\\.",
-    "replacement": "使用微软扩展时不给出警告"
+    "replacement": "当使用微软扩展时不给出警告。"
   },
   {
     "id": "Implement resolution of DR 150 for matching of template template arguments.",
     "pattern": "Implement resolution of DR 150 for matching of template template arguments\\.",
-    "replacement": ""
+    "replacement": "实现用于模板模板实参匹配的 DR 150 决议。"
   },
   {
     "id": "Generate code for NeXT (Apple Mac OS X) runtime environment.",
     "pattern": "Generate code for NeXT \\(Apple Mac OS X\\) runtime environment\\.",
-    "replacement": "为 NeXT (苹果 Mac OS X) 运行时环境生成代码"
+    "replacement": "为 NeXT (苹果 Mac OS X) 运行时环境生成代码。"
   },
   {
     "id": "Assume that receivers of Objective-C messages may be nil.",
     "pattern": "Assume that receivers of Objective-C messages may be nil\\.",
-    "replacement": "假定 Objective-C 消息的接受者可能是 nil"
+    "replacement": "假定 Objective-C 消息的接受者可能是 nil。"
   },
   {
     "id": "Allow access to instance variables as if they were local declarations within instance method implementations.",
     "pattern": "Allow access to instance variables as if they were local declarations within instance method implementations\\.",
-    "replacement": ""
+    "replacement": "允许在实例方法实现中访问实例变量，将其视为带有实例方法实现的局部声明。"
   },
   {
     "id": "-fvisibility=[private|protected|public|package]\\tSet the default symbol visibility.",
-    "pattern": "-fvisibility=\\[private\\|protected\\|public\\|package\\]\\tSet the default symbol visibility\\.",
-    "replacement": "-fvisibility=[default|internal|hidden|protected]\\t设置符号的默认可见性"
+    "pattern": "Set the default symbol visibility\\.",
+    "replacement": "设置符号的默认可见性。"
   },
   {
     "id": "Treat a throw() exception specification as noexcept to improve code size.",
     "pattern": "Treat a throw\\(\\) exception specification as noexcept to improve code size\\.",
-    "replacement": "对待丢掷() 异常规格作为 noexcept 到改善编码大小"
+    "replacement": "将 throw() 异常说明视为 noexcept，以改进代码大小。"
   },
   {
     "id": "Specify which ABI to use for Objective-C family code and meta-data generation.",
     "pattern": "Specify which ABI to use for Objective-C family code and meta-data generation\\.",
-    "replacement": "指定该项 ABI 以使用用于 Objective-C 家族编码和元数据产生。"
+    "replacement": "指定用于 Objective-C 家族代码和元数据生成的 ABI。"
   },
   {
     "id": "Generate special Objective-C methods to initialize/destroy non-POD C++ ivars, if needed.",
     "pattern": "Generate special Objective-C methods to initialize/destroy non-POD C\\+\\+ ivars, if needed\\.",
-    "replacement": "如果需要，生成特殊的 Objective-C 方法来初始化/析构非简单旧数据 C++ 变量"
+    "replacement": "如果需要，生成特殊的 Objective-C 方法来初始化/销毁非 POD C++ 变量。"
   },
   {
     "id": "Allow fast jumps to the message dispatcher.",
@@ -1752,162 +1752,162 @@
   {
     "id": "Enable Objective-C exception and synchronization syntax.",
     "pattern": "Enable Objective-C exception and synchronization syntax\\.",
-    "replacement": "启用 Objective-C 异常和同步语法"
+    "replacement": "启用 Objective-C 异常和同步语法。"
   },
   {
     "id": "Enable garbage collection (GC) in Objective-C/Objective-C++ programs.",
     "pattern": "Enable garbage collection \\(GC\\) in Objective-C/Objective-C\\+\\+ programs\\.",
-    "replacement": "在 Objective-C/Objective-C++ 程序中启用垃圾收集"
+    "replacement": "在 Objective-C/Objective-C++ 程序中启用垃圾收集（GC）。"
   },
   {
     "id": "Enable inline checks for nil receivers with the NeXT runtime and ABI version 2.",
     "pattern": "Enable inline checks for nil receivers with the NeXT runtime and ABI version 2\\.",
-    "replacement": "启用内联检查看看零收件者与下一个运行阶段和 ABI 版本 2。"
+    "replacement": "启用对 NexT 运行时和 ABI 版本 2 下 nil 收件者的内联检查。"
   },
   {
     "id": "Enable Objective-C setjmp exception handling runtime.",
     "pattern": "Enable Objective-C setjmp exception handling runtime\\.",
-    "replacement": "启用 Objective-C setjmp 异常处理运行时"
+    "replacement": "启用 Objective-C setjmp 异常处理运行时。"
   },
   {
     "id": "Conform to the Objective-C 1.0 language as implemented in GCC 4.0.",
     "pattern": "Conform to the Objective-C 1\\.0 language as implemented in GCC 4\\.0\\.",
-    "replacement": "遵循于 GCC 4.0 实现的 Ojbective-C 1.0 语言"
+    "replacement": "遵循于 GCC 4.0 实现的 Ojbective-C 1.0 语言。"
   },
   {
     "id": "Enable OpenACC.",
     "pattern": "Enable OpenACC\\.",
-    "replacement": "对齐 COMMON 块"
+    "replacement": "启用 OpenACC。"
   },
   {
     "id": "Specify default OpenACC compute dimensions.",
     "pattern": "Specify default OpenACC compute dimensions\\.",
-    "replacement": ""
+    "replacement": "指定默认的 OpenACC 计算维度。"
   },
   {
     "id": "Enable OpenMP (implies -frecursive in Fortran).",
     "pattern": "Enable OpenMP \\(implies -frecursive in Fortran\\)\\.",
-    "replacement": "启用 OpenMP(对 Fortran 而言也同时设定 -frecursive)"
+    "replacement": "启用 OpenMP（在 Fortran 中启用 -frecursive）。"
   },
   {
     "id": "Enable OpenMP's SIMD directives.",
     "pattern": "Enable OpenMP's SIMD directives\\.",
-    "replacement": "启用 OpenMP(对 Fortran 而言也同时设定 -frecursive)"
+    "replacement": "启用 OpenMP 的 SIMD 命令。"
   },
   {
     "id": "Recognize C++ keywords like \\\"compl\\\" and \\\"xor\\\".",
     "pattern": "Recognize C\\+\\+ keywords like \"compl\" and \"xor\"\\.",
-    "replacement": "识别“compl”、“xor”等 C++ 关键词"
+    "replacement": "识别 \"compl\" 和 \"xor\" 等 C++ 关键字。"
   },
   {
     "id": "Look for and use PCH files even when preprocessing.",
     "pattern": "Look for and use PCH files even when preprocessing\\.",
-    "replacement": "即使在预处理时也搜索并使用 PCH 文件"
+    "replacement": "即使在预处理时也搜索并使用 PCH 文件。"
   },
   {
     "id": "Downgrade conformance errors to warnings.",
     "pattern": "Downgrade conformance errors to warnings\\.",
-    "replacement": "将兼容性错误降格为警告"
+    "replacement": "将兼容性错误降级为警告。"
   },
   {
     "id": "Enable Plan 9 language extensions.",
     "pattern": "Enable Plan 9 language extensions\\.",
-    "replacement": "启用九号计划语言扩展"
+    "replacement": "启用 Plan 9 语言扩展。"
   },
   {
     "id": "Treat the input file as already preprocessed.",
     "pattern": "Treat the input file as already preprocessed\\.",
-    "replacement": "将输入文件当作已经预处理过的"
+    "replacement": "将输入文件当作已经预处理过的。"
   },
   {
     "id": "-ftrack-macro-expansion=<0|1|2>\\tTrack locations of tokens coming from macro expansion and display them in error messages.",
-    "pattern": "-ftrack-macro-expansion=<0\\|1\\|2>\\tTrack locations of tokens coming from macro expansion and display them in error messages\\.",
-    "replacement": "-ftrack-macro-expansion=<0|1|2> 轨段位置的字组来自宏展开和显示它们在中错误消息"
+    "pattern": "Track locations of tokens coming from macro expansion and display them in error messages\\.",
+    "replacement": "跟踪从宏展开得到的词法单元的位置，并在错误消息中显示它们。"
   },
   {
     "id": "Do not pretty-print template specializations as the template signature followed by the arguments.",
     "pattern": "Do not pretty-print template specializations as the template signature followed by the arguments\\.",
-    "replacement": "-fno-pretty-templates 不使用模板签名加实参的方式美化模板特例化的打印"
+    "replacement": "不要将模板特化美观打印为后随实参的模板签名。"
   },
   {
     "id": "Treat known sprintf return values as constants.",
     "pattern": "Treat known sprintf return values as constants\\.",
-    "replacement": ""
+    "replacement": "将已知的 sprintf 返回值视为常量。"
   },
   {
     "id": "Used in Fix-and-Continue mode to indicate that object files may be swapped in at runtime.",
     "pattern": "Used in Fix-and-Continue mode to indicate that object files may be swapped in at runtime\\.",
-    "replacement": "指定对象文件可能在运行时被换入以允许“修复并继续”调试模式"
+    "replacement": "指定对象文件可能在运行时被换入，以允许“修复并继续”调试模式。"
   },
   {
     "id": "Removed in GCC 10.  This switch has no effect.",
     "pattern": "Removed in GCC 10\\.  This switch has no effect\\.",
-    "replacement": "已弃用。此开关不起作用。"
+    "replacement": "GCC 10 中移除。此选项无效。"
   },
   {
     "id": "Generate run time type descriptor information.",
     "pattern": "Generate run time type descriptor information\\.",
-    "replacement": "生成运行时类型描述信息"
+    "replacement": "生成运行时类型描述信息。"
   },
   {
     "id": "Use the narrowest integer type possible for enumeration types.",
     "pattern": "Use the narrowest integer type possible for enumeration types\\.",
-    "replacement": "为枚举类型使用尽可能窄的整数类型"
+    "replacement": "为枚举类型使用尽可能窄的整数类型。"
   },
   {
     "id": "Force the underlying type for \\\"wchar_t\\\" to be \\\"unsigned short\\\".",
     "pattern": "Force the underlying type for \"wchar_t\" to be \"unsigned short\"\\.",
-    "replacement": "强制指定“wchar_t”的内在类型为“unsigned short”"
+    "replacement": "强制指定 \"wchar_t\" 的底层类型为 \"unsigned short\"。"
   },
   {
     "id": "When \\\"signed\\\" or \\\"unsigned\\\" is not given make the bitfield signed.",
     "pattern": "When \"signed\" or \"unsigned\" is not given make the bitfield signed\\.",
-    "replacement": "没有给定“signed”或“unsigned”时将位段视作有符号的"
+    "replacement": "当没有指定 \"signed\" 或 \"unsigned\" 时，将位域设置为有符号的。"
   },
   {
     "id": "Make \\\"char\\\" signed by default.",
     "pattern": "Make \"char\" signed by default\\.",
-    "replacement": "使“char”类型默认为有符号"
+    "replacement": "默认将 \"char\" 设置为有符号的。"
   },
   {
     "id": "Enable C++14 sized deallocation support.",
     "pattern": "Enable C\\+\\+14 sized deallocation support\\.",
-    "replacement": "启用硬件十进制浮点支持"
+    "replacement": "启用 C++14 的可指定大小释放函数。"
   },
   {
     "id": "-fsso-struct=[big-endian|little-endian|native]\\tSet the default scalar storage order.",
-    "pattern": "-fsso-struct=\\[big-endian\\|little-endian\\|native\\]\\tSet the default scalar storage order\\.",
-    "replacement": ""
+    "pattern": "Set the default scalar storage order\\.",
+    "replacement": "设置默认的标量存储顺序。"
   },
   {
     "id": "Display statistics accumulated during compilation.",
     "pattern": "Display statistics accumulated during compilation\\.",
-    "replacement": "显示编译过程中累计的统计数字"
+    "replacement": "在编译期间显示统计信息。"
   },
   {
     "id": "Assume that values of enumeration type are always within the minimum range of that type.",
     "pattern": "Assume that values of enumeration type are always within the minimum range of that type\\.",
-    "replacement": "假设该值的枚举类型类型是一律在之内最小范围的该类型"
+    "replacement": "假定枚举类型的值总是在该类型的最小范围内。"
   },
   {
     "id": "Follow the C++17 evaluation order requirements for assignment expressions, shift, member function calls, etc.",
     "pattern": "Follow the C\\+\\+17 evaluation order requirements for assignment expressions, shift, member function calls, etc\\.",
-    "replacement": ""
+    "replacement": "遵循 C++17 的赋值表达式、移位、成员函数调用等求值顺序规定。"
   },
   {
     "id": "Set the maximum number of template instantiation notes for a single warning or error.",
     "pattern": "Set the maximum number of template instantiation notes for a single warning or error\\.",
-    "replacement": "单个循环最大的剥离数"
+    "replacement": "设置单个警告或错误的最大模板实例化附注数。"
   },
   {
     "id": "-ftemplate-depth=<number>\\tSpecify maximum template instantiation depth.",
-    "pattern": "-ftemplate-depth=<number>\\tSpecify maximum template instantiation depth\\.",
-    "replacement": "-ftemplate-depth=<N>\\t指定模板实例化的最大深度"
+    "pattern": "Specify maximum template instantiation depth\\.",
+    "replacement": "指定最大模板实例化深度。"
   },
   {
     "id": "-fno-threadsafe-statics\\tDo not generate thread-safe code for initializing local statics.",
-    "pattern": "-fno-threadsafe-statics\\tDo not generate thread-safe code for initializing local statics\\.",
-    "replacement": "-fno-threadsafe-statics\\t不为局部静态变量生成线程安全的初始化代码"
+    "pattern": "Do not generate thread-safe code for initializing local statics\\.",
+    "replacement": "初始化局部静态变量时不生成线程安全代码。"
   },
   {
     "id": "When \\\"signed\\\" or \\\"unsigned\\\" is not given make the bitfield unsigned.",
@@ -1917,232 +1917,232 @@
   {
     "id": "Make \\\"char\\\" unsigned by default.",
     "pattern": "Make \"char\" unsigned by default\\.",
-    "replacement": "使“char”类型默认为无符号。"
+    "replacement": "默认将 \"char\" 设置为无符号的。"
   },
   {
     "id": "Use __cxa_atexit to register destructors.",
     "pattern": "Use __cxa_atexit to register destructors\\.",
-    "replacement": "将 __cxa_atexit 而非 atexit 登记为析构函数"
+    "replacement": "使用 __cxa_atexit 注册析构函数。"
   },
   {
     "id": "Use __cxa_get_exception_ptr in exception handling.",
     "pattern": "Use __cxa_get_exception_ptr in exception handling\\.",
-    "replacement": "在异常处理中使用 __cxa_get_exception_ptr"
+    "replacement": "在异常处理中使用 __cxa_get_exception_ptr。"
   },
   {
     "id": "Marks all inlined functions and methods as having hidden visibility.",
     "pattern": "Marks all inlined functions and methods as having hidden visibility\\.",
-    "replacement": "将所有内联函数标记为具有隐藏的可见性"
+    "replacement": "标记所有内联函数和方法的可见性为隐藏。"
   },
   {
     "id": "Changes visibility to match Microsoft Visual Studio by default.",
     "pattern": "Changes visibility to match Microsoft Visual Studio by default\\.",
-    "replacement": "默认使用与 Microsoft Visual Studio 匹配的可见性"
+    "replacement": "默认将可见性设置为与 Microsoft Visual Studio 一致。"
   },
   {
     "id": "Emit common-like symbols as weak symbols.",
     "pattern": "Emit common-like symbols as weak symbols\\.",
-    "replacement": "将公共符号视作弱符号"
+    "replacement": "将 common-like 符号作为弱符号输出。"
   },
   {
     "id": "-fwide-exec-charset=<cset>\\tConvert all wide strings and character constants to character set <cset>.",
-    "pattern": "-fwide-exec-charset=<cset>\\tConvert all wide strings and character constants to character set <cset>\\.",
-    "replacement": "-finput-charset=<字符集>\\t将所有宽字符串和字符常量都转换为字符集"
+    "pattern": "Convert all wide strings and character constants to character set <cset>\\.",
+    "replacement": "将所有宽字符串和字符常量转换为 <cset> 字符集。"
   },
   {
     "id": "Generate a #line directive pointing at the current working directory.",
     "pattern": "Generate a #line directive pointing at the current working directory\\.",
-    "replacement": "生成一个指向当前工作目录的 #line 预处理指令"
+    "replacement": "生成一个指向当前工作目录的 #line 预处理指令。"
   },
   {
     "id": "Generate lazy class lookup (via objc_getClass()) for use in Zero-Link mode.",
     "pattern": "Generate lazy class lookup \\(via objc_getClass\\(\\)\\) for use in Zero-Link mode\\.",
-    "replacement": "为 Zero-Link 模式生成后期类查找(通过 objc_getClass())"
+    "replacement": "在 Zero-Link 模式下生成懒类查找（通过 objc_getClass()）。"
   },
   {
     "id": "Dump declarations to a .decl file.",
     "pattern": "Dump declarations to a \\.decl file\\.",
-    "replacement": "将声明转储到一个 .decl 文件中"
+    "replacement": "将声明转储到一个 .decl 文件中。"
   },
   {
     "id": "-femit-struct-debug-baseonly\\tAggressive reduced debug info for structs.",
-    "pattern": "-femit-struct-debug-baseonly\\tAggressive reduced debug info for structs\\.",
-    "replacement": "-femit-struct-debug-baseonly\\t积极地缩减结构体的调试信息"
+    "pattern": "Aggressive reduced debug info for structs\\.",
+    "replacement": "激进地减少结构体的调试信息。"
   },
   {
     "id": "-femit-struct-debug-reduced\\tConservative reduced debug info for structs.",
-    "pattern": "-femit-struct-debug-reduced\\tConservative reduced debug info for structs\\.",
-    "replacement": "-femit-struct-debug-reduced\\t保守地缩减结构体的调试信息"
+    "pattern": "Conservative reduced debug info for structs\\.",
+    "replacement": "保守地减少结构体的调试信息。"
   },
   {
     "id": "-femit-struct-debug-detailed=<spec-list>\\tDetailed reduced debug info for structs.",
-    "pattern": "-femit-struct-debug-detailed=<spec-list>\\tDetailed reduced debug info for structs\\.",
-    "replacement": "-femit-struct-debug-detailed=<规格列表>\\t详细指定如何缩减结构体的调试信息"
+    "pattern": "Detailed reduced debug info for structs\\.",
+    "replacement": "减少结构体的详细调试信息。"
   },
   {
     "id": "Interpret imaginary, fixed-point, or other gnu number suffix as the corresponding number literal rather than a user-defined number literal.",
     "pattern": "Interpret imaginary, fixed-point, or other gnu number suffix as the corresponding number literal rather than a user-defined number literal\\.",
-    "replacement": ""
+    "replacement": "将虚数、定点数或其他 gnu 后缀解释为对应的字面量而不是用户定义字面量。"
   },
   {
     "id": "-idirafter <dir>\\tAdd <dir> to the end of the system include path.",
-    "pattern": "-idirafter <dir>\\tAdd <dir> to the end of the system include path\\.",
-    "replacement": "-idirafter <目录>\\t将目录添加至系统包含路径末尾"
+    "pattern": "Add <dir> to the end of the system include path\\.",
+    "replacement": "将 <dir> 添加到系统包含路径的末尾。"
   },
   {
     "id": "-imacros <file>\\tAccept definition of macros in <file>.",
-    "pattern": "-imacros <file>\\tAccept definition of macros in <file>\\.",
-    "replacement": "-imacros <文件>\\t接受文件中定义的宏"
+    "pattern": "Accept definition of macros in <file>\\.",
+    "replacement": "接受在 <file> 中定义的宏。"
   },
   {
     "id": "-imultilib <dir>\\tSet <dir> to be the multilib include subdirectory.",
-    "pattern": "-imultilib <dir>\\tSet <dir> to be the multilib include subdirectory\\.",
-    "replacement": "-imultilib <目录>\\t将目录设定为 multilib 的包含子目录"
+    "pattern": "Set <dir> to be the multilib include subdirectory\\.",
+    "replacement": "将 <dir> 设置为多平台包含子目录。"
   },
   {
     "id": "-include <file>\\tInclude the contents of <file> before other files.",
-    "pattern": "-include <file>\\tInclude the contents of <file> before other files\\.",
-    "replacement": "-include <文件>\\t在包含其它文件之前先包含该文件的内容"
+    "pattern": "Include the contents of <file> before other files\\.",
+    "replacement": "在其他文件之前包含 <file> 的内容。"
   },
   {
     "id": "-iprefix <path>\\tSpecify <path> as a prefix for next two options.",
-    "pattern": "-iprefix <path>\\tSpecify <path> as a prefix for next two options\\.",
-    "replacement": "-iprefix <路径>\\t将路径指定为下两个选项的前缀"
+    "pattern": "Specify <path> as a prefix for next two options\\.",
+    "replacement": "将 <path> 指定为接下来两个选项的前缀。"
   },
   {
     "id": "-isysroot <dir>\\tSet <dir> to be the system root directory.",
-    "pattern": "-isysroot <dir>\\tSet <dir> to be the system root directory\\.",
-    "replacement": "-isysroot <目录>\\t将目录设为系统根目录"
+    "pattern": "Set <dir> to be the system root directory\\.",
+    "replacement": "将 <dir> 设置为系统根目录。"
   },
   {
     "id": "-isystem <dir>\\tAdd <dir> to the start of the system include path.",
-    "pattern": "-isystem <dir>\\tAdd <dir> to the start of the system include path\\.",
-    "replacement": "-isystem <目录>\\t将目录添加至系统包含路径开头"
+    "pattern": "Add <dir> to the start of the system include path\\.",
+    "replacement": "将 <dir> 添加到系统包含路径的开头。"
   },
   {
     "id": "-iquote <dir>\\tAdd <dir> to the end of the quote include path.",
-    "pattern": "-iquote <dir>\\tAdd <dir> to the end of the quote include path\\.",
-    "replacement": "-iquote <目录>\\t将目录添加至括起的包含路径末尾"
+    "pattern": "Add <dir> to the end of the quote include path\\.",
+    "replacement": "将 <dir> 添加到引用包含路径的末尾。"
   },
   {
     "id": "-iwithprefix <dir>\\tAdd <dir> to the end of the system include path.",
-    "pattern": "-iwithprefix <dir>\\tAdd <dir> to the end of the system include path\\.",
-    "replacement": "-iwithprefix <目录>\\t将目录添加至系统包含路径末尾"
+    "pattern": "Add <dir> to the end of the system include path\\.",
+    "replacement": "将 <dir> 添加到系统包含路径的末尾。"
   },
   {
     "id": "-iwithprefixbefore <dir>\\tAdd <dir> to the end of the main include path.",
-    "pattern": "-iwithprefixbefore <dir>\\tAdd <dir> to the end of the main include path\\.",
-    "replacement": "-iwithprefixbefore <目录>\\t将目录添加至主包含路径末尾"
+    "pattern": "Add <dir> to the end of the main include path\\.",
+    "replacement": "将 <dir> 添加到主包含路径的末尾。"
   },
   {
     "id": "Do not search standard system include directories (those specified with -isystem will still be used).",
     "pattern": "Do not search standard system include directories \\(those specified with -isystem will still be used\\)\\.",
-    "replacement": "不搜索标准系统头文件目录(但仍将使用由 -isystem 指定的目录)"
+    "replacement": "不搜索标准系统头文件目录（但仍将使用由 -isystem 指定的目录）。"
   },
   {
     "id": "Do not search standard system include directories for C++.",
     "pattern": "Do not search standard system include directories for C\\+\\+\\.",
-    "replacement": "不搜索 C++ 标准系统头文件目录"
+    "replacement": "不搜索 C++ 标准系统头文件目录。"
   },
   {
     "id": "Generate C header of platform-specific features.",
     "pattern": "Generate C header of platform-specific features\\.",
-    "replacement": "生成有平台相关特性的 C 头文件"
+    "replacement": "生成有平台相关特性的 C 头文件。"
   },
   {
     "id": "Remap file names when including files.",
     "pattern": "Remap file names when including files\\.",
-    "replacement": "包含文件时映射短文件名"
+    "replacement": "在包含文件时重新映射文件名。"
   },
   {
     "id": "Conform to the ISO 1998 C++ standard revised by the 2003 technical corrigendum.",
     "pattern": "Conform to the ISO 1998 C\\+\\+ standard revised by the 2003 technical corrigendum\\.",
-    "replacement": "遵循 ISO 1998 C++ 标准于 2003 年的技术勘误版本"
+    "replacement": "遵循 ISO 1998 C++ 标准于 2003 年的技术勘误版本。"
   },
   {
     "id": "Conform to the ISO 2011 C++ standard.",
     "pattern": "Conform to the ISO 2011 C\\+\\+ standard\\.",
-    "replacement": "遵循 ISO 2011 C++ 标准"
+    "replacement": "遵循 ISO 2011 C++ 标准。"
   },
   {
     "id": "Deprecated in favor of -std=c++11.",
     "pattern": "Deprecated in favor of -std=c\\+\\+11\\.",
-    "replacement": "已弃用，请改用 -std=gnu99"
+    "replacement": "已弃用，请改用 -std=c++11。"
   },
   {
     "id": "Deprecated in favor of -std=c++14.",
     "pattern": "Deprecated in favor of -std=c\\+\\+14\\.",
-    "replacement": "已弃用，请改用 -std=gnu99"
+    "replacement": "已弃用，请改用 -std=c++14。"
   },
   {
     "id": "Conform to the ISO 2014 C++ standard.",
     "pattern": "Conform to the ISO 2014 C\\+\\+ standard\\.",
-    "replacement": "遵循 ISO 2011 C++ 标准"
+    "replacement": "遵循 ISO 2014 C++ 标准。"
   },
   {
     "id": "Deprecated in favor of -std=c++17.",
     "pattern": "Deprecated in favor of -std=c\\+\\+17\\.",
-    "replacement": "已弃用，请改用 -std=gnu99"
+    "replacement": "已弃用，请改用 -std=c++17。"
   },
   {
     "id": "Conform to the ISO 2017 C++ standard.",
     "pattern": "Conform to the ISO 2017 C\\+\\+ standard\\.",
-    "replacement": "遵循 ISO 2011 C++ 标准"
+    "replacement": "遵循 ISO 2017 C++ 标准。"
   },
   {
     "id": "Conform to the ISO 2020 C++ standard (experimental and incomplete support).",
     "pattern": "Conform to the ISO 2020 C\\+\\+ standard \\(experimental and incomplete support\\)\\.",
-    "replacement": "遵循 ISO 2017(?) C++ 标准草案(试验性质的不完全支持)"
+    "replacement": "遵循 ISO 2020 C++ 标准（实验性和不完整支持）。"
   },
   {
     "id": "Conform to the ISO 2023 C++ draft standard (experimental and incomplete support).",
     "pattern": "Conform to the ISO 2023 C\\+\\+ draft standard \\(experimental and incomplete support\\)\\.",
-    "replacement": "遵循 ISO 2017(?) C++ 标准草案(试验性质的不完全支持)"
+    "replacement": "遵循 ISO 2023 C++ 标准草案（实验性和不完整支持）。"
   },
   {
     "id": "Conform to the ISO 2011 C standard.",
     "pattern": "Conform to the ISO 2011 C standard\\.",
-    "replacement": "遵循 ISO 2011 C++ 标准"
+    "replacement": "遵循 ISO 2011 C 标准。"
   },
   {
     "id": "Deprecated in favor of -std=c11.",
     "pattern": "Deprecated in favor of -std=c11\\.",
-    "replacement": "已弃用，请改用 -std=c99"
+    "replacement": "已弃用，请改用 -std=c11。"
   },
   {
     "id": "Conform to the ISO 2017 C standard (published in 2018).",
     "pattern": "Conform to the ISO 2017 C standard \\(published in 2018\\)\\.",
-    "replacement": "遵循 ISO 2011 C++ 标准"
+    "replacement": "遵循 ISO 2017 C 标准（2018 年出版）。"
   },
   {
     "id": "Conform to the ISO 202X C standard draft (experimental and incomplete support).",
     "pattern": "Conform to the ISO 202X C standard draft \\(experimental and incomplete support\\)\\.",
-    "replacement": "遵循 ISO 2017(?) C++ 标准草案(试验性质的不完全支持)"
+    "replacement": "遵循 ISO 202X C 标准草案（实验性和不完整支持）。"
   },
   {
     "id": "Conform to the ISO 1990 C standard.",
     "pattern": "Conform to the ISO 1990 C standard\\.",
-    "replacement": "遵循 ISO 1990 C 标准"
+    "replacement": "遵循 ISO 1990 C 标准。"
   },
   {
     "id": "Conform to the ISO 1999 C standard.",
     "pattern": "Conform to the ISO 1999 C standard\\.",
-    "replacement": "遵循 ISO 1999 C 标准"
+    "replacement": "遵循 ISO 1999 C 标准。"
   },
   {
     "id": "Deprecated in favor of -std=c99.",
     "pattern": "Deprecated in favor of -std=c99\\.",
-    "replacement": "已弃用，请改用 -std=c99"
+    "replacement": "已弃用，请改用 -std=c99。"
   },
   {
     "id": "Conform to the ISO 1998 C++ standard revised by the 2003 technical corrigendum with GNU extensions.",
     "pattern": "Conform to the ISO 1998 C\\+\\+ standard revised by the 2003 technical corrigendum with GNU extensions\\.",
-    "replacement": "遵循 ISO 1998 C++ 标准于 2003 年的技术勘误版本"
+    "replacement": "遵循带 GNU 扩展的 ISO 1998 C++ 标准于 2003 年的技术勘误版本。"
   },
   {
     "id": "Conform to the ISO 2011 C++ standard with GNU extensions.",
     "pattern": "Conform to the ISO 2011 C\\+\\+ standard with GNU extensions\\.",
-    "replacement": "遵循 ISO 1990 C 标准，也支持 GNU 扩展"
+    "replacement": "遵循带 GNU 扩展的 ISO 2011 C++ 标准。"
   },
   {
     "id": "Deprecated in favor of -std=gnu++11.",
@@ -2157,7 +2157,7 @@
   {
     "id": "Conform to the ISO 2014 C++ standard with GNU extensions.",
     "pattern": "Conform to the ISO 2014 C\\+\\+ standard with GNU extensions\\.",
-    "replacement": "遵循 ISO 1990 C 标准，也支持 GNU 扩展"
+    "replacement": "遵循带 GNU 扩展的 ISO 2014 C++ 标准。"
   },
   {
     "id": "Deprecated in favor of -std=gnu++17.",
@@ -2167,22 +2167,22 @@
   {
     "id": "Conform to the ISO 2017 C++ standard with GNU extensions.",
     "pattern": "Conform to the ISO 2017 C\\+\\+ standard with GNU extensions\\.",
-    "replacement": "遵循 ISO 1990 C 标准，也支持 GNU 扩展"
+    "replacement": "遵循带 GNU 扩展的 ISO 2017 C++ 标准。"
   },
   {
     "id": "Conform to the ISO 2020 C++ standard with GNU extensions (experimental and incomplete support).",
     "pattern": "Conform to the ISO 2020 C\\+\\+ standard with GNU extensions \\(experimental and incomplete support\\)\\.",
-    "replacement": "遵循 ISO 201z(7?) C++ 标准草案和 GNU 扩展(试验性质的不完全支持)"
+    "replacement": "遵循带 GNU 扩展的 ISO 2020 C++ 标准（实验性和不完整支持）。"
   },
   {
     "id": "Conform to the ISO 2023 C++ draft standard with GNU extensions (experimental and incomplete support).",
     "pattern": "Conform to the ISO 2023 C\\+\\+ draft standard with GNU extensions \\(experimental and incomplete support\\)\\.",
-    "replacement": "遵循 ISO 201z(7?) C++ 标准草案和 GNU 扩展(试验性质的不完全支持)"
+    "replacement": "遵循带 GNU 扩展的 ISO 2023 C++ 标准草案（实验性和不完整支持）。"
   },
   {
     "id": "Conform to the ISO 2011 C standard with GNU extensions.",
     "pattern": "Conform to the ISO 2011 C standard with GNU extensions\\.",
-    "replacement": "遵循 ISO 1990 C 标准，也支持 GNU 扩展"
+    "replacement": "遵循带 GNU 扩展的 ISO 2011 C 标准。"
   },
   {
     "id": "Deprecated in favor of -std=gnu11.",
@@ -2192,42 +2192,42 @@
   {
     "id": "Conform to the ISO 2017 C standard (published in 2018) with GNU extensions.",
     "pattern": "Conform to the ISO 2017 C standard \\(published in 2018\\) with GNU extensions\\.",
-    "replacement": "遵循 ISO 1990 C 标准，也支持 GNU 扩展"
+    "replacement": "遵循带 GNU 扩展的 ISO 2017 C 标准（2018 年出版）。"
   },
   {
     "id": "Conform to the ISO 202X C standard draft with GNU extensions (experimental and incomplete support).",
     "pattern": "Conform to the ISO 202X C standard draft with GNU extensions \\(experimental and incomplete support\\)\\.",
-    "replacement": "遵循 ISO 201z(7?) C++ 标准草案和 GNU 扩展(试验性质的不完全支持)"
+    "replacement": "遵循带 GNU 扩展的 ISO 202x C 标准草案（实验性和不完整支持）。"
   },
   {
     "id": "Conform to the ISO 1990 C standard with GNU extensions.",
     "pattern": "Conform to the ISO 1990 C standard with GNU extensions\\.",
-    "replacement": "遵循 ISO 1990 C 标准，也支持 GNU 扩展"
+    "replacement": "遵循带 GNU 扩展的 ISO 1990 C 标准。"
   },
   {
     "id": "Conform to the ISO 1999 C standard with GNU extensions.",
     "pattern": "Conform to the ISO 1999 C standard with GNU extensions\\.",
-    "replacement": "遵循 ISO 1999 C 标准，也支持 GNU 扩展"
+    "replacement": "遵循带 GNU 扩展的 ISO 1999 C 标准。"
   },
   {
     "id": "Deprecated in favor of -std=gnu99.",
     "pattern": "Deprecated in favor of -std=gnu99\\.",
-    "replacement": "已弃用，请改用 -std=gnu99"
+    "replacement": "已弃用，请改用 -std=gnu99。"
   },
   {
     "id": "Conform to the ISO 1990 C standard as amended in 1994.",
     "pattern": "Conform to the ISO 1990 C standard as amended in 1994\\.",
-    "replacement": "遵循 ISO 1990 C 标准于 1994 年修订的版本"
+    "replacement": "遵循 ISO 1990 C 标准于 1994 年修订的版本。"
   },
   {
     "id": "Deprecated in favor of -std=iso9899:1999.",
     "pattern": "Deprecated in favor of -std=iso9899:1999\\.",
-    "replacement": "已弃用，为 -std=iso9899:1999 所取代"
+    "replacement": "已弃用，请改用 -std=iso9899:1999。"
   },
   {
     "id": "-stdlib=[libstdc++|libc++]\\tThe standard library to be used for C++ headers and runtime.",
-    "pattern": "-stdlib=\\[libstdc\\+\\+\\|libc\\+\\+\\]\\tThe standard library to be used for C\\+\\+ headers and runtime\\.",
-    "replacement": ""
+    "pattern": "The standard library to be used for C\\+\\+ headers and runtime\\.",
+    "replacement": "用于 C++ 头文件和运行时的标准库。"
   },
   {
     "id": "Enable traditional preprocessing.",
@@ -2236,13 +2236,13 @@
   },
   {
     "id": "-trigraphs\\tSupport ISO C trigraphs.",
-    "pattern": "-trigraphs\\tSupport ISO C trigraphs\\.",
-    "replacement": "-trigraphs\\t支持 ISO C 三元符。"
+    "pattern": "Support ISO C trigraphs\\.",
+    "replacement": "支持 ISO C 三标符。"
   },
   {
     "id": "Do not predefine system-specific and GCC-specific macros.",
     "pattern": "Do not predefine system-specific and GCC-specific macros\\.",
-    "replacement": "不预定义系统或 GCC 特定的宏"
+    "replacement": "不预定义系统相关或 GCC 相关的宏。"
   },
   {
     "id": "%s: all warnings being treated as errors",
@@ -2272,17 +2272,17 @@
   {
     "id": "Please submit a full bug report, with preprocessed source.\\n",
     "pattern": "Please submit a full bug report, with preprocessed source\\.\\n",
-    "replacement": "请提交一份完整的错误报告，\\n如有可能请附上经预处理后的源文件。\\n"
+    "replacement": "请提交一份完整的错误报告，并附上经预处理后的源文件。\\n"
   },
   {
     "id": "Please submit a full bug report, with preprocessed source (by using -freport-bug).\\n",
     "pattern": "Please submit a full bug report, with preprocessed source \\(by using -freport-bug\\)\\.\\n",
-    "replacement": "请提交一份完整的错误报告，\\n如有可能请附上经预处理后的源文件。\\n"
+    "replacement": "请提交一份完整的错误报告，并附上经预处理后的源文件（经由 -freport-bug）。\\n"
   },
   {
     "id": "Please include the complete backtrace with any bug report.\\n",
     "pattern": "Please include the complete backtrace with any bug report\\.\\n",
-    "replacement": ""
+    "replacement": "请在错误报告中包含完整的栈踪信息。\\n"
   },
   {
     "id": "See %s for instructions.\\n",
@@ -2337,7 +2337,7 @@
   {
     "id": "internal compiler error: error reporting routines re-entered.\\n",
     "pattern": "internal compiler error: error reporting routines re-entered\\.\\n",
-    "replacement": "内部编译器错误：重入错误报告程序。\\n"
+    "replacement": "编译器内部错误：重入错误报告程序。\\n"
   },
   {
     "id": "in %s, at %s:%d",
@@ -2767,7 +2767,7 @@
   {
     "id": "expected %<else%>",
     "pattern": "expected 'else'",
-    "replacement": "需要%<delete%>"
+    "replacement": "期望 'else'"
   },
   {
     "id": "expected %<#pragma omp section%> or %<}%>",
@@ -2777,7 +2777,7 @@
   {
     "id": "<message unknown at compile time>",
     "pattern": "<message unknown at compile time>",
-    "replacement": ""
+    "replacement": "<编译时未知的消息>"
   },
   {
     "id": "expected %<<%>",
@@ -3217,7 +3217,7 @@
   {
     "id": "missing filename after %qs",
     "pattern": "missing filename after '(.+?)'",
-    "replacement": "%qs后缺少文件名"
+    "replacement": "'$1' 后缺少文件名"
   },
   {
     "id": "missing path after %qs",
@@ -3237,7 +3237,7 @@
   {
     "id": "argument %qs to %<-Wbidi-chars%> not recognized",
     "pattern": "argument '(.+?)' to '-Wbidi-chars' not recognized",
-    "replacement": "实参%qs(给予%<-Wnormalized%>)无法识别"
+    "replacement": "提供给 '-Wbidi-chars' 的实参 '$1' 未被识别"
   },
   {
     "id": "argument %qs to %<-Wnormalized%> not recognized",
@@ -3297,7 +3297,7 @@
   {
     "id": "%qE attribute ignored",
     "pattern": "'(.+?)' attribute ignored",
-    "replacement": "%qE属性被忽略"
+    "replacement": "'$1' 特性已忽略"
   },
   {
     "id": "previous declaration of %qD",
@@ -3337,7 +3337,7 @@
   {
     "id": "PDP11 bit-field handling unsupported in %qs",
     "pattern": "PDP11 bit-field handling unsupported in '(.+?)'",
-    "replacement": ""
+    "replacement": "PDP11 位域处理在 '$1' 中不受支持"
   },
   {
     "id": "declared here",
@@ -3362,7 +3362,7 @@
   {
     "id": "single %<target_clones%> attribute is ignored",
     "pattern": "single 'target_clones' attribute is ignored",
-    "replacement": "%qE不兼容的属性已被忽略"
+    "replacement": "单个 'target_clones' 特性已忽略"
   },
   {
     "id": "%<depend(%s)%> is only allowed in %<omp ordered%>",
@@ -3407,7 +3407,7 @@
   {
     "id": "argument %u null where non-null expected",
     "pattern": "argument (\\d+?) null where non-null expected",
-    "replacement": ""
+    "replacement": "实参 $1 为空，但期望是非空的"
   },
   {
     "id": "in a call to built-in function %qD",
@@ -3472,87 +3472,87 @@
   {
     "id": "%qD writing one too many bytes into a region of a size that depends on %<strlen%>",
     "pattern": "'(.+?)' writing one too many bytes into a region of a size that depends on 'strlen'",
-    "replacement": ""
+    "replacement": "'$1' 将多余的字节写入一个大小依赖于 'strlen' 的区域"
   },
   {
     "id": "writing one too many bytes into a region of a size that depends on %<strlen%>",
     "pattern": "writing one too many bytes into a region of a size that depends on 'strlen'",
-    "replacement": ""
+    "replacement": "将多余的字节写入一个大小依赖于 'strlen' 的区域"
   },
   {
     "id": "%qD writing %wu byte into a region of size %wu",
-    "pattern": "'(.+?)' writing (\\d+?) byte into a region of size (\\d+?)",
-    "replacement": ""
+    "pattern": "'(.+?)' writing (\\d+?) bytes? into a region of size (\\d+?)",
+    "replacement": "'$1' 将 $2 字节写入大小为 $3 的区域"
   },
   {
     "id": "writing %wu byte into a region of size %wu",
-    "pattern": "writing (\\d+?) byte into a region of size (\\d+?)",
-    "replacement": ""
+    "pattern": "writing (\\d+?) bytes? into a region of size (\\d+?)",
+    "replacement": "将 $1 字节写入大小为 $2 的区域"
   },
   {
     "id": "%qD writing %wu byte into a region of size between %wu and %wu",
-    "pattern": "'(.+?)' writing (\\d+?) byte into a region of size between (\\d+?) and (\\d+?)",
-    "replacement": ""
+    "pattern": "'(.+?)' writing (\\d+?) bytes? into a region of size between (\\d+?) and (\\d+?)",
+    "replacement": "'$1' 将 $2 字节写入大小介于 $3 和 $4 的区域"
   },
   {
     "id": "writing %wu byte into a region of size between %wu and %wu",
-    "pattern": "writing (\\d+?) byte into a region of size between (\\d+?) and (\\d+?)",
-    "replacement": ""
+    "pattern": "writing (\\d+?) bytes? into a region of size between (\\d+?) and (\\d+?)",
+    "replacement": "将 $1 字节写入大小介于 $2 和 $3 的区域"
   },
   {
     "id": "%qD writing between %wu and %wu bytes into a region of size %wu",
     "pattern": "'(.+?)' writing between (\\d+?) and (\\d+?) bytes into a region of size (\\d+?)",
-    "replacement": ""
+    "replacement": "'$1' 将介于 $2 和 $3 字节写入大小为 $4 的区域"
   },
   {
     "id": "writing between %wu and %wu bytes into a region of size %wu",
     "pattern": "writing between (\\d+?) and (\\d+?) bytes into a region of size (\\d+?)",
-    "replacement": ""
+    "replacement": "将介于 $2 和 $3 字节写入大小为 $4 的区域"
   },
   {
     "id": "%qD writing between %wu and %wu bytes into a region of size between %wu and %wu",
     "pattern": "'(.+?)' writing between (\\d+?) and (\\d+?) bytes into a region of size between (\\d+?) and (\\d+?)",
-    "replacement": ""
+    "replacement": "'$1' 将介于 $2 和 $3 字节写入大小介于 $4 和 $5 的区域"
   },
   {
     "id": "writing between %wu and %wu bytes into a region of size between %wu and %wu",
     "pattern": "writing between (\\d+?) and (\\d+?) bytes into a region of size between (\\d+?) and (\\d+?)",
-    "replacement": ""
+    "replacement": "将介于 $1 和 $2 字节写入大小介于 $3 和 $4 的区域"
   },
   {
     "id": "%qD output truncated before terminating nul copying %E byte from a string of the same length",
-    "pattern": "'(.+?)' output truncated before terminating nul copying (.+?) byte from a string of the same length",
-    "replacement": ""
+    "pattern": "'(.+?)' output truncated before terminating nul copying (.+?) bytes? from a string of the same length",
+    "replacement": "从 $2 字节长的字符串复制同样长度的字节时，'$1' 输出在空字符前截断"
   },
   {
     "id": "%qD output truncated copying %E byte from a string of length %wu",
-    "pattern": "'(.+?)' output truncated copying (.+?) byte from a string of length (\\d+?)",
-    "replacement": ""
+    "pattern": "'(.+?)' output truncated copying (.+?) bytes? from a string of length (\\d+?)",
+    "replacement": "从 $3 长度的字符串复制 $2 字节时，'$1' 输出被截断"
   },
   {
     "id": "%qD output truncated copying between %wu and %wu bytes from a string of length %wu",
     "pattern": "'(.+?)' output truncated copying between (\\d+?) and (\\d+?) bytes from a string of length (\\d+?)",
-    "replacement": ""
+    "replacement": "从 $4 长度的字符串复制 $2 ~ $3 字节时，'$1' 输出被截断"
   },
   {
     "id": "%qD output may be truncated copying %E byte from a string of length %wu",
-    "pattern": "'(.+?)' output may be truncated copying (.+?) byte from a string of length (\\d+?)",
-    "replacement": ""
+    "pattern": "'(.+?)' output may be truncated copying (.+?) bytes? from a string of length (\\d+?)",
+    "replacement": "从 $3 长度的字符串复制 $2 字节时，'$1' 输出可能被截断"
   },
   {
     "id": "%qD output may be truncated copying between %wu and %wu bytes from a string of length %wu",
     "pattern": "'(.+?)' output may be truncated copying between (\\d+?) and (\\d+?) bytes from a string of length (\\d+?)",
-    "replacement": ""
+    "replacement": "从 $4 长度的字符串复制 $2 ~ $3 字节时，'$1' 输出可能被截断"
   },
   {
     "id": "%qD output truncated before terminating nul copying as many bytes from a string as its length",
     "pattern": "'(.+?)' output truncated before terminating nul copying as many bytes from a string as its length",
-    "replacement": ""
+    "replacement": "从字符串复制同样长度的字节时，'$1' 输出在空字符前截断"
   },
   {
     "id": "%qD specified bound depends on the length of the source argument",
     "pattern": "'(.+?)' specified bound depends on the length of the source argument",
-    "replacement": ""
+    "replacement": "'$1' 指定边界依赖于源实参的长度"
   },
   {
     "id": "length computed here",
@@ -3562,22 +3562,22 @@
   {
     "id": "%qD of a string of length %wu or more and an array of size %wu evaluates to nonzero",
     "pattern": "'(.+?)' of a string of length (\\d+?) or more and an array of size (\\d+?) evaluates to nonzero",
-    "replacement": ""
+    "replacement": "长度不小于 $2 的字符串的 '$1' 和大小 $3 的数组求值为非零"
   },
   {
     "id": "%qD of a string of length %wu and an array of size %wu evaluates to nonzero",
     "pattern": "'(.+?)' of a string of length (\\d+?) and an array of size (\\d+?) evaluates to nonzero",
-    "replacement": ""
+    "replacement": "长度 $2 的字符串的 '$1' 和大小 $3 的数组求值为非零"
   },
   {
     "id": "%qD of strings of length %wu and %wu and bound of %wu evaluates to nonzero",
     "pattern": "'(.+?)' of strings of length (\\d+?) and (\\d+?) and bound of (\\d+?) evaluates to nonzero",
-    "replacement": ""
+    "replacement": "长度 $2 和 $3 的字符串的 '$1' 和 $3 的界求值为非零"
   },
   {
     "id": "%qD of a string of length %wu, an array of size %wu and bound of %wu evaluates to nonzero",
     "pattern": "'(.+?)' of a string of length (\\d+?), an array of size (\\d+?) and bound of (\\d+?) evaluates to nonzero",
-    "replacement": ""
+    "replacement": "长度 $2 和 $3 的字符串的 '$1' 和大小 $3 的数组和 $3 的界求值为非零"
   },
   {
     "id": "in this expression",
@@ -3652,7 +3652,7 @@
   {
     "id": "packed layout",
     "pattern": "packed layout",
-    "replacement": "使用紧实的堆栈布局"
+    "replacement": "紧实布局"
   },
   {
     "id": "%qE attribute argument is invalid",
@@ -3777,12 +3777,12 @@
   {
     "id": "%qE attribute ignored due to conflict with %qs attribute",
     "pattern": "'(.+?)' attribute ignored due to conflict with '(.+?)' attribute",
-    "replacement": "%qE属性与 %s 属性冲突"
+    "replacement": "'$1' 特性被忽略，因其与 '$2' 特性冲突"
   },
   {
     "id": "%qE attribute has no effect on unit local functions",
     "pattern": "'(.+?)' attribute has no effect on unit local functions",
-    "replacement": "%qE属性只能用于函数"
+    "replacement": "'$1' 特性对单元局部函数没有影响"
   },
   {
     "id": "%qE attribute ignored because %qD is not a variable",
@@ -3792,7 +3792,7 @@
   {
     "id": "%qE attribute ignored because %qD is not a local variable",
     "pattern": "'(.+?)' attribute ignored because '(.+?)' is not a local variable",
-    "replacement": "%qE属性被忽略，因为%qT已被定义"
+    "replacement": "'$1' 特性被忽略，因为 '$2' 不是局部变量"
   },
   {
     "id": "%qE attribute have effect only on public objects",
@@ -3917,7 +3917,7 @@
   {
     "id": "section of %q+D conflicts with previous declaration",
     "pattern": "section of '(.+?)' conflicts with previous declaration",
-    "replacement": "%q+D的节与早先的声明冲突"
+    "replacement": "与前一声明冲突的 '$1' 段"
   },
   {
     "id": "section of %q+D cannot be overridden",
@@ -4071,8 +4071,8 @@
   },
   {
     "id": "%+qD declared %qE after being used",
-    "pattern": "%\\+qD declared '(.+?)' after being used",
-    "replacement": "%q+D声明为友元"
+    "pattern": "'(.+?)' declared '(.+?)' after being used",
+    "replacement": "'$1' 在使用后被声明为 '$2'"
   },
   {
     "id": "%qE attribute ignored on non-class types",
@@ -4267,7 +4267,7 @@
   {
     "id": "the message attached to %<unavailable%> is not a string",
     "pattern": "the message attached to 'unavailable' is not a string",
-    "replacement": ""
+    "replacement": "附加到 'unavailable' 的消息不是字符串"
   },
   {
     "id": "invalid vector type for attribute %qE",
@@ -4297,17 +4297,17 @@
   {
     "id": "number of vector components %wu not a power of two",
     "pattern": "number of vector components (\\d+?) not a power of two",
-    "replacement": "向量中分量数不是 2 的某次方"
+    "replacement": "大小为 $1 的向量组件数不是 2 的幂"
   },
   {
     "id": "number of vector components %wu exceeds %d",
     "pattern": "number of vector components (\\d+?) exceeds (\\d+?)",
-    "replacement": ""
+    "replacement": "大小为 $1 的向量组件数超过 $2"
   },
   {
     "id": "%qE attribute only supported on non-mask vector types",
     "pattern": "'(.+?)' attribute only supported on non-mask vector types",
-    "replacement": "%qE属性在不是类的类型上被忽略"
+    "replacement": "'$1' 特性仅支持非掩码向量类型"
   },
   {
     "id": "%qE attribute without arguments on a non-prototype",
@@ -4467,7 +4467,7 @@
   {
     "id": "%qE attribute argument not a string constant",
     "pattern": "'(.+?)' attribute argument not a string constant",
-    "replacement": "%qE属性需要一个字符串常量作为实参"
+    "replacement": "'$1' 特性实参不是字符串常量"
   },
   {
     "id": "unrecognized %qE attribute argument %qs",
@@ -4527,12 +4527,12 @@
   {
     "id": "%qE attribute ignored; valid only for functions and function pointer fields",
     "pattern": "'(.+?)' attribute ignored; valid only for functions and function pointer fields",
-    "replacement": "%qE属性只能用于函数类型"
+    "replacement": "'$1' 特性被忽略，它仅对函数和函数指针字段有效"
   },
   {
     "id": "%qE attribute ignored; field must be a function pointer",
     "pattern": "'(.+?)' attribute ignored; field must be a function pointer",
-    "replacement": "%qE属性只能用于函数类型"
+    "replacement": "'$1' 特性被忽略，字段必须是函数指针"
   },
   {
     "id": "unknown attribute %qE",
@@ -4552,7 +4552,7 @@
   {
     "id": "%qs attribute not supported for %qE in %<__builtin_has_attribute%>",
     "pattern": "'(.+?)' attribute not supported for '(.+?)' in '__builtin_has_attribute'",
-    "replacement": "%qE属性在 R8C 目标机上不受支持"
+    "replacement": "'__builtin_has_attribute' 中的 '$2' 不支持 '$1' 特性"
   },
   {
     "id": "%qs attribute not supported in %<__builtin_has_attribute%>",
@@ -4607,27 +4607,27 @@
   {
     "id": "%<__builtin_shufflevector%> arguments must be vectors",
     "pattern": "'__builtin_shufflevector' arguments must be vectors",
-    "replacement": "%<__builtin___clear_cache%>的两个参数必须都是指针"
+    "replacement": "'__builtin_shufflevector' 实参必须是向量"
   },
   {
     "id": "%<__builtin_shufflevector%> arguments must be constant size vectors",
     "pattern": "'__builtin_shufflevector' arguments must be constant size vectors",
-    "replacement": "%<__builtin___clear_cache%>的两个参数必须都是指针"
+    "replacement": "'__builtin_shufflevector' 实参必须是常量大小的向量"
   },
   {
     "id": "%<__builtin_shufflevector%> argument vectors must have the same element type",
     "pattern": "'__builtin_shufflevector' argument vectors must have the same element type",
-    "replacement": "%4$L处‘%3$s’内建函数的‘%1$s’和‘%2$s’实参类型必须相同"
+    "replacement": "'__builtin_shufflevector' 实参向量必须具有相同元素类型"
   },
   {
     "id": "%<__builtin_shufflevector%> must specify a result with a power of two number of elements",
     "pattern": "'__builtin_shufflevector' must specify a result with a power of two number of elements",
-    "replacement": ""
+    "replacement": "'__builtin_shufflevector' 必须指定元素个数为 2 的幂"
   },
   {
     "id": "invalid element index %qE to %<__builtin_shufflevector%>",
     "pattern": "invalid element index '(.+?)' to '__builtin_shufflevector'",
-    "replacement": "%<__builtin_frame_address%>的实参无效"
+    "replacement": "'__builtin_shufflevector' 中的元素索引 '$1' 无效"
   },
   {
     "id": "%<__builtin_convertvector%> first argument must be an integer or floating vector",
@@ -4912,7 +4912,7 @@
   {
     "id": "non-floating-point arguments in call to function %qE",
     "pattern": "non-floating-point arguments in call to function '(.+?)'",
-    "replacement": "给予函数%qE的参数不是浮点数"
+    "replacement": "调用函数 '$1' 的实参不是浮点数"
   },
   {
     "id": "non-const integer argument %u in call to function %qE",
@@ -5651,13 +5651,13 @@
   },
   {
     "id": "%s %<%s%.*s%> expects argument of type %<%T%s%>, but argument %d has type %qT",
-    "pattern": "(.+?) '(.+?)%\\.\\*s' expects argument of type '(.+?)(.+?)', but argument (\\d+?) has type '(.+?)'",
-    "replacement": "格式%q.*s需要类型%<%s%s%>，但实参 %d 的类型为%qT"
+    "pattern": "(.+?)' expects argument of type '(.+?)', but argument (\\d+) has type '(.+?)'",
+    "replacement": "$1' 期望实参类型 '$2'，但第 $3 个实参的类型为 '$4'"
   },
   {
     "id": "%s %<%s%.*s%> expects a matching %<%T%s%> argument",
-    "pattern": "(.+?) '(.+?)%\\.\\*s' expects a matching '(.+?)(.+?)' argument",
-    "replacement": "对%<%T::%s(%A)%#V%>的调用没有匹配的函数"
+    "pattern": "(.+?)' expects a matching '(.+?)' argument",
+    "replacement": "$1' 期望一个吻合的 '$2' 实参"
   },
   {
     "id": "%<__gcc_host_wide_int__%> is not defined as a type",
@@ -5756,7 +5756,7 @@
   },
   {
     "id": "stray %<\\\\%o%> in program",
-    "pattern": "stray '\\\\(\\d+?)' in program",
+    "pattern": "stray '(.+?)' in program",
     "replacement": "程序中有游离的 '\\$1'"
   },
   {
@@ -5837,7 +5837,7 @@
   {
     "id": "%<#pragma omp atomic compare capture%> with non-integral comparison result",
     "pattern": "'#pragma omp atomic compare capture' with non-integral comparison result",
-    "replacement": "%<# pragma omp 基元的 capture%>使用两不同的变量用于内存"
+    "replacement": "'#pragma omp atomic compare capture' 中的比较结果不是整数"
   },
   {
     "id": "%<#pragma omp atomic update%> uses two different variables for memory",
@@ -6082,7 +6082,7 @@
   {
     "id": "the %qs debug info cannot be used with pre-compiled headers",
     "pattern": "the '(.+?)' debug info cannot be used with pre-compiled headers",
-    "replacement": ""
+    "replacement": "调试信息 '$1' 不能与预编译头文件一起使用"
   },
   {
     "id": "opening dependency file %s: %m",
@@ -6252,12 +6252,12 @@
   {
     "id": "missing %<big-endian%>, %<little-endian%>, or %<default%> after %<#pragma scalar_storage_order%>",
     "pattern": "missing 'big-endian', 'little-endian', or 'default' after '#pragma scalar_storage_order'",
-    "replacement": ""
+    "replacement": "'#pragma scalar_storage_order' 后缺少 'big-endian'、'little-endian' 或 'default'"
   },
   {
     "id": "expected %<big-endian%>, %<little-endian%>, or %<default%> after %<#pragma scalar_storage_order%>",
     "pattern": "expected 'big-endian', 'little-endian', or 'default' after '#pragma scalar_storage_order'",
-    "replacement": ""
+    "replacement": "'#pragma scalar_storage_order' 后期望 'big-endian'、'little-endian' 或 'default'"
   },
   {
     "id": "malformed %<#pragma redefine_extname%>, ignored",
@@ -6322,27 +6322,27 @@
   {
     "id": "missing %<error%>, %<warning%>, %<ignored%>, %<push%>, %<pop%>, or %<ignored_attributes%> after %<#pragma GCC diagnostic%>",
     "pattern": "missing 'error', 'warning', 'ignored', 'push', 'pop', or 'ignored_attributes' after '#pragma GCC diagnostic'",
-    "replacement": "%<#pragma GCC diagnostic%>后缺少 error、warning 或 ignored"
+    "replacement": "'#pragma GCC diagnostic' 后缺少 'error'、'warning'、'ignored'、'push'、'pop' 或 'ignored_attributes'"
   },
   {
     "id": "missing attribute name after %<#pragma GCC diagnostic ignored_attributes%>",
     "pattern": "missing attribute name after '#pragma GCC diagnostic ignored_attributes'",
-    "replacement": "%<#pragma GCC diagnostic%>后选项缺失"
+    "replacement": "'#pragma GCC diagnostic ignored_attributes' 后缺少特性名"
   },
   {
     "id": "missing argument to %<#pragma GCC diagnostic ignored_attributes%>",
     "pattern": "missing argument to '#pragma GCC diagnostic ignored_attributes'",
-    "replacement": "%<#pragma GCC diagnostic%>后选项缺失"
+    "replacement": "'#pragma GCC diagnostic ignored_attributes' 后缺少实参"
   },
   {
     "id": "trailing %<,%> in arguments for %<#pragma GCC diagnostic ignored_attributes%>",
     "pattern": "trailing ',' in arguments for '#pragma GCC diagnostic ignored_attributes'",
-    "replacement": "%<#pragma GCC diagnostic%>后选项缺失"
+    "replacement": "'#pragma GCC diagnostic ignored_attributes' 的实参有多余的 ','"
   },
   {
     "id": "expected %<error%>, %<warning%>, %<ignored%>, %<push%>, %<pop%>, %<ignored_attributes%> after %<#pragma GCC diagnostic%>",
     "pattern": "expected 'error', 'warning', 'ignored', 'push', 'pop', 'ignored_attributes' after '#pragma GCC diagnostic'",
-    "replacement": "%<#pragma GCC diagnostic%>后需要 error、warning 或 ignored"
+    "replacement": "'#pragma GCC diagnostic' 后期望 'error'、'warning'、'ignored'、'push'、'pop' 或 'ignored_attributes'"
   },
   {
     "id": "missing option after %<#pragma GCC diagnostic%> kind",
@@ -6443,11 +6443,6 @@
     "id": "junk at end of %<#pragma message%>",
     "pattern": "junk at end of '#pragma message'",
     "replacement": "'#pragma message' 末尾有垃圾字符"
-  },
-  {
-    "id": "%<#pragma message: %s%>",
-    "pattern": "'#pragma message: (.+?)'",
-    "replacement": "#pragma message：%s"
   },
   {
     "id": "invalid location for %<pragma %s%>, ignored",
@@ -7392,7 +7387,7 @@
   {
     "id": "previously declared as %s with bound %qs",
     "pattern": "previously declared as (.+?) with bound '(.+?)'",
-    "replacement": "先前的声明%q+D"
+    "replacement": "以前声明为带 '$2' 边界的 $1"
   },
   {
     "id": "argument %u of type %s with mismatched bound",
@@ -7417,22 +7412,22 @@
   {
     "id": "comparison between two arrays is deprecated in C++20",
     "pattern": "comparison between two arrays is deprecated in C\\+\\+20",
-    "replacement": "比较指针和整数"
+    "replacement": "C++20 中两个数组的比较已弃用"
   },
   {
     "id": "comparison between two arrays",
     "pattern": "comparison between two arrays",
-    "replacement": "在%qT和%qT间比较"
+    "replacement": "两个数组的比较"
   },
   {
     "id": "use unary %<+%> which decays operands to pointers or %<&%D[0] %s &%D[0]%> to compare the addresses",
-    "pattern": "use unary '\\+' which decays operands to pointers or '&(\\d+?)\\[0\\] (.+?) &(\\d+?)\\[0\\]' to compare the addresses",
-    "replacement": ""
+    "pattern": "use unary '\\+' which decays operands to pointers or '(.+?)' to compare the addresses",
+    "replacement": "使用单目运算符 '+' 将操作数退化为指针，或使用 '$1' 比较地址"
   },
   {
     "id": "use %<&%D[0] %s &%D[0]%> to compare the addresses",
-    "pattern": "use '&(\\d+?)\\[0\\] (.+?) &(\\d+?)\\[0\\]' to compare the addresses",
-    "replacement": ""
+    "pattern": "use '(.+?)' to compare the addresses",
+    "replacement": "使用 '$1' 比较地址"
   },
   {
     "id": "%qs is not a valid option to the preprocessor",
@@ -7447,7 +7442,7 @@
   {
     "id": "%qs is defined in header %qs; did you forget to %<#include %s%>?",
     "pattern": "'(.+?)' is defined in header '(.+?)'; did you forget to '#include (.+?)'\\?",
-    "replacement": ""
+    "replacement": "'$1' 定义于头文件 '$2'；你是否忘记了 '#include $3'？"
   },
   {
     "id": "void value not ignored as it ought to be",
@@ -7702,7 +7697,7 @@
   {
     "id": "expected expression",
     "pattern": "expected expression",
-    "replacement": "需要表达式"
+    "replacement": "期望表达式"
   },
   {
     "id": "wrong number of arguments to %<__builtin_shuffle%>",
@@ -7797,7 +7792,7 @@
   {
     "id": "expected %<none%>, %<shared%>, %<private%> or %<firstprivate%>",
     "pattern": "expected 'none', 'shared', 'private' or 'firstprivate'",
-    "replacement": "需要%<class%>、%<typename%>或%<template%>"
+    "replacement": "期望 'none'、'shared'、'private' 或 'firstprivate'"
   },
   {
     "id": "expected %<data%>, %<update%>, %<enter%> or %<exit%>",
@@ -7892,7 +7887,7 @@
   {
     "id": "expected %<reproducible%> or %<unconstrained%>",
     "pattern": "expected 'reproducible' or 'unconstrained'",
-    "replacement": "需要%<none%>或%<shared%>"
+    "replacement": "期望 'reproducible' 或 'unconstrained'"
   },
   {
     "id": "expected %<concurrent%>",
@@ -7942,7 +7937,7 @@
   {
     "id": "%<num_teams%> lower bound %qE bigger than upper bound %qE",
     "pattern": "'num_teams' lower bound '(.+?)' bigger than upper bound '(.+?)'",
-    "replacement": ""
+    "replacement": "'num_teams' 的下界 '$1' 大于上界 '$2'"
   },
   {
     "id": "%<thread_limit%> value must be positive",
@@ -7962,7 +7957,7 @@
   {
     "id": "%<allocate%> clause %<align%> modifier argument needs to be positive constant power of two integer expression",
     "pattern": "'allocate' clause 'align' modifier argument needs to be positive constant power of two integer expression",
-    "replacement": "%H折叠变量需要正整常数表达式"
+    "replacement": "'allocate' 子句 'align' 修饰符实参需要是 2 的正整数次幂"
   },
   {
     "id": "%<iterator%> modifier incompatible with %qs",
@@ -7977,17 +7972,17 @@
   {
     "id": "too many %<always%> modifiers",
     "pattern": "too many 'always' modifiers",
-    "replacement": "太多的%qs子句"
+    "replacement": "太多 'always' 修饰符"
   },
   {
     "id": "too many %<close%> modifiers",
     "pattern": "too many 'close' modifiers",
-    "replacement": "太多的%qs子句"
+    "replacement": "太多 'close' 修饰符"
   },
   {
     "id": "%<#pragma omp target%> with modifier other than %<always%> or %<close%> on %<map%> clause",
     "pattern": "'#pragma omp target' with modifier other than 'always' or 'close' on 'map' clause",
-    "replacement": "%<#pragma omp taskwait%>只能用在复合语句中"
+    "replacement": "'#pragma omp target' 修饰符 的 'map' 子句不是 'always' 或 'close'"
   },
   {
     "id": "invalid map kind",
@@ -7997,17 +7992,17 @@
   {
     "id": "%<ancestor%> device modifier not preceded by %<requires%> directive with %<reverse_offload%> clause",
     "pattern": "'ancestor' device modifier not preceded by 'requires' directive with 'reverse_offload' clause",
-    "replacement": ""
+    "replacement": "'ancestor' 设备修饰符没有以带 'reverse_offload' 子句的 'requires' 命令开头"
   },
   {
     "id": "expected %<ancestor%> or %<device_num%>",
     "pattern": "expected 'ancestor' or 'device_num'",
-    "replacement": "需要%<none%>或%<shared%>"
+    "replacement": "期望 'ancestor' 或 'device_num'"
   },
   {
     "id": "the %<device%> clause expression must evaluate to %<1%>",
     "pattern": "the 'device' clause expression must evaluate to '1'",
-    "replacement": "调度块大小表达式必须为整型"
+    "replacement": "'device' 子句表达式必须计算为 '1'"
   },
   {
     "id": "invalid dist_schedule kind",
@@ -8107,12 +8102,12 @@
   {
     "id": "%<#pragma acc routine%> not immediately followed by function declaration or definition",
     "pattern": "'#pragma acc routine' not immediately followed by function declaration or definition",
-    "replacement": "'#pragma acc routine' 不得立即出现在函数声明或定义后"
+    "replacement": "'#pragma acc routine' 没有立即出现在函数声明或定义后"
   },
   {
     "id": "%<#pragma acc routine%> not immediately followed by a single function declaration or definition",
     "pattern": "'#pragma acc routine' not immediately followed by a single function declaration or definition",
-    "replacement": "'#pragma acc routine' 不得立即出现在单个函数声明或定义后"
+    "replacement": "'#pragma acc routine' 没有立即出现在单个函数声明或定义后"
   },
   {
     "id": "%<#pragma acc routine%> must be applied before use",
@@ -8147,12 +8142,12 @@
   {
     "id": "expected %<seq_cst%>, %<acquire%> or %<relaxed%>",
     "pattern": "expected 'seq_cst', 'acquire' or 'relaxed'",
-    "replacement": "需要%<class%>、%<typename%>或%<template%>"
+    "replacement": "期望 'seq_cst'、'acquire' 或 'relaxed'"
   },
   {
     "id": "expected %<read%>, %<write%>, %<update%>, %<capture%>, %<compare%>, %<weak%>, %<fail%>, %<seq_cst%>, %<acq_rel%>, %<release%>, %<relaxed%> or %<hint%> clause",
     "pattern": "expected 'read', 'write', 'update', 'capture', 'compare', 'weak', 'fail', 'seq_cst', 'acq_rel', 'release', 'relaxed' or 'hint' clause",
-    "replacement": "需要标识符或%<(%>"
+    "replacement": "期望 'read'、'write'、'update'、'capture'、'compare'、'weak'、'fail'、'seq_cst'、'acq_rel'、'release'、'relaxed' 或 'hint' 子句"
   },
   {
     "id": "too many atomic clauses",
@@ -8167,47 +8162,47 @@
   {
     "id": "%qs clause is incompatible with %<read%> or %<write%> clauses",
     "pattern": "'(.+?)' clause is incompatible with 'read' or 'write' clauses",
-    "replacement": "%<#pragma omp taskwait%>只能用在复合语句中"
+    "replacement": "'$1' 子句与 'read' 或 'write' 子句不兼容"
   },
   {
     "id": "%qs clause requires %qs clause",
     "pattern": "'(.+?)' clause requires '(.+?)' clause",
-    "replacement": "%qT作为%qs被引用"
+    "replacement": "'$1' 子句需要 '$2' 子句"
   },
   {
     "id": "%<#pragma omp atomic read%> incompatible with %<release%> clause",
     "pattern": "'#pragma omp atomic read' incompatible with 'release' clause",
-    "replacement": "%<#pragma omp taskwait%>只能用在复合语句中"
+    "replacement": "'#pragma omp atomic read' 与 'release' 子句不兼容"
   },
   {
     "id": "%<#pragma omp atomic write%> incompatible with %<acquire%> clause",
     "pattern": "'#pragma omp atomic write' incompatible with 'acquire' clause",
-    "replacement": "%<#pragma omp taskwait%>只能用在复合语句中"
+    "replacement": "'#pragma omp atomic write' 与 'acquire' 子句不兼容"
   },
   {
     "id": "expected %<==%> comparison in %<if%> condition",
     "pattern": "expected '==' comparison in 'if' condition",
-    "replacement": "联合定义后需要%<;%>"
+    "replacement": "'if' 条件中期望 '==' 比较"
   },
   {
     "id": "expected %<==%>, %<<%> or %<>%> comparison in %<if%> condition",
     "pattern": "expected '==', '<' or '>' comparison in 'if' condition",
-    "replacement": ""
+    "replacement": "'if' 条件中期望 '=='、'<' 或 '>' 比较"
   },
   {
     "id": "invalid form of %<#pragma omp atomic compare%>",
     "pattern": "invalid form of '#pragma omp atomic compare'",
-    "replacement": "%<#pragma omp atomic%>运算符无效"
+    "replacement": "'#pragma omp atomic compare' 的形式无效"
   },
   {
     "id": "unexpected %<else%>",
     "pattern": "unexpected 'else'",
-    "replacement": "需要%<delete%>"
+    "replacement": "意外的 'else'"
   },
   {
     "id": "invalid form of %<pragma omp atomic compare%>",
     "pattern": "invalid form of 'pragma omp atomic compare'",
-    "replacement": "%<#pragma omp atomic%>运算符无效"
+    "replacement": "'pragma omp atomic compare' 的形式无效"
   },
   {
     "id": "invalid form of %<#pragma omp atomic%>",
@@ -8222,7 +8217,7 @@
   {
     "id": "%<weak%> clause requires atomic equality comparison",
     "pattern": "'weak' clause requires atomic equality comparison",
-    "replacement": ""
+    "replacement": "'weak' 子句需要原子性等于比较"
   },
   {
     "id": "%<#pragma omp atomic capture%> uses two different expressions for memory",
@@ -8247,7 +8242,7 @@
   {
     "id": "expected %<seq_cst%>, %<acq_rel%>, %<release%> or %<acquire%>",
     "pattern": "expected 'seq_cst', 'acq_rel', 'release' or 'acquire'",
-    "replacement": "需要%<class%>、%<typename%>或%<template%>"
+    "replacement": "期望 'seq_cst', 'acq_rel', 'release' 或 'acquire'"
   },
   {
     "id": "%<flush%> list specified together with memory order clause",
@@ -8422,7 +8417,7 @@
   {
     "id": "%<#pragma omp declare %s%> not immediately followed by a single function declaration or definition",
     "pattern": "'#pragma omp declare (.*?)' not immediately followed by a single function declaration or definition",
-    "replacement": "'#pragma omp declare $1' 不得立即跟随单个函数声明或定义"
+    "replacement": "'#pragma omp declare $1' 没有立即跟随单个函数声明或定义"
   },
   {
     "id": "%qD specified both in declare target %<link%> and %<to%> clauses",
@@ -8492,17 +8487,17 @@
   {
     "id": "expected %<at%>, %<severity%> or %<message%> clause",
     "pattern": "expected 'at', 'severity' or 'message' clause",
-    "replacement": "需要 %<;%>、%<,%> 或 %<)%>"
+    "replacement": "期望 'at', 'severity' 或 'message' 子句"
   },
   {
     "id": "expected %qs or %qs",
     "pattern": "expected '(.+?)' or '(.+?)'",
-    "replacement": "需要 %<,%> 或 %<)%>"
+    "replacement": "期望 '$1' 或 '$2'"
   },
   {
     "id": "%<#pragma omp error%> with %<at(execution)%> clause may only be used in compound statements",
     "pattern": "'#pragma omp error' with 'at\\(execution\\)' clause may only be used in compound statements",
-    "replacement": "%<#pragma omp barrier%>只能用在复合语句中"
+    "replacement": "带 'at(exception)' 的 '#pragma omp error' 只能用在复合语句中"
   },
   {
     "id": "%<pragma omp error%> encountered: %s",
@@ -8512,7 +8507,7 @@
   {
     "id": "%<pragma omp error%> encountered",
     "pattern": "'pragma omp error' encountered",
-    "replacement": ""
+    "replacement": "遇到了 'pragma omp error'"
   },
   {
     "id": "%qE declared %<threadprivate%> after first use",
@@ -8722,7 +8717,7 @@
   {
     "id": "cannot dereference %qE in %qs clause",
     "pattern": "cannot dereference '(.+?)' in '(.+?)' clause",
-    "replacement": "字段%qE的类型不完全"
+    "replacement": "在 '$2' 子句中不能对 '$1' 解地址"
   },
   {
     "id": "%qD is not a variable in %qs clause",
@@ -8892,7 +8887,7 @@
   {
     "id": "%qD appears more than once in data-sharing clauses",
     "pattern": "'(.+?)' appears more than once in data-sharing clauses",
-    "replacement": "%qD在数据子句中多次出现"
+    "replacement": "'$1' 在数据共享子句中出现了多次"
   },
   {
     "id": "%qD appears more than once in reduction clauses",
@@ -8942,7 +8937,7 @@
   {
     "id": "%qE is not lvalue expression nor array section in %qs clause",
     "pattern": "'(.+?)' is not lvalue expression nor array section in '(.+?)' clause",
-    "replacement": "%qE在子句%<lastprivate%>中不是一个变量"
+    "replacement": "'$1' 不是子句 '$2' 中的左值表达式或数组段"
   },
   {
     "id": "%qE does not have %<omp_depend_t%> type in %<depend%> clause with %<depobj%> dependence type",
@@ -9096,13 +9091,8 @@
   },
   {
     "id": "%s%<%D(%T, %T)%> (built-in)",
-    "pattern": "(.+?)'(\\d+?)\\((.+?), (.+?)\\)' \\(built-in\\)",
-    "replacement": "%s%D(%T, %T) <内建>"
-  },
-  {
-    "id": "%s%<%D(%T)%> (built-in)",
-    "pattern": "(.+?)'(\\d+?)\\((.+?)\\)' \\(built-in\\)",
-    "replacement": "%s%D(%T) <内建>"
+    "pattern": "\\(built-in\\)",
+    "replacement": "(内建)"
   },
   {
     "id": "%s%qT (conversion)",
@@ -9250,49 +9240,14 @@
     "replacement": "'$1 ? $2 : $3' 中的三元 'operator?:'"
   },
   {
-    "id": "%<operator%s%>",
-    "pattern": "'operator(.+?)'",
-    "replacement": "单目数值运算符‘%s’(位于 %%L)的操作数为 %s"
-  },
-  {
     "id": "%<operator%s%> in %<%E%s%>",
     "pattern": "'operator(.*?)' in '(.+?)'",
     "replacement": "'$2' 中的 'operator$1'"
   },
   {
-    "id": "%<operator[]%>",
-    "pattern": "'operator\\[\\]'",
-    "replacement": "错误的运算符"
-  },
-  {
     "id": "%<operator[]%> in %<%E[%E]%>",
-    "pattern": "'operator\\[\\]' in '(.+?)\\[(.+?)\\]'",
-    "replacement": "%<%E::%E%>不是一个类型"
-  },
-  {
-    "id": "%qs in %<%s %E%>",
-    "pattern": "'(.+?)' in '(.+?) (.+?)'",
-    "replacement": "%Xbfd_openr %s: %E\\n"
-  },
-  {
-    "id": "%<operator %s%>",
-    "pattern": "'operator (.+?)'",
-    "replacement": "单目数值运算符‘%s’(位于 %%L)的操作数为 %s"
-  },
-  {
-    "id": "%<operator %s%> in %<%s%E%>",
-    "pattern": "'operator (.+?)' in '(.+?)(.+?)'",
-    "replacement": "%Xbfd_openr %s: %E\\n"
-  },
-  {
-    "id": "%<operator%s%> in %<%E %s %E%>",
-    "pattern": "'operator(.+?)' in '(.+?) (.+?) (.+?)'",
-    "replacement": "在协议中找到%<-%E%>而非%<+%E%>"
-  },
-  {
-    "id": "%<operator%s%> in %<%s%E%>",
-    "pattern": "'operator(.+?)' in '(.+?)(.+?)'",
-    "replacement": "%Xbfd_openr %s: %E\\n"
+    "pattern": "'(.+?)' in '(.+?)'",
+    "replacement": "'$2' 中的 '$1'"
   },
   {
     "id": "ISO C++ forbids omitting the middle term of a %<?:%> expression",
@@ -9422,7 +9377,7 @@
   {
     "id": "destroying delete %qD cannot be used to release the allocated memory if the initialization throws because the object is not constructed yet",
     "pattern": "destroying delete '(.+?)' cannot be used to release the allocated memory if the initialization throws because the object is not constructed yet",
-    "replacement": ""
+    "replacement": "如果初始化抛出，则销毁 delete '$1' 不能用于释放已分配的内存：因为对象尚未构造"
   },
   {
     "id": "no suitable %<operator %s%> for %qT",
@@ -9537,7 +9492,7 @@
   {
     "id": "cannot bind lvalue reference of type %qH to an rvalue of type %qI",
     "pattern": "cannot bind lvalue reference of type '(.+?)' to an rvalue of type '(.+?)'",
-    "replacement": "将类型为%2$qT的右值转换为%1$qT的 volatile 引用"
+    "replacement": "不能将类型为 '$1' 的左值引用绑定到类型为 '$2' 的右值"
   },
   {
     "id": "cannot bind reference of type %qH to %qI due to different array bounds",
@@ -9701,8 +9656,8 @@
   },
   {
     "id": "%qD writing to an object of type %#qT with no trivial copy-assignment%s",
-    "pattern": "'(.+?)' writing to an object of type '(.+?)' with no trivial copy-assignment(.+?)",
-    "replacement": ""
+    "pattern": "'(.+?)' writing to an object of type '(.+?)' with no trivial copy-assignment",
+    "replacement": "'$1' 写入类型为 '$2' 的对象，但没有平凡复制赋值"
   },
   {
     "id": "%qD writing to an object of non-trivially copyable type %#qT%s",
@@ -9731,8 +9686,8 @@
   },
   {
     "id": "%qD writing to an object of a non-trivial type %#qT leaves %wu byte unchanged",
-    "pattern": "'(.+?)' writing to an object of a non-trivial type '(.+?)' leaves (\\d+?) byte unchanged",
-    "replacement": ""
+    "pattern": "'(.+?)' writing to an object of a non-trivial type '(.+?)' leaves (\\d+?) bytes? unchanged",
+    "replacement": "'$1' 写入非平凡类型 '$2' 的对象，其中 $3 个字节未发生改变"
   },
   {
     "id": "%qD moving an object of non-trivially copyable type %#qT; use %<new%> and %<delete%> instead",
@@ -9762,7 +9717,7 @@
   {
     "id": "argument %u in call to function %qE has pointer to a non-trivially-copyable type (%qT)",
     "pattern": "argument (\\d+?) in call to function '(.+?)' has pointer to a non-trivially-copyable type \\('(.+?)'\\)",
-    "replacement": "%K%D 的第一个实参必须是一个指针，第二个必须是整常量"
+    "replacement": "调用函数 '$2' 的第 $1 个实参是指向非平凡复制类型（'$3'）的指针"
   },
   {
     "id": "constructor delegates to itself",
@@ -9842,7 +9797,7 @@
   {
     "id": "default argument mismatch in overload resolution",
     "pattern": "default argument mismatch in overload resolution",
-    "replacement": "重载解析时默认实参不匹配"
+    "replacement": "重载决议中默认实参不匹配"
   },
   {
     "id": " candidate 1: %q#F",
@@ -10252,12 +10207,12 @@
   {
     "id": "offset of %qT base class for %<-std=c++14%> and up changes in %<-fabi-version=17%> (GCC 12)",
     "pattern": "offset of '(.+?)' base class for '-std=c\\+\\+14' and up changes in '-fabi-version=17' \\(GCC 12\\)",
-    "replacement": ""
+    "replacement": "在 '-fabi-version=17' 下，基类 '$1' 的偏移量在 '-std=c++14' 和更高版本中发生了改变（GCC 12）"
   },
   {
     "id": "offset of %qD for %<-std=c++14%> and up changes in %<-fabi-version=17%> (GCC 12)",
     "pattern": "offset of '(.+?)' for '-std=c\\+\\+14' and up changes in '-fabi-version=17' \\(GCC 12\\)",
-    "replacement": "%qD的对齐"
+    "replacement": "在 '-fabi-version=17' 下，'$1' 的偏移量在 '-std=c++14' 和更高版本中发生了改变（GCC 12）"
   },
   {
     "id": "direct base %qT inaccessible in %qT due to ambiguity",
@@ -10422,7 +10377,7 @@
   {
     "id": "variable %qD of non-literal type %qT in %<constexpr%> function only available with %<-std=c++2b%> or %<-std=gnu++2b%>",
     "pattern": "variable '(.+?)' of non-literal type '(.+?)' in 'constexpr' function only available with '-std=c\\+\\+2b' or '-std=gnu\\+\\+2b'",
-    "replacement": "C++0x %<constexpr%>只在 -std=c++0x 或 -std=gnu++0x 下可用"
+    "replacement": "在 'constexpr' 函数中，非字面类型 '$2' 的变量 '$1' 只能在 '-std=c++2b' 或 '-std=gnu\\+\\+2b' 下使用"
   },
   {
     "id": "%<constexpr%> variable %qD has variably-modified type %qT",
@@ -10547,7 +10502,7 @@
   {
     "id": "calling constexpr member function %qD through virtual base subobject",
     "pattern": "calling constexpr member function '(.+?)' through virtual base subobject",
-    "replacement": "没有对象无法调用成员函数%qD"
+    "replacement": "通过虚基子对象调用常量成员函数 '$1'"
   },
   {
     "id": "expression %qE does not designate a %<constexpr%> function",
@@ -10852,27 +10807,27 @@
   {
     "id": "use of %qD",
     "pattern": "use of '(.+?)'",
-    "replacement": "错误地使用了%qD"
+    "replacement": "'$1' 的使用"
   },
   {
     "id": "its value can vary between compiler versions or with different %<-mtune%> or %<-mcpu%> flags",
     "pattern": "its value can vary between compiler versions or with different '-mtune' or '-mcpu' flags",
-    "replacement": ""
+    "replacement": "其值可能在不同的编译器版本或不同的 '-mtune' 或 '-mcpu' 标记下变化"
   },
   {
     "id": "if this use is part of a public ABI, change it to instead use a constant variable you define",
     "pattern": "if this use is part of a public ABI, change it to instead use a constant variable you define",
-    "replacement": ""
+    "replacement": "如果这个使用是公共 ABI 的一部分，请改为使用自定义的只读变量"
   },
   {
     "id": "the default value for the current CPU tuning is %d bytes",
     "pattern": "the default value for the current CPU tuning is (\\d+?) bytes",
-    "replacement": ""
+    "replacement": "当前 CPU 频率调节下，默认值为 $1 字节"
   },
   {
     "id": "you can stabilize this value with %<--param hardware_destructive_interference_size=%d%>, or disable this warning with %<-Wno-interference-size%>",
     "pattern": "you can stabilize this value with '--param hardware_destructive_interference_size=(\\d+?)', or disable this warning with '-Wno-interference-size'",
-    "replacement": ""
+    "replacement": "你可以使用 '--param hardware_destructive_interference_size=$1' 来稳定这个值，或者使用 '-Wno-interference-size' 来禁用这个警告"
   },
   {
     "id": "value %qE of type %qT is not a constant expression",
@@ -10887,12 +10842,12 @@
   {
     "id": "control passes through definition of %qD with thread storage duration",
     "pattern": "control passes through definition of '(.+?)' with thread storage duration",
-    "replacement": ""
+    "replacement": "控制流穿过线程存储期变量 '$1' 的定义"
   },
   {
     "id": "control passes through definition of %qD with static storage duration",
     "pattern": "control passes through definition of '(.+?)' with static storage duration",
-    "replacement": "截取的变量 %qD 与 non-automatic 贮藏体持续时间"
+    "replacement": "控制流穿过静态存储期变量 '$1' 的定义"
   },
   {
     "id": "temporary of non-literal type %qT in a constant expression",
@@ -11027,12 +10982,12 @@
   {
     "id": "%qD defined %<thread_local%> in %<constexpr%> context",
     "pattern": "'(.+?)' defined 'thread_local' in 'constexpr' context",
-    "replacement": "函数%qs的存储类%<__thread%>无效"
+    "replacement": "'$1' 在 'constexpr' 语境内被定义为 'thread_local'"
   },
   {
     "id": "%qD defined %<static%> in %<constexpr%> context",
     "pattern": "'(.+?)' defined 'static' in 'constexpr' context",
-    "replacement": "非静态数据成员%qE被声明为%<constexpr%>"
+    "replacement": "'$1' 在 'constexpr' 语境内被定义为 'static'"
   },
   {
     "id": "division by zero is not a constant expression",
@@ -11047,7 +11002,7 @@
   {
     "id": "neither branch of %<if%> is a constant expression",
     "pattern": "neither branch of 'if' is a constant expression",
-    "replacement": "整型表达式%qE不是常量"
+    "replacement": "if 语句的两个分支都不是常量表达式"
   },
   {
     "id": "non-constant array initialization",
@@ -11057,7 +11012,7 @@
   {
     "id": "label definition in %<constexpr%> function only available with %<-std=c++2b%> or %<-std=gnu++2b%>",
     "pattern": "label definition in 'constexpr' function only available with '-std=c\\+\\+2b' or '-std=gnu\\+\\+2b'",
-    "replacement": "C++0x %<constexpr%>只在 -std=c++0x 或 -std=gnu++0x 下可用"
+    "replacement": "在 'constexpr' 函数中，标签定义只能在 '-std=c++2b' 或 '-std=gnu\\+\\+2b' 下使用"
   },
   {
     "id": "unexpected AST of kind %s",
@@ -11067,87 +11022,72 @@
   {
     "id": "constraint expression does not have type %<bool%>",
     "pattern": "constraint expression does not have type 'bool'",
-    "replacement": "取一个类型为%<void%>的表达式的地址"
+    "replacement": "约束表达式不是 bool 类型"
   },
   {
     "id": "function call of variable concept %qE",
     "pattern": "function call of variable concept '(.+?)'",
-    "replacement": "有歧义的模板特例化%qD(为%q+D)"
-  },
-  {
-    "id": "MAP %qD TO %qT",
-    "pattern": "MAP '(.+?)' TO '(.+?)'",
-    "replacement": ""
-  },
-  {
-    "id": "MAP %qD TO %qE",
-    "pattern": "MAP '(.+?)' TO '(.+?)'",
-    "replacement": ""
+    "replacement": "变量概念 '$1' 的函数调用"
   },
   {
     "id": "argument %qT",
     "pattern": "argument '(.+?)'",
-    "replacement": "没有参数"
-  },
-  {
-    "id": "argument %qE",
-    "pattern": "argument '(.+?)'",
-    "replacement": "%L处内建 REPEAT 的 NCOPIES 实参是负的"
+    "replacement": "实参 '$1'"
   },
   {
     "id": "%qT does not match original declaration",
     "pattern": "'(.+?)' does not match original declaration",
-    "replacement": "类型%qD不匹配原先的声明"
+    "replacement": "'$1' 与原先的声明不匹配"
   },
   {
     "id": "original template declaration here",
     "pattern": "original template declaration here",
-    "replacement": "%q+D已在此声明过"
+    "replacement": "原先的模板声明在此"
   },
   {
     "id": "no matching concepts for %qE",
     "pattern": "no matching concepts for '(.+?)'",
-    "replacement": "没有找到与%qD匹配的模板"
+    "replacement": "没有与 '$1' 匹配的概念"
   },
   {
     "id": "%qE cannot be introduced with an ellipsis %<...%>",
     "pattern": "'(.+?)' cannot be introduced with an ellipsis '\\.\\.\\.'",
-    "replacement": ""
+    "replacement": "'$1' 不能由省略号 '...' 来引入"
   },
   {
     "id": "prototype declared here",
     "pattern": "prototype declared here",
-    "replacement": "以前在此声明过"
+    "replacement": "原型声明在此"
   },
   {
     "id": "all template parameters of %qD must be introduced",
     "pattern": "all template parameters of '(.+?)' must be introduced",
-    "replacement": "模板参数不能是友元"
+    "replacement": "'$1' 的所有模板形参必须被引入"
   },
   {
     "id": "cannot deduce template parameters from introduction list",
     "pattern": "cannot deduce template parameters from introduction list",
-    "replacement": "%qE不是类型%qT的有效模板实参，因为%qE不是一个变量"
+    "replacement": "无法从引入列表中推导模板形参"
   },
   {
     "id": "the required expression %qE is invalid, because",
     "pattern": "the required expression '(.+?)' is invalid, because",
-    "replacement": "KIND 参数 %s 在%L处必须是初始化表达式"
+    "replacement": "要求的表达式 '$1' 无效，因为"
   },
   {
     "id": "the required expression %qE is invalid",
     "pattern": "the required expression '(.+?)' is invalid",
-    "replacement": "KIND 参数 %s 在%L处必须是初始化表达式"
+    "replacement": "要求的表达式 '$1' 无效"
   },
   {
     "id": "the required type %qT is invalid, because",
     "pattern": "the required type '(.+?)' is invalid, because",
-    "replacement": "字段%qE的类型不完全"
+    "replacement": "要求的类型 '$1' 无效，因为"
   },
   {
     "id": "the required type %qT is invalid",
     "pattern": "the required type '(.+?)' is invalid",
-    "replacement": "重复的基类型%qT无效"
+    "replacement": "要求的类型 '$1' 无效"
   },
   {
     "id": "cannot convert %qE to %qT",
@@ -11157,422 +11097,427 @@
   {
     "id": "%qE is not %<noexcept%>",
     "pattern": "'(.+?)' is not 'noexcept'",
-    "replacement": "%qE不是一个模板"
+    "replacement": "'$1' 不是 'noexcept'"
   },
   {
     "id": "%qE does not satisfy return-type-requirement, because",
     "pattern": "'(.+?)' does not satisfy return-type-requirement, because",
-    "replacement": ""
+    "replacement": "'$1' 不满足返回类型要求，因为"
   },
   {
     "id": "%qE does not satisfy return-type-requirement",
     "pattern": "'(.+?)' does not satisfy return-type-requirement",
-    "replacement": "指令不满足其约束："
+    "replacement": "'$1' 不满足返回类型要求"
   },
   {
     "id": "cannot convert %qE to %qT because",
     "pattern": "cannot convert '(.+?)' to '(.+?)' because",
-    "replacement": "不能将%qT转换为%qT"
+    "replacement": "不能将 '$1' 转换为 '$2'，因为"
   },
   {
     "id": "nested requirement %qE is not satisfied, because",
     "pattern": "nested requirement '(.+?)' is not satisfied, because",
-    "replacement": ""
+    "replacement": "嵌套的要求 '$1' 不能满足，因为"
   },
   {
     "id": "nested requirement %qE is not satisfied",
     "pattern": "nested requirement '(.+?)' is not satisfied",
-    "replacement": "析构函数不能被 cv 限定"
+    "replacement": "嵌套的要求 '$1' 不能满足"
   },
   {
     "id": "satisfaction of atomic constraint %qE depends on itself",
     "pattern": "satisfaction of atomic constraint '(.+?)' depends on itself",
-    "replacement": "在初次使用后显式特例化%qD"
+    "replacement": "原子约束 '$1' 的满足依赖于它自己"
   },
   {
     "id": "satisfaction value of atomic constraint %qE changed from %qE to %qE",
     "pattern": "satisfaction value of atomic constraint '(.+?)' changed from '(.+?)' to '(.+?)'",
-    "replacement": "从%qT到%qT的转换丢失了限定信息"
+    "replacement": "原子约束 '$1' 的满足值从 '$2' 变为 '$3'"
   },
   {
     "id": "satisfaction value first evaluated to %qE from here",
     "pattern": "satisfaction value first evaluated to '(.+?)' from here",
-    "replacement": ""
+    "replacement": "满足值第一次在此求值为 '$1'"
   },
   {
     "id": "no operand of the disjunction is satisfied",
     "pattern": "no operand of the disjunction is satisfied",
-    "replacement": ""
+    "replacement": "析取约束中的任何一个操作数都不满足"
   },
   {
     "id": "the operand %qE is unsatisfied because",
     "pattern": "the operand '(.+?)' is unsatisfied because",
-    "replacement": ""
+    "replacement": "操作数 '$1' 不能满足，因为"
   },
   {
     "id": "definition of concept %qD is empty",
     "pattern": "definition of concept '(.+?)' is empty",
-    "replacement": "%qs后缺少宏名"
+    "replacement": "概念 '$1' 的定义为空"
   },
   {
     "id": "definition of concept %qD has multiple statements",
     "pattern": "definition of concept '(.+?)' has multiple statements",
-    "replacement": ""
+    "replacement": "概念 '$1' 的定义有多个语句"
   },
   {
     "id": "  %qT is not %<nothrow%> copy assignable",
     "pattern": "  '(.+?)' is not 'nothrow' copy assignable",
-    "replacement": ""
+    "replacement": "  '$1' 不可 'nothrow' 复制赋值"
   },
   {
     "id": "  %qT is not %<nothrow%> default constructible",
     "pattern": "  '(.+?)' is not 'nothrow' default constructible",
-    "replacement": "%q#T没有用户提供的默认构造函数"
+    "replacement": "  '$1' 不可 'nothrow' 默认构造"
   },
   {
     "id": "  %qT is not %<nothrow%> copy constructible",
     "pattern": "  '(.+?)' is not 'nothrow' copy constructible",
-    "replacement": ""
+    "replacement": "  '$1' 不可 'nothrow' 复制构造"
   },
   {
     "id": "  %qT is not trivially copy assignable",
     "pattern": "  '(.+?)' is not trivially copy assignable",
-    "replacement": "%qD不是一个变量"
+    "replacement": "  '$1' 不可平凡复制赋值"
   },
   {
     "id": "  %qT is not trivially default constructible",
     "pattern": "  '(.+?)' is not trivially default constructible",
-    "replacement": "%q#T没有用户提供的默认构造函数"
+    "replacement": "  '$1' 不可平凡默认构造"
   },
   {
     "id": "  %qT is not trivially copy constructible",
     "pattern": "  '(.+?)' is not trivially copy constructible",
-    "replacement": "基类%q#T有一个非虚析构函数"
+    "replacement": "  '$1' 不可平凡复制构造"
   },
   {
     "id": "  %qT is not trivially destructible",
     "pattern": "  '(.+?)' is not trivially destructible",
-    "replacement": "基类%q#T有一个非虚析构函数"
+    "replacement": "  '$1' 不可平凡析构"
   },
   {
     "id": "  %qT does not have a virtual destructor",
     "pattern": "  '(.+?)' does not have a virtual destructor",
-    "replacement": "基类%q#T有一个非虚析构函数"
+    "replacement": "  '$1' 没有虚析构函数"
   },
   {
     "id": "  %qT is not an abstract class",
     "pattern": "  '(.+?)' is not an abstract class",
-    "replacement": "%q#T不是一个类"
+    "replacement": "  '$1' 不是抽象类"
   },
   {
     "id": "  %qT is not a base of %qT",
     "pattern": "  '(.+?)' is not a base of '(.+?)'",
-    "replacement": "%qT不是%qT的基类"
+    "replacement": "  '$1' 不是 '$2' 的基类"
   },
   {
     "id": "  %qT is not a class",
     "pattern": "  '(.+?)' is not a class",
-    "replacement": "%q#T不是一个类"
+    "replacement": "  '$1' 不是类"
   },
   {
     "id": "  %qT is not an empty class",
     "pattern": "  '(.+?)' is not an empty class",
-    "replacement": "%q#T不是一个类"
+    "replacement": "  '$1' 不是空类"
   },
   {
     "id": "  %qT is not an enum",
     "pattern": "  '(.+?)' is not an enum",
-    "replacement": "%qT不是一个模板"
+    "replacement": "  '$1' 不是枚举"
   },
   {
     "id": "  %qT is not a final class",
     "pattern": "  '(.+?)' is not a final class",
-    "replacement": "%q#T不是一个类"
+    "replacement": "  '$1' 不是最终类"
   },
   {
     "id": "  %qT is not layout compatible with %qT",
     "pattern": "  '(.+?)' is not layout compatible with '(.+?)'",
-    "replacement": "选择%qD而不是%qD"
+    "replacement": "  '$1' 与 '$2' 布局不兼容"
   },
   {
     "id": "  %qT is not a literal type",
     "pattern": "  '(.+?)' is not a literal type",
-    "replacement": "%qT不是一个类"
+    "replacement": "  '$1' 不是字面类型"
   },
   {
     "id": "  %qT is not pointer-interconvertible base of %qT",
     "pattern": "  '(.+?)' is not pointer-interconvertible base of '(.+?)'",
-    "replacement": "%qT是%qT的一个不可访问的基类"
+    "replacement": "  '$1' 不是 '$2' 的指针可互转换基类"
   },
   {
     "id": "  %qT is not a POD type",
     "pattern": "  '(.+?)' is not a POD type",
-    "replacement": "%qD不是一个类型"
+    "replacement": "  '$1' 不是 POD 类型"
   },
   {
     "id": "  %qT is not a polymorphic type",
     "pattern": "  '(.+?)' is not a polymorphic type",
-    "replacement": "%qT不是一个类"
+    "replacement": "  '$1' 不是多态类型"
   },
   {
     "id": "  %qT is not the same as %qT",
     "pattern": "  '(.+?)' is not the same as '(.+?)'",
-    "replacement": "%qT不是%qT的基类"
+    "replacement": "  '$1' 与 '$2' 不同"
   },
   {
     "id": "  %qT is not an standard layout type",
     "pattern": "  '(.+?)' is not an standard layout type",
-    "replacement": "%qT不是一个模板类型"
+    "replacement": "  '$1' 不是标准布局类型"
   },
   {
     "id": "  %qT is not a trivial type",
     "pattern": "  '(.+?)' is not a trivial type",
-    "replacement": "%qT不是一个类"
+    "replacement": "  '$1' 不是平凡类型"
   },
   {
     "id": "  %qT is not a union",
     "pattern": "  '(.+?)' is not a union",
-    "replacement": "在函数%qs中"
+    "replacement": "  '$1' 不是联合体类型"
   },
   {
     "id": "  %qT is not an aggregate",
     "pattern": "  '(.+?)' is not an aggregate",
-    "replacement": "%qT不是一个模板"
+    "replacement": "  '$1' 不是聚合类型"
   },
   {
     "id": "  %qT is not trivially copyable",
     "pattern": "  '(.+?)' is not trivially copyable",
-    "replacement": "在%q#T和%q#T间比较"
+    "replacement": "  '$1' 不可平凡复制"
   },
   {
     "id": "  %qT is not assignable from %qT",
     "pattern": "  '(.+?)' is not assignable from '(.+?)'",
-    "replacement": "派生联合%qT无效"
+    "replacement": "  '$1' 不可从 '$2' 赋值"
   },
   {
     "id": "  %qT is not trivially assignable from %qT",
     "pattern": "  '(.+?)' is not trivially assignable from '(.+?)'",
-    "replacement": "派生联合%qT无效"
+    "replacement": "  '$1' 不可从 '$2' 平凡赋值"
   },
   {
     "id": "  %qT is not %<nothrow%> assignable from %qT",
     "pattern": "  '(.+?)' is not 'nothrow' assignable from '(.+?)'",
-    "replacement": "派生联合%qT无效"
+    "replacement": "  '$1' 不可从 '$2' 'nothrow' 赋值"
   },
   {
     "id": "  %qT is not default constructible",
     "pattern": "  '(.+?)' is not default constructible",
-    "replacement": "类型%qE没有可以调用的默认构造函数"
+    "replacement": "  '$1' 不可默认构造"
   },
   {
     "id": "  %qT is not constructible from %qE",
     "pattern": "  '(.+?)' is not constructible from '(.+?)'",
-    "replacement": "派生联合%qT无效"
+    "replacement": "  '$1' 不可从 '$2' 构造"
   },
   {
     "id": "  %qT is not trivially constructible from %qE",
     "pattern": "  '(.+?)' is not trivially constructible from '(.+?)'",
-    "replacement": "派生联合%qT无效"
+    "replacement": "  '$1' 不可从 '$2' 平凡构造"
   },
   {
     "id": "  %qT is not %<nothrow%> constructible from %qE",
     "pattern": "  '(.+?)' is not 'nothrow' constructible from '(.+?)'",
-    "replacement": "派生联合%qT无效"
+    "replacement": "  '$1' 不可从 '$2' 'nothrow' 构造"
   },
   {
     "id": "  %qT does not have unique object representations",
     "pattern": "  '(.+?)' does not have unique object representations",
-    "replacement": "new 声明中的表达式必须具有整数或枚举类型"
+    "replacement": "  '$1' 不具有唯一对象表示"
   },
   {
     "id": "invalid constraints",
     "pattern": "invalid constraints",
-    "replacement": "%<#pragma pack%>中有无效常量 - 已忽略"
+    "replacement": "约束无效"
   },
   {
     "id": "constraint %qE has type %qT, not %<bool%>",
     "pattern": "constraint '(.+?)' has type '(.+?)', not 'bool'",
-    "replacement": ""
+    "replacement": "约束 '$1' 的类型为 '$2', 不是 'bool'"
   },
   {
     "id": "the expression %qE evaluated to %<false%>",
     "pattern": "the expression '(.+?)' evaluated to 'false'",
-    "replacement": "用户定义的%qD总是计算所有两个参数"
+    "replacement": "表达式 '$1' 求值为 'false'"
   },
   {
     "id": "constraints not satisfied",
     "pattern": "constraints not satisfied",
-    "replacement": "析构函数不能被 cv 限定"
+    "replacement": "约束不满足"
   },
   {
     "id": "set %qs to at least %d for more detail",
     "pattern": "set '(.+?)' to at least (\\d+?) for more detail",
-    "replacement": ""
+    "replacement": "要查看详细信息，将设置 '$1' 为至少 $2"
   },
   {
     "id": "coroutines require a traits template; cannot find %<%E::%E%>",
     "pattern": "coroutines require a traits template; cannot find '(.+?)::(.+?)'",
-    "replacement": ""
+    "replacement": "协程需要特性模板，无法找到 '$1::$2'"
   },
   {
     "id": "perhaps %<#include <coroutine>%> is missing",
     "pattern": "perhaps '#include <coroutine>' is missing",
-    "replacement": ""
+    "replacement": "可能缺少 '#include <coroutine>'"
   },
   {
     "id": "cannot instantiate %<coroutine traits%>",
     "pattern": "cannot instantiate 'coroutine traits'",
-    "replacement": "不能内联%<main%>函数"
+    "replacement": "无法实例化 'coroutine traits'"
   },
   {
     "id": "coroutines require a handle class template; cannot find %<%E::%E%>",
     "pattern": "coroutines require a handle class template; cannot find '(.+?)::(.+?)'",
-    "replacement": ""
+    "replacement": "协程需要句柄类模板，无法找到 '$1::$2'"
   },
   {
     "id": "cannot instantiate a %<coroutine handle%> for promise type %qT",
     "pattern": "cannot instantiate a 'coroutine handle' for promise type '(.+?)'",
-    "replacement": ""
+    "replacement": "无法为期约类型 '$1' 实例化 'coroutine handle'"
   },
   {
     "id": "unable to find the promise type for this coroutine",
     "pattern": "unable to find the promise type for this coroutine",
-    "replacement": "在类%qs中找不到可溢出的寄存器"
+    "replacement": "无法找到此协程的期约类型"
   },
   {
     "id": "the coroutine promise type %qT declares both %<return_value%> and %<return_void%>",
     "pattern": "the coroutine promise type '(.+?)' declares both 'return_value' and 'return_void'",
-    "replacement": ""
+    "replacement": "协程期约类型 '$1' 同时声明了 'return_value' 和 'return_void'"
   },
   {
     "id": "%<return_void%> declared here",
     "pattern": "'return_void' declared here",
-    "replacement": "%qD在此声明"
+    "replacement": "'return_void' 声明在此"
+  },
+  {
+    "id": "%<return_value%> declared here",
+    "pattern": "'return_value' declared here",
+    "replacement": "'return_value' 声明在此"
   },
   {
     "id": "no member named %qE in %qT",
     "pattern": "no member named '(.+?)' in '(.+?)'",
-    "replacement": "没有名为%q#T的类模板，在%q#T中 "
+    "replacement": "'$2' 中没有名为 '$1' 的成员"
   },
   {
     "id": "%qs cannot be used outside a function",
     "pattern": "'(.+?)' cannot be used outside a function",
-    "replacement": "%qE不能用作函数"
+    "replacement": "'$1' 不能在函数外使用"
   },
   {
     "id": "%qs cannot be used in the %<main%> function",
     "pattern": "'(.+?)' cannot be used in the 'main' function",
-    "replacement": "%qE不能用作函数"
+    "replacement": "'$1' 不能在 'main' 函数中使用"
   },
   {
     "id": "%qs cannot be used in a %<constexpr%> function",
     "pattern": "'(.+?)' cannot be used in a 'constexpr' function",
-    "replacement": "%qE不能用作函数"
+    "replacement": "'$1' 不能在 'constexpr' 函数中使用"
   },
   {
     "id": "%qs cannot be used in a function with a deduced return type",
     "pattern": "'(.+?)' cannot be used in a function with a deduced return type",
-    "replacement": "虚函数不能是友元"
+    "replacement": "'$1' 不能在使用返回类型推导的函数中使用"
   },
   {
     "id": "%qs cannot be used in a varargs function",
     "pattern": "'(.+?)' cannot be used in a varargs function",
-    "replacement": "%qE不能用作函数"
+    "replacement": "'$1' 不能在变长实参函数中使用"
   },
   {
     "id": "%qs cannot be used in a constructor",
     "pattern": "'(.+?)' cannot be used in a constructor",
-    "replacement": "%s 不能在这里用于 asm"
+    "replacement": "'$1' 不能在构造函数中使用"
   },
   {
     "id": "%qs cannot be used in a destructor",
     "pattern": "'(.+?)' cannot be used in a destructor",
-    "replacement": "%s 不能在这里用于 asm"
+    "replacement": "'$1' 不能在析构函数中使用"
   },
   {
     "id": "a %<return%> statement is not allowed in coroutine; did you mean %<co_return%>?",
     "pattern": "a 'return' statement is not allowed in coroutine; did you mean 'co_return'\\?",
-    "replacement": "在返回%qT的函数中，返回语句不带返回值"
+    "replacement": "协程中不允许使用 'return' 语句，你的意思是 'co_return' 吗?"
   },
   {
     "id": "the expression %qE is required to be non-throwing",
     "pattern": "the expression '(.+?)' is required to be non-throwing",
-    "replacement": "整型表达式%qE不是常量"
+    "replacement": "表达式 '$1' 被要求是非抛出的"
   },
   {
     "id": "must be declared with %<noexcept(true)%>",
     "pattern": "must be declared with 'noexcept\\(true\\)'",
-    "replacement": ""
+    "replacement": "必须声明为 'noexcept(true)'"
   },
   {
     "id": "awaitable type %qT is not a structure",
     "pattern": "awaitable type '(.+?)' is not a structure",
-    "replacement": "限定的类型%qT不匹配析构函数名 ~%qT"
+    "replacement": "可等待类型 '$1' 不是结构体"
   },
   {
     "id": "%<await_suspend%> must return %<void%>, %<bool%> or a coroutine handle",
     "pattern": "'await_suspend' must return 'void', 'bool' or a coroutine handle",
-    "replacement": ""
+    "replacement": "'await_suspend' 必须返回 'void', 'bool' 或协程句柄"
   },
   {
     "id": "function declared %<noreturn%> has a %<co_return%> statement",
     "pattern": "function declared 'noreturn' has a 'co_return' statement",
-    "replacement": "被声明为%<noreturn%>的函数却有%<return%>语句"
+    "replacement": "声明为 'noreturn' 的函数中有 'co_return' 语句"
   },
   {
     "id": "the align argument to %<__builtin_coro_promise%> must be a constant",
     "pattern": "the align argument to '__builtin_coro_promise' must be a constant",
-    "replacement": "%<__builtin_prefetch%>的第三个实参必须是一个常量"
+    "replacement": "'__builtin_coro_promise' 的对齐实参必须是常量"
   },
   {
     "id": "the direction argument to %<__builtin_coro_promise%> must be a constant",
     "pattern": "the direction argument to '__builtin_coro_promise' must be a constant",
-    "replacement": "%<__builtin_prefetch%>的第三个实参必须是一个常量"
+    "replacement": "'__builtin_coro_promise' 的方向实参必须是常量"
   },
   {
     "id": "no suspend point info for %qD",
     "pattern": "no suspend point info for '(.+?)'",
-    "replacement": "%qD先前没有原型"
+    "replacement": "'$1' 没有挂起点信息"
   },
   {
     "id": "%qE is provided by %qT but is not usable with the function signature %qD",
     "pattern": "'(.+?)' is provided by '(.+?)' but is not usable with the function signature '(.+?)'",
-    "replacement": ""
+    "replacement": "'$1' 提供了 '$2' 但不能用于函数签名 '$3'"
   },
   {
     "id": "duplicate info for %qE",
     "pattern": "duplicate info for '(.+?)'",
-    "replacement": "重复的%qE"
+    "replacement": "'$1' 的重复信息"
   },
   {
     "id": "await expressions are not permitted in handlers",
     "pattern": "await expressions are not permitted in handlers",
-    "replacement": "指针不能用作 case 常量"
+    "replacement": "不允许在处理器中使用 await 表达式"
   },
   {
     "id": "variable length arrays are not yet supported in coroutines",
     "pattern": "variable length arrays are not yet supported in coroutines",
-    "replacement": "使用了变长数组"
+    "replacement": "协程中暂时不支持变长数组"
   },
   {
     "id": "%qE is provided by %qT but %qE is not marked %<throw()%> or %<noexcept%>",
     "pattern": "'(.+?)' is provided by '(.+?)' but '(.+?)' is not marked 'throw\\(\\)' or 'noexcept'",
-    "replacement": ""
+    "replacement": "'$1' 由 '$2' 提供，但 '$3' 没有被标记 'throw()' 或 'noexcept'"
   },
   {
     "id": "%qE is marked %<throw()%> or %<noexcept%> but no usable %<get_return_object_on_allocation_failure%> is provided by %qT",
     "pattern": "'(.+?)' is marked 'throw\\(\\)' or 'noexcept' but no usable 'get_return_object_on_allocation_failure' is provided by '(.+?)'",
-    "replacement": ""
+    "replacement": "'$1' 被标记 'throw()' 或 'noexcept'，但没有由 '$2' 提供可用的 'get_return_object_on_allocation_failure'"
   },
   {
     "id": "%qE is provided by %qT but %<std::nothrow%> cannot be found",
     "pattern": "'(.+?)' is provided by '(.+?)' but 'std::nothrow' cannot be found",
-    "replacement": ""
+    "replacement": "'$1' 由 '$2' 提供，但没有找到 'std::nothrow'"
   },
   {
     "id": "cannot initialize a return object of type %qT with an rvalue of type %<void%>",
     "pattern": "cannot initialize a return object of type '(.+?)' with an rvalue of type 'void'",
-    "replacement": "用类型为%2$qT的右值初始化类型为%1$qT的非常量引用无效"
+    "replacement": "不能用右值 'void' 类型初始化类型为 '$1' 的返回对象"
   },
   {
     "id": "both branches of %<if%> statement marked as %qs",
@@ -12007,7 +11952,7 @@
   {
     "id": "requires",
     "pattern": "requires",
-    "replacement": "%qT作为%qs被引用"
+    "replacement": "要求"
   },
   {
     "id": "with",
@@ -12096,8 +12041,8 @@
   },
   {
     "id": "redefinition of default argument for %q+#D",
-    "pattern": "redefinition of default argument for %q\\+#D",
-    "replacement": "重定义%q#D的默认参数"
+    "pattern": "redefinition of default argument for '(.+?)'",
+    "replacement": "默认实参 '$1' 重复定义"
   },
   {
     "id": "original definition appeared here",
@@ -12412,7 +12357,7 @@
   {
     "id": "  enters %<consteval if%> statement",
     "pattern": "  enters 'consteval if' statement",
-    "replacement": "需要语句"
+    "replacement": "  进入 'consteval if' 语句"
   },
   {
     "id": "  skips initialization of %q#D",
@@ -12477,22 +12422,22 @@
   {
     "id": "%<--param destructive-interference-size=%d%> is less than %d",
     "pattern": "'--param destructive-interference-size=(\\d+?)' is less than (\\d+?)",
-    "replacement": ""
+    "replacement": "'--param destructive-interference-size=$1' 小于 $2"
   },
   {
     "id": "%<--param destructive-interference-size=%d%> is less than %<--param l1-cache-line-size=%d%>",
     "pattern": "'--param destructive-interference-size=(\\d+?)' is less than '--param l1-cache-line-size=(\\d+?)'",
-    "replacement": ""
+    "replacement": "'--param destructive-interference-size=$1' 小于 '--param l1-cache-line-size=$2'"
   },
   {
     "id": "%<--param constructive-interference-size=%d%> is less than %d",
     "pattern": "'--param constructive-interference-size=(\\d+?)' is less than (\\d+?)",
-    "replacement": ""
+    "replacement": "'--param constructive-interference-size=$1' 小于 $2"
   },
   {
     "id": "%<--param constructive-interference-size=%d%> is greater than %<--param l1-cache-line-size=%d%>",
     "pattern": "'--param constructive-interference-size=(\\d+?)' is greater than '--param l1-cache-line-size=(\\d+?)'",
-    "replacement": ""
+    "replacement": "'--param constructive-interference-size=$1' 大于 '--param l1-cache-line-size=$2'"
   },
   {
     "id": "%q#D invalid; an anonymous union may only have public non-static data members",
@@ -12507,7 +12452,7 @@
   {
     "id": "anonymous struct with base classes",
     "pattern": "anonymous struct with base classes",
-    "replacement": "匿名结构不在有名类型内"
+    "replacement": "匿名结构体带有基类"
   },
   {
     "id": "member %q+#D with constructor not allowed in anonymous aggregate",
@@ -12687,12 +12632,12 @@
   {
     "id": "%qD defined %<thread_local%> in %qs function only available with %<-std=c++2b%> or %<-std=gnu++2b%>",
     "pattern": "'(.+?)' defined 'thread_local' in '(.+?)' function only available with '-std=c\\+\\+2b' or '-std=gnu\\+\\+2b'",
-    "replacement": "C++0x %<constexpr%>只在 -std=c++0x 或 -std=gnu++0x 下可用"
+    "replacement": "'$1' 在 '$2' 函数中被定义为 'thread_local'，这只在 '-std=c++2b' 或 '-std=gnu++2b' 下才可用"
   },
   {
     "id": "%qD defined %<static%> in %qs function only available with %<-std=c++2b%> or %<-std=gnu++2b%>",
     "pattern": "'(.+?)' defined 'static' in '(.+?)' function only available with '-std=c\\+\\+2b' or '-std=gnu\\+\\+2b'",
-    "replacement": "C++0x %<constexpr%>只在 -std=c++0x 或 -std=gnu++0x 下可用"
+    "replacement": "'$1' 在 '$2' 函数中被定义为 'static'，这只在 '-std=c++2b' 或 '-std=gnu++2b' 下才可用"
   },
   {
     "id": "variable %q#D has initializer but incomplete type",
@@ -12827,7 +12772,7 @@
   {
     "id": "%qD is not a direct member of %qT",
     "pattern": "'(.+?)' is not a direct member of '(.+?)'",
-    "replacement": "%qD不是%qT的成员"
+    "replacement": "'$1' 不是 '$2' 的直接成员"
   },
   {
     "id": "invalid initializer for %q#D",
@@ -13052,7 +12997,7 @@
   {
     "id": "while %qT decomposes into %E elements",
     "pattern": "while '(.+?)' decomposes into (.+?) elements",
-    "replacement": ""
+    "replacement": "当 '$1' 分解为 $2 个元素时"
   },
   {
     "id": "%<std::tuple_element<%u, %T>::type%> is %<void%>",
@@ -13307,7 +13252,7 @@
   {
     "id": "deduction guide %qD must have the same access as %qT",
     "pattern": "deduction guide '(.+?)' must have the same access as '(.+?)'",
-    "replacement": "%qD的特例化必须出现在命名空间内"
+    "replacement": "推导指南 '$1' 必须和 '$2' 的访问修饰符相同"
   },
   {
     "id": "deduction guide %qD must not have a function body",
@@ -13482,12 +13427,12 @@
   {
     "id": "%qD declared as array of template placeholder type %qT",
     "pattern": "'(.+?)' declared as array of template placeholder type '(.+?)'",
-    "replacement": "成员函数%qD未在%qT中声明"
+    "replacement": "'$1' 被声明为模板占位符 '$2' 类型的数组"
   },
   {
     "id": "creating array of template placeholder type %qT",
     "pattern": "creating array of template placeholder type '(.+?)'",
-    "replacement": "生成引用类型%qT的成员指针"
+    "replacement": "创建模板占位符 '$1' 类型的数组"
   },
   {
     "id": "declaration of %qD as array of void",
@@ -13542,7 +13487,7 @@
   {
     "id": "variable-length array of %<auto%>",
     "pattern": "variable-length array of 'auto'",
-    "replacement": "使用了变长数组"
+    "replacement": "'auto' 类型的变长数组"
   },
   {
     "id": "return type specification for constructor invalid",
@@ -13636,8 +13581,8 @@
   },
   {
     "id": "invalid use of qualified-name %<%D::%D%>",
-    "pattern": "invalid use of qualified-name '(\\d+?)::(\\d+?)'",
-    "replacement": "对限定名%<%D::%D%>的使用无效"
+    "pattern": "invalid use of qualified-name '(.+?)::(.+?)'",
+    "replacement": "非法地使用了限定名 '$1::$2'"
   },
   {
     "id": "%q#T is not a class or namespace",
@@ -13935,11 +13880,6 @@
     "replacement": "带尾随返回类型的 '$1' 函数没有用 'auto' 作为类型说明符声明"
   },
   {
-    "id": "a conversion function cannot have a trailing return type",
-    "pattern": "a conversion function cannot have a trailing return type",
-    "replacement": "转换函数不能拥有尾随返回类型"
-  },
-  {
     "id": "%<volatile%>-qualified return type is deprecated",
     "pattern": "'volatile'-qualified return type is deprecated",
     "replacement": "'volatile' 限定的返回类型被弃用"
@@ -14018,6 +13958,11 @@
     "id": "friend function definition %qs cannot have a name qualified with %<%D::%>",
     "pattern": "friend function definition '(.+?)' cannot have a name qualified with '(.+?)::'",
     "replacement": "友元函数定义 '$1' 不能拥有带 '$2::' 的限定名"
+  },
+  {
+    "id": "a conversion function cannot have a trailing return type",
+    "pattern": "a conversion function cannot have a trailing return type",
+    "replacement": "转换函数不能拥有尾随返回类型"
   },
   {
     "id": "destructors may not have parameters",
@@ -14362,7 +14307,7 @@
   {
     "id": "an attribute that appertains to a friend declaration that is not a definition is ignored",
     "pattern": "an attribute that appertains to a friend declaration that is not a definition is ignored",
-    "replacement": "类型在非前向声明的详尽类型限定符中被忽略"
+    "replacement": "非定义的友元声明上附着的特性被忽略"
   },
   {
     "id": "static data member %qE declared %qs",
@@ -14692,7 +14637,7 @@
   {
     "id": "class template %qD redeclared as non-template",
     "pattern": "class template '(.+?)' redeclared as non-template",
-    "replacement": "函数模板%qD重声明为类模板"
+    "replacement": "类模板 '$1' 重声明为非模板"
   },
   {
     "id": "%qD has the same name as the class in which it is declared",
@@ -14867,17 +14812,17 @@
   {
     "id": "top-level comma expression in array subscript changed meaning in C++23",
     "pattern": "top-level comma expression in array subscript changed meaning in C\\+\\+23",
-    "replacement": ""
+    "replacement": "C++23 中，数组下标内的顶级逗号表达式语义有变"
   },
   {
     "id": "built-in subscript operator without expression list",
     "pattern": "built-in subscript operator without expression list",
-    "replacement": ""
+    "replacement": "内置下标操作符没有表达式列表"
   },
   {
     "id": "built-in subscript operator with more than one expression in expression list",
     "pattern": "built-in subscript operator with more than one expression in expression list",
-    "replacement": ""
+    "replacement": "内置下标操作符表达式列表中的表达式数量大于 1"
   },
   {
     "id": "ambiguous conversion for array subscript",
@@ -15042,7 +14987,7 @@
   {
     "id": "%<omp::%E%> not allowed to be specified in this context",
     "pattern": "'omp::(.+?)' not allowed to be specified in this context",
-    "replacement": "%<this%>不能用在此上下文中"
+    "replacement": "在此语境中不允许指定 'omp::$1'"
   },
   {
     "id": "anonymous struct not inside named type",
@@ -15327,7 +15272,7 @@
   {
     "id": "C++11 attributes only available with %<-std=c++11%> or %<-std=gnu++11%>",
     "pattern": "C\\+\\+11 attributes only available with '-std=c\\+\\+11' or '-std=gnu\\+\\+11'",
-    "replacement": "C++0x auto 只在 -std=c++0x 或 -std=gnu++0x 下可用"
+    "replacement": "C++11 特性仅在 '-std=c++11' 或 '-std=gnu++11' 下可用"
   },
   {
     "id": "ref-qualifiers only available with %<-std=c++11%> or %<-std=gnu++11%>",
@@ -15562,12 +15507,12 @@
   {
     "id": "reference %qD is not yet bound to a value when used here",
     "pattern": "reference '(.+?)' is not yet bound to a value when used here",
-    "replacement": ""
+    "replacement": "引用 '$1' 在此处使用时尚未绑定到值"
   },
   {
     "id": "member %qD is used uninitialized",
     "pattern": "member '(.+?)' is used uninitialized",
-    "replacement": "成员%qD是未初始化的引用"
+    "replacement": "成员 '$1' 使用时未初始化"
   },
   {
     "id": "%qD should be initialized in the member initialization list",
@@ -16032,7 +15977,7 @@
   {
     "id": "the mangled name of %qD changes between %<%s=%d%> (%qD) and %<%s=%d%> (%qD)",
     "pattern": "the mangled name of '(.+?)' changes between '(.+?)=(\\d+?)' \\('(.+?)'\\) and '(.+?)=(\\d+?)' \\('(.+?)'\\)",
-    "replacement": "%qD修饰后的名字将在 GCC 的未来版本中有变化"
+    "replacement": " '$2=$3' ('$4') 和 '$5=$6' ('$7') 之间，'$1' 的重整名字发生改变"
   },
   {
     "id": "the mangled name of a thunk for %qD changes between %<-fabi-version=%d%> and %<-fabi-version=%d%>",
@@ -16052,27 +15997,27 @@
   {
     "id": "failed %s mapper %qs line %u",
     "pattern": "failed (.+?) mapper '(.+?)' line (\\d+?)",
-    "replacement": ""
+    "replacement": "失败的 $1 映射器 '$2'，行 $3"
   },
   {
     "id": "failed %s mapper %qs",
     "pattern": "failed (.+?) mapper '(.+?)'",
-    "replacement": ""
+    "replacement": "失败的 $1 映射器 '$2'"
   },
   {
     "id": "failed mapper handshake %s",
     "pattern": "failed mapper handshake (.+?)",
-    "replacement": ""
+    "replacement": "失败的映射器握手 $1"
   },
   {
     "id": "mapper died by signal %s",
     "pattern": "mapper died by signal (.+?)",
-    "replacement": ""
+    "replacement": "映射器因信号 $1 死亡"
   },
   {
     "id": "mapper exit status %d",
     "pattern": "mapper exit status (\\d+?)",
-    "replacement": "%s(%s) 短脚本运行失败，离开状态 %d\\n"
+    "replacement": "映射器退出状态 $1"
   },
   {
     "id": "non-static const member %q#D, cannot use default assignment operator",
@@ -16282,122 +16227,122 @@
   {
     "id": "section %qs is missing or corrupted",
     "pattern": "section '(.+?)' is missing or corrupted",
-    "replacement": "在 %s %s 中有缺失的“%s”\\n"
+    "replacement": "段 '$1' 缺失或损坏"
   },
   {
     "id": "section #%u is missing or corrupted",
     "pattern": "section #(\\d+?) is missing or corrupted",
-    "replacement": "在 %s %s 中有缺失的“%s”\\n"
+    "replacement": "段 #$1 缺失或损坏"
   },
   {
     "id": "not Encapsulated Lazy Records of Named Declarations",
     "pattern": "not Encapsulated Lazy Records of Named Declarations",
-    "replacement": ""
+    "replacement": "不是 Encapsulated Lazy Records of Named Declarations"
   },
   {
     "id": "unexpected encapsulation format or type",
     "pattern": "unexpected encapsulation format or type",
-    "replacement": "需要模板 ID"
+    "replacement": "意外的封装格式或类型"
   },
   {
     "id": "encapsulation is malformed",
     "pattern": "encapsulation is malformed",
-    "replacement": ""
+    "replacement": "封装格式错误"
   },
   {
     "id": "conflicting global module declaration %#qD",
     "pattern": "conflicting global module declaration '(.+?)'",
-    "replacement": "相互冲突的声明%q#D"
+    "replacement": "冲突的全局模块声明 '$1'"
   },
   {
     "id": "existing declaration %#qD",
     "pattern": "existing declaration '(.+?)'",
-    "replacement": "在声明%q+D中"
+    "replacement": "已有声明 '$1'"
   },
   {
     "id": "definition of %qD does not match",
     "pattern": "definition of '(.+?)' does not match",
-    "replacement": "%q#D的外部声明不匹配"
+    "replacement": "定义 '$1' 不匹配"
   },
   {
     "id": "existing definition %qD",
     "pattern": "existing definition '(.+?)'",
-    "replacement": "定义缺失"
+    "replacement": "已有定义 '$1'"
   },
   {
     "id": "... this enumerator %qD",
     "pattern": "\\.\\.\\. this enumerator '(.+?)'",
-    "replacement": "枚举%q+D重声明"
+    "replacement": "... 这个枚举项 '$1'"
   },
   {
     "id": "enumerator %qD does not match ...",
     "pattern": "enumerator '(.+?)' does not match \\.\\.\\.",
-    "replacement": "%q#D的外部声明不匹配"
+    "replacement": "枚举项 '$1' 不匹配 ..."
   },
   {
     "id": "additional enumerators beginning with %qD",
     "pattern": "additional enumerators beginning with '(.+?)'",
-    "replacement": ""
+    "replacement": "以 '$1' 开头的额外枚举项"
   },
   {
     "id": "enumeration range differs",
     "pattern": "enumeration range differs",
-    "replacement": ""
+    "replacement": "枚举范围不同"
   },
   {
     "id": "%q#D references internal linkage entity %q#D",
     "pattern": "'(.+?)' references internal linkage entity '(.+?)'",
-    "replacement": ""
+    "replacement": "'$1' 引用内部l连接实体 '$2'"
   },
   {
     "id": "recursive lazy load",
     "pattern": "recursive lazy load",
-    "replacement": ""
+    "replacement": "递归懒加载"
   },
   {
     "id": "cannot import module in its own purview",
     "pattern": "cannot import module in its own purview",
-    "replacement": ""
+    "replacement": "不能将模块导入到自身的范围"
   },
   {
     "id": "module %qs declared here",
     "pattern": "module '(.+?)' declared here",
-    "replacement": "%qD在此声明"
+    "replacement": "模块 '$1' 声明在此"
   },
   {
     "id": "indirect import %qs is not already loaded",
     "pattern": "indirect import '(.+?)' is not already loaded",
-    "replacement": ""
+    "replacement": "间接导入 '$1' 尚未被加载"
   },
   {
     "id": "import %qs has CRC mismatch",
     "pattern": "import '(.+?)' has CRC mismatch",
-    "replacement": ""
+    "replacement": "导入 '$1' CRC 不匹配"
   },
   {
     "id": "unable to represent further imported source locations",
     "pattern": "unable to represent further imported source locations",
-    "replacement": ""
+    "replacement": "无法表示更多导入的源位置"
   },
   {
     "id": "not exporting %<#define %E%> as it is a keyword",
     "pattern": "not exporting '#define (.+?)' as it is a keyword",
-    "replacement": ""
+    "replacement": "不导出 '#define $1' 因为它是关键字"
   },
   {
     "id": "macro definitions of %qE corrupted",
     "pattern": "macro definitions of '(.+?)' corrupted",
-    "replacement": "%q+D的上一个定义在此"
+    "replacement": "'$1' 的宏定义损坏"
   },
   {
     "id": "inconsistent imported macro definition %qE",
     "pattern": "inconsistent imported macro definition '(.+?)'",
-    "replacement": "对%qT不一致的演绎：先是%qT然后是%qT"
+    "replacement": "导入的宏定义 '$1' 不一致"
   },
   {
     "id": "compiled module file is %qs",
     "pattern": "compiled module file is '(.+?)'",
-    "replacement": "%s：无法找到模块文件 %s\\n"
+    "replacement": "已编译的模块文件是 '$1'"
   },
   {
     "id": "compiled module is %sversion %s",
@@ -16407,212 +16352,202 @@
   {
     "id": "compiler is %sversion %s%s%s",
     "pattern": "compiler is (.+?)version (.+?)(.+?)(.+?)",
-    "replacement": "collect2 版本 %s\\n"
+    "replacement": "编译器是 $1 版本 $2$3$4"
   },
   {
     "id": "module %qs found",
     "pattern": "module '(.+?)' found",
-    "replacement": "找不到 %qs 的取值器"
+    "replacement": "模块 '$1' 已找到"
   },
   {
     "id": "header module expected, module %qs found",
     "pattern": "header module expected, module '(.+?)' found",
-    "replacement": ""
+    "replacement": "期望头文件模块，但发现模块 '$1'"
   },
   {
     "id": "module %qs expected, header module found",
     "pattern": "module '(.+?)' expected, header module found",
-    "replacement": ""
+    "replacement": "期望模块 '$1'，但发现头文件模块"
   },
   {
     "id": "module %qs CRC mismatch",
     "pattern": "module '(.+?)' CRC mismatch",
-    "replacement": ""
+    "replacement": "模块 '$1' CRC 不匹配"
   },
   {
     "id": "target & host is %qs:%qs, expected %qs:%qs",
     "pattern": "target & host is '(.+?)':'(.+?)', expected '(.+?)':'(.+?)'",
-    "replacement": ""
+    "replacement": "目标和宿主是 '$1':'$2'，期望 '$3':'$4'"
   },
   {
     "id": "language dialect differs %qs, expected %qs",
     "pattern": "language dialect differs '(.+?)', expected '(.+?)'",
-    "replacement": ""
+    "replacement": "语言方言 '$2' 不同，期望 '$1'"
   },
   {
     "id": "module contains OpenMP, use %<-fopenmp%> to enable",
     "pattern": "module contains OpenMP, use '-fopenmp' to enable",
-    "replacement": "异常处理已被禁用，使用 -fexceptions 启用"
+    "replacement": "模块包含 OpenMP，使用 '-fopenmp' 开启"
   },
   {
     "id": "fixed tree mismatch",
     "pattern": "fixed tree mismatch",
-    "replacement": "函数属性不匹配"
+    "replacement": "固定树不匹配"
   },
   {
     "id": "interface partition is not exported",
     "pattern": "interface partition is not exported",
-    "replacement": "不支持堆栈限制表达式"
+    "replacement": "接口分区未导出"
   },
   {
     "id": "failed to read compiled module cluster %u: %s",
     "pattern": "failed to read compiled module cluster (\\d+?): (.+?)",
-    "replacement": ""
+    "replacement": "读取已编译模块集群 $1 失败：$2"
   },
   {
     "id": "failed to read compiled module: %s",
     "pattern": "failed to read compiled module: (.+?)",
-    "replacement": "找不到类‘%s’"
+    "replacement": "读取已编译模块失败：$1"
   },
   {
     "id": "consider using %<-fno-module-lazy%>, increasing %<-param-lazy-modules=%u%> value, or increasing the per-process file descriptor limit",
     "pattern": "consider using '-fno-module-lazy', increasing '-param-lazy-modules=(\\d+?)' value, or increasing the per-process file descriptor limit",
-    "replacement": ""
+    "replacement": "考虑使用 '-fno-module-lazy'，增加 '-param-lazy-modules=$1' 值，或增加进程文件描述符限制"
   },
   {
     "id": "imports must be built before being imported",
     "pattern": "imports must be built before being imported",
-    "replacement": ""
+    "replacement": "导入在被导入前必须被编译"
   },
   {
     "id": "returning to the gate for a mechanical issue",
     "pattern": "returning to the gate for a mechanical issue",
-    "replacement": ""
+    "replacement": "因机械问题回到门口"
   },
   {
     "id": "reading CMI %qs",
     "pattern": "reading CMI '(.+?)'",
-    "replacement": "正在创建 '%s'\\n"
+    "replacement": "读取 CMI '$1'"
   },
   {
     "id": "failed to load binding %<%E%s%E%>",
-    "pattern": "failed to load binding '(.+?)(.+?)(.+?)'",
-    "replacement": ""
-  },
-  {
-    "id": "failed to load binding %<%E%s%E@%s%>",
-    "pattern": "failed to load binding '(.+?)(.+?)(.+?)@(.+?)'",
-    "replacement": ""
+    "pattern": "failed to load binding '(.+?)'",
+    "replacement": "加载绑定 '$1' 失败"
   },
   {
     "id": "during load of binding %<%E%s%E%>",
-    "pattern": "during load of binding '(.+?)(.+?)(.+?)'",
-    "replacement": ""
-  },
-  {
-    "id": "during load of binding %<%E%s%E@%s%>",
-    "pattern": "during load of binding '(.+?)(.+?)(.+?)@(.+?)'",
-    "replacement": ""
+    "pattern": "during load of binding '(.+?)'",
+    "replacement": "加载绑定 '$1' 时"
   },
   {
     "id": "failed to load pendings for %<%E%s%E%>",
-    "pattern": "failed to load pendings for '(.+?)(.+?)(.+?)'",
-    "replacement": ""
+    "pattern": "failed to load pendings for '(.+?)'",
+    "replacement": "加载 '$1' 的 pending 失败"
   },
   {
     "id": "during load of pendings for %<%E%s%E%>",
-    "pattern": "during load of pendings for '(.+?)(.+?)(.+?)'",
-    "replacement": "未知的选项：%s %s %s"
+    "pattern": "during load of pendings for '(.+?)'",
+    "replacement": "加载 '$1' 的 pending 时"
   },
   {
     "id": "import of named module %qs inside language-linkage block",
     "pattern": "import of named module '(.+?)' inside language-linkage block",
-    "replacement": ""
+    "replacement": "在语言连接块内导入具名模块 '$1'"
   },
   {
     "id": "module already declared",
     "pattern": "module already declared",
-    "replacement": "`%.*s' 已被定义为对照符号"
+    "replacement": "模块已声明"
   },
   {
     "id": "module already imported",
     "pattern": "module already imported",
-    "replacement": "模块过程"
+    "replacement": "模块已导入"
   },
   {
     "id": "module %qs imported here",
     "pattern": "module '(.+?)' imported here",
-    "replacement": "模块过程"
+    "replacement": "模块 '$1' 在此导入"
   },
   {
     "id": "unknown Compiled Module Interface: %s",
     "pattern": "unknown Compiled Module Interface: (.+?)",
-    "replacement": "PRINT_OPERAND：未知的标点‘%c’"
+    "replacement": "未知的已编译模块接口（CMI）：$1"
   },
   {
     "id": "cannot determine %<#include%> translation of %s: %s",
     "pattern": "cannot determine '#include' translation of (.+?): (.+?)",
-    "replacement": ""
+    "replacement": "无法确定 $1 的 '#include' 翻译：$2"
   },
   {
     "id": "include %qs translated to import",
     "pattern": "include '(.+?)' translated to import",
-    "replacement": ""
+    "replacement": "包含 '$1' 翻译为导入"
   },
   {
     "id": "include %qs processed textually",
     "pattern": "include '(.+?)' processed textually",
-    "replacement": ""
+    "replacement": "包含 '$1' 以文本形式处理"
   },
   {
     "id": "C++ modules are incompatible with precompiled headers",
     "pattern": "C\\+\\+ modules are incompatible with precompiled headers",
-    "replacement": ""
+    "replacement": "C++ 模块与预编译头文件不兼容"
   },
   {
     "id": "C++ modules are incompatible with traditional preprocessing",
     "pattern": "C\\+\\+ modules are incompatible with traditional preprocessing",
-    "replacement": "启用传统预处理。"
+    "replacement": "C++ 模块与传统预处理不兼容"
   },
   {
     "id": "macro debug output may be incomplete with modules",
     "pattern": "macro debug output may be incomplete with modules",
-    "replacement": ""
+    "replacement": "模块下的宏调试输出可能不完整"
   },
   {
     "id": "module dependencies require preprocessing",
     "pattern": "module dependencies require preprocessing",
-    "replacement": ""
+    "replacement": "模块依赖需要预处理"
   },
   {
     "id": "you should use the %<-%s%> option",
     "pattern": "you should use the '-(.+?)' option",
-    "replacement": ""
+    "replacement": "你应该使用 '-$1' 选项"
   },
   {
     "id": "invalid header name %qs",
     "pattern": "invalid header name '(.+?)'",
-    "replacement": "无效的 --param 值%qs"
+    "replacement": "无效的头文件名 '$1'"
   },
   {
     "id": "invalid module name %qs",
     "pattern": "invalid module name '(.+?)'",
-    "replacement": "无效的 --param 值%qs"
+    "replacement": "无效的模块名 '$1'"
   },
   {
     "id": "%<-fmodule-only%> used for non-interface",
     "pattern": "'-fmodule-only' used for non-interface",
-    "replacement": ""
+    "replacement": "'-fmodule-only' 只能用于非接口"
   },
   {
     "id": "writing CMI %qs",
     "pattern": "writing CMI '(.+?)'",
-    "replacement": "写入%qs时错误"
+    "replacement": "写入 CMI '$1'"
   },
   {
     "id": "not writing module %qs due to errors",
     "pattern": "not writing module '(.+?)' due to errors",
-    "replacement": "写入模块文件时出错：%s"
+    "replacement": "由于错误，未写入模块 '$1'"
   },
   {
     "id": "failed to write compiled module: %s",
     "pattern": "failed to write compiled module: (.+?)",
-    "replacement": "找不到类‘%s’"
+    "replacement": "写入已编译模块失败：$1"
   },
   {
     "id": "unknown header kind %qs",
     "pattern": "unknown header kind '(.+?)'",
-    "replacement": "spec 函数名格式错误"
+    "replacement": "未知的头文件种类 '$1'"
   },
   {
     "id": "redeclaration of %q#D with different template parameters",
@@ -16887,12 +16822,12 @@
   {
     "id": "%<#pragma omp declare %s%> not immediately followed by function declaration or definition",
     "pattern": "'#pragma omp declare (.*?)' not immediately followed by function declaration or definition",
-    "replacement": "'#pragma omp declare $1' 不允许立即跟随在函数声明或定义后"
+    "replacement": "'#pragma omp declare $1' 没有立即跟随在函数声明或定义后"
   },
   {
     "id": "%<declare %s%> directive not immediately followed by function declaration or definition",
     "pattern": "'declare (.+?)' directive not immediately followed by function declaration or definition",
-    "replacement": "%<#pragma align%>必须出现在 %D 的声明之前，忽略"
+    "replacement": "'declare $1' 命令没有立即跟随在函数声明或定义后"
   },
   {
     "id": "%<#pragma%> is not allowed here",
@@ -17202,7 +17137,7 @@
   {
     "id": "concatenation of string literals with conflicting encoding prefixes",
     "pattern": "concatenation of string literals with conflicting encoding prefixes",
-    "replacement": ""
+    "replacement": "连接字符串字面量时与编码前缀冲突"
   },
   {
     "id": "unable to find character literal operator %qD with %qT argument",
@@ -17332,7 +17267,7 @@
   {
     "id": "expected %qs keyword before dependent template name",
     "pattern": "expected '(.+?)' keyword before dependent template name",
-    "replacement": ""
+    "replacement": "预期在依赖模板名前使用 '$1' 关键字"
   },
   {
     "id": "scope %qT before %<~%> is not a class-name",
@@ -17427,12 +17362,12 @@
   {
     "id": "wrong number of arguments to %<__builtin_assoc_barrier%>",
     "pattern": "wrong number of arguments to '__builtin_assoc_barrier'",
-    "replacement": "给函数%<__builtin_next_arg%>的参数数目不对"
+    "replacement": "'__builtin_assoc_barrier' 的实参数量错误"
   },
   {
     "id": "wrong number of arguments to %<__builtin_shufflevector%>",
     "pattern": "wrong number of arguments to '__builtin_shufflevector'",
-    "replacement": "给函数%<__builtin_next_arg%>的参数数目不对"
+    "replacement": "'__builtin_shufflevector' 的实参数量错误"
   },
   {
     "id": "ISO C++ forbids compound-literals",
@@ -17572,7 +17507,7 @@
   {
     "id": "explicit by-copy capture of %<this%> with by-copy capture default only available with %<-std=c++20%> or %<-std=gnu++20%>",
     "pattern": "explicit by-copy capture of 'this' with by-copy capture default only available with '-std=c\\+\\+20' or '-std=gnu\\+\\+20'",
-    "replacement": "C++0x auto 只在 -std=c++0x 或 -std=gnu++0x 下可用"
+    "replacement": "在默认复制捕获下使用显式 'this' 复制捕获仅在 '-std=c\\+\\+20' 或 '-std=gnu\\+\\+20' 下可用"
   },
   {
     "id": "already captured %qD in lambda expression",
@@ -17682,32 +17617,32 @@
   {
     "id": "mixing OpenMP directives with attribute and pragma syntax on the same statement",
     "pattern": "mixing OpenMP directives with attribute and pragma syntax on the same statement",
-    "replacement": ""
+    "replacement": "在同一语句中混合 OpenMP 带特性的指令和 pragma 语法"
   },
   {
     "id": "unknown OpenMP directive name in %<omp::directive%> attribute argument",
     "pattern": "unknown OpenMP directive name in 'omp::directive' attribute argument",
-    "replacement": ""
+    "replacement": "'omp::directive' 特性实参中未知的指令名"
   },
   {
     "id": "OpenMP construct among %<omp::directive%> attributes requires all %<omp::directive%> attributes on the same statement to be in the same %<omp::sequence%>",
     "pattern": "OpenMP construct among 'omp::directive' attributes requires all 'omp::directive' attributes on the same statement to be in the same 'omp::sequence'",
-    "replacement": ""
+    "replacement": "在 'omp::directive' 特性中的 OpenMP 构造中，所有 'omp::directive' 特性都必须在同一语句的同一 'omp::sequence' 中"
   },
   {
     "id": "multiple OpenMP standalone directives among %<omp::directive%> attributes must be all within the same %<omp::sequence%>",
     "pattern": "multiple OpenMP standalone directives among 'omp::directive' attributes must be all within the same 'omp::sequence'",
-    "replacement": ""
+    "replacement": "在 'omp::directive' 特性中的多个独立 OpenMP 指令必须在同一 'omp::sequence' 中"
   },
   {
     "id": "standalone OpenMP directives in %<omp::directive%> attribute can only appear on an empty statement",
     "pattern": "standalone OpenMP directives in 'omp::directive' attribute can only appear on an empty statement",
-    "replacement": ""
+    "replacement": "在 'omp::directive' 特性中的独立 OpenMP 指令只能出现在空语句中"
   },
   {
     "id": "mixing OpenMP directives with attribute and pragma syntax on the same declaration",
     "pattern": "mixing OpenMP directives with attribute and pragma syntax on the same declaration",
-    "replacement": ""
+    "replacement": "在同一声明中混合 OpenMP 带特性的指令和 pragma 语法"
   },
   {
     "id": "attributes at the beginning of statement are ignored",
@@ -17731,8 +17666,8 @@
   },
   {
     "id": "%<%T::%D%> names the constructor, not the type",
-    "pattern": "'(.+?)::(\\d+?)' names the constructor, not the type",
-    "replacement": "%<%T::%D%>命名了一个构造函数而非类型"
+    "pattern": "'(.+?)::(.+?)' names the constructor, not the type",
+    "replacement": "'$1::$2' 指明构造函数，而不是类型"
   },
   {
     "id": "compound-statement in %<constexpr%> function",
@@ -17747,12 +17682,12 @@
   {
     "id": "%<if consteval%> only available with %<-std=c++2b%> or %<-std=gnu++2b%>",
     "pattern": "'if consteval' only available with '-std=c\\+\\+2b' or '-std=gnu\\+\\+2b'",
-    "replacement": "C++0x %<constexpr%>只在 -std=c++0x 或 -std=gnu++0x 下可用"
+    "replacement": "'if consteval' 仅在 '-std=c++2b' 或 '-std=gnu++2b' 下可用"
   },
   {
     "id": "%<if consteval%> requires compound statement",
     "pattern": "'if consteval' requires compound statement",
-    "replacement": "asm 语句中需要左值"
+    "replacement": "'if consteval' 必须使用复合语句"
   },
   {
     "id": "init-statement in selection statements only available with %<-std=c++17%> or %<-std=gnu++17%>",
@@ -17827,7 +17762,7 @@
   {
     "id": "alias-declaration in init-statement only available with %<-std=c++23%> or %<-std=gnu++23%>",
     "pattern": "alias-declaration in init-statement only available with '-std=c\\+\\+23' or '-std=gnu\\+\\+23'",
-    "replacement": "可变参数模板只在 -std=c++0x 或 -std=gnu++0x 下可用"
+    "replacement": "初始语句中的类型别名声明仅在 '-std=c++23' 或 '-std=gnu++23' 下可用"
   },
   {
     "id": "range-based %<for%> loops only available with %<-std=c++11%> or %<-std=gnu++11%>",
@@ -17837,7 +17772,7 @@
   {
     "id": "%<goto%> in %<constexpr%> function only available with %<-std=c++2b%> or %<-std=gnu++2b%>",
     "pattern": "'goto' in 'constexpr' function only available with '-std=c\\+\\+2b' or '-std=gnu\\+\\+2b'",
-    "replacement": "C++0x %<constexpr%>只在 -std=c++0x 或 -std=gnu++0x 下可用"
+    "replacement": "'constexpr' 函数中的 'goto' 仅在 '-std=c++2b' 或 '-std=gnu++2b' 下可用"
   },
   {
     "id": "ISO C++ forbids computed gotos",
@@ -18007,7 +17942,7 @@
   {
     "id": "%qD invalid in condition",
     "pattern": "'(.+?)' invalid in condition",
-    "replacement": "%s：无效的新列指定符号“%s”\\n"
+    "replacement": "'$1' 在条件中无效"
   },
   {
     "id": "%qD invalid in lambda",
@@ -18022,12 +17957,12 @@
   {
     "id": "standard attributes in middle of decl-specifiers",
     "pattern": "standard attributes in middle of decl-specifiers",
-    "replacement": ""
+    "replacement": "声明说明符的中间出现标准特性"
   },
   {
     "id": "standard attributes must precede the decl-specifiers to apply to the declaration, or follow them to apply to the type",
     "pattern": "standard attributes must precede the decl-specifiers to apply to the declaration, or follow them to apply to the type",
-    "replacement": ""
+    "replacement": "标准特性必须在声明说明符之前应用，或在声明说明符之后应用"
   },
   {
     "id": "class definition may not be declared a friend",
@@ -18287,7 +18222,7 @@
   {
     "id": "use of %<auto%> in parameter declaration only available with %<-std=c++20%> or %<-fconcepts%>",
     "pattern": "use of 'auto' in parameter declaration only available with '-std=c\\+\\+20' or '-fconcepts'",
-    "replacement": "默认化和被删除的函数只在 -std=c++0x 或 -std=gnu++0x 下可用"
+    "replacement": "在形参声明中使用 'auto' 仅在 '-std=c++20' 或 '-fconcepts' 下可用"
   },
   {
     "id": "expected template-id for type",
@@ -18367,7 +18302,7 @@
   {
     "id": "types may not be defined in enum-base",
     "pattern": "types may not be defined in enum-base",
-    "replacement": "类型不能定义在类型转换中"
+    "replacement": "枚举基中不能定义类型"
   },
   {
     "id": "expected %<;%> or %<{%>",
@@ -18417,7 +18352,7 @@
   {
     "id": "unexpanded parameter pack in enumerator in lambda",
     "pattern": "unexpanded parameter pack in enumerator in lambda",
-    "replacement": ""
+    "replacement": "lambda 中的枚举项形参包未展开"
   },
   {
     "id": "%qD is not a namespace-name; did you mean %qs?",
@@ -18852,7 +18787,7 @@
   {
     "id": "unexpanded parameter pack in local class in lambda",
     "pattern": "unexpanded parameter pack in local class in lambda",
-    "replacement": ""
+    "replacement": "lambda 中的本地类形参包未展开"
   },
   {
     "id": "expected class-key",
@@ -18987,17 +18922,17 @@
   {
     "id": "expected OpenMP directive name",
     "pattern": "expected OpenMP directive name",
-    "replacement": "需要函数"
+    "replacement": "期望 OpenMP 指令名"
   },
   {
     "id": "expected attribute argument as balanced token sequence",
     "pattern": "expected attribute argument as balanced token sequence",
-    "replacement": "需要类型%qT，但实参的类型为%qT"
+    "replacement": "期望特性实参是平衡的词法单元序列"
   },
   {
     "id": "expected %<directive%> or %<sequence%>",
     "pattern": "expected 'directive' or 'sequence'",
-    "replacement": "需要%<none%>或%<shared%>"
+    "replacement": "期望 'directive' 或 'sequence'"
   },
   {
     "id": "attribute using prefix used together with scoped attribute token",
@@ -19012,7 +18947,7 @@
   {
     "id": "%<omp::%E%> attribute requires argument",
     "pattern": "'omp::(.+?)' attribute requires argument",
-    "replacement": "%qE属性需要带有名实参的原型"
+    "replacement": "'omp::$1' 特性需要实参"
   },
   {
     "id": "parentheses must be omitted if %qE attribute argument list is empty",
@@ -19047,7 +18982,7 @@
   {
     "id": "testing if a concept-id is a valid expression; add %<requires%> to check satisfaction",
     "pattern": "testing if a concept-id is a valid expression; add 'requires' to check satisfaction",
-    "replacement": ""
+    "replacement": "测试一个概念标识是否为有效表达式；添加 'requires' 来检查满足"
   },
   {
     "id": "result type is not a plain type-constraint",
@@ -19487,7 +19422,7 @@
   {
     "id": "%<[[omp::directive(%s)]]%> must be the only specified attribute on a statement",
     "pattern": "'\\[\\[omp::directive\\((.+?)\\)\\]\\]' must be the only specified attribute on a statement",
-    "replacement": ""
+    "replacement": "'[[omp::directive($1)]]' 必须是该语句的唯一特性"
   },
   {
     "id": "%<ordered%> clause with parameter on range-based %<for%> loop",
@@ -19512,17 +19447,17 @@
   {
     "id": "OpenMP directive other than %<declare simd%> or %<declare variant%> appertains to a declaration",
     "pattern": "OpenMP directive other than 'declare simd' or 'declare variant' appertains to a declaration",
-    "replacement": ""
+    "replacement": "除 'declare simd' 或 'declare variant' 外的 OpenMP 指令，都只能附着于声明上"
   },
   {
     "id": "%<declare target%> in attribute syntax terminated with %<end declare target%> in pragma syntax",
     "pattern": "'declare target' in attribute syntax terminated with 'end declare target' in pragma syntax",
-    "replacement": ""
+    "replacement": "在 pragma 语法中，特性语法中的 'declare target' 应以 'end declare target' 结束"
   },
   {
     "id": "%<declare target%> in pragma syntax terminated with %<end declare target%> in attribute syntax",
     "pattern": "'declare target' in pragma syntax terminated with 'end declare target' in attribute syntax",
-    "replacement": ""
+    "replacement": "在 pragma 语法中的 'declare target' 应以 'end declare target' 结束"
   },
   {
     "id": "invalid initializer clause",
@@ -19573,11 +19508,6 @@
     "id": "%qD does not refer to a namespace scope function",
     "pattern": "'(.+?)' does not refer to a namespace scope function",
     "replacement": "'$1' 不指示命名空间作用域的函数"
-  },
-  {
-    "id": "%<atomic_cancel%>",
-    "pattern": "'atomic_cancel'",
-    "replacement": ""
   },
   {
     "id": "%<__transaction_relaxed%> without transactional memory support enabled",
@@ -19672,7 +19602,7 @@
   {
     "id": "  from definition of %q#D",
     "pattern": "  from definition of '(.+?)'",
-    "replacement": "  从%q+#D的定义"
+    "replacement": "  自 '$1' 的定义"
   },
   {
     "id": "explicit instantiation of %qD in namespace %qD (which does not enclose namespace %qD)",
@@ -19718,11 +19648,6 @@
     "id": "specialization of %qD after instantiation",
     "pattern": "specialization of '(.+?)' after instantiation",
     "replacement": "'$1' 在其实例化后特化"
-  },
-  {
-    "id": "%s %#qD",
-    "pattern": "(.+?) '(.+?)'",
-    "replacement": "%s%#D"
   },
   {
     "id": "%qD is not a function template",
@@ -19787,7 +19712,7 @@
   {
     "id": "missing primary template attribute %s",
     "pattern": "missing primary template attribute (.+?)",
-    "replacement": "以前在此声明过"
+    "replacement": "主模板特性 $1 缺失"
   },
   {
     "id": "template-id %qE in declaration of primary template",
@@ -20052,7 +19977,7 @@
   {
     "id": "got %d template parameters for %q#T",
     "pattern": "got (\\d+?) template parameters for '(.+?)'",
-    "replacement": "%2$q#T得到了 %1$d 个模板参数"
+    "replacement": "'$2' 获得了 $1 个模板形参"
   },
   {
     "id": "  but %d required",
@@ -20842,7 +20767,7 @@
   {
     "id": "concept %qE has multiple template parameter lists",
     "pattern": "concept '(.+?)' has multiple template parameter lists",
-    "replacement": "在模板参数列表中定义了%q#T"
+    "replacement": "概念 '$1' 有多个模板形参列表"
   },
   {
     "id": "deducing from brace-enclosed initializer list requires %<#include <initializer_list>%>",
@@ -20858,11 +20783,6 @@
     "id": "alias template deduction only available with %<-std=c++20%> or %<-std=gnu++20%>",
     "pattern": "alias template deduction only available with '-std=c\\+\\+20' or '-std=gnu\\+\\+20'",
     "replacement": "别名模板推导仅在 '-std=c++20' 或 '-std=gnu++20' 下可用"
-  },
-  {
-    "id": "use %qD directly instead",
-    "pattern": "use '(.+?)' directly instead",
-    "replacement": "改用 #include"
   },
   {
     "id": "cannot deduce template arguments for copy-initialization of %qT, as it has no non-explicit deduction guides or user-declared constructors",
@@ -21082,17 +21002,17 @@
   {
     "id": "%<std::is_constant_evaluated%> always evaluates to true in %<if constexpr%>",
     "pattern": "'std::is_constant_evaluated' always evaluates to true in 'if constexpr'",
-    "replacement": ""
+    "replacement": "'std::is_constant_evaluated' 在 'if constexpr' 中总是会被计算为 true"
   },
   {
     "id": "%<std::is_constant_evaluated%> always evaluates to false in a non-%<constexpr%> function",
     "pattern": "'std::is_constant_evaluated' always evaluates to false in a non-'constexpr' function",
-    "replacement": ""
+    "replacement": "'std::is_constant_evaluated' 在非 'constexpr' 函数中总是会被计算为 false"
   },
   {
     "id": "%<std::is_constant_evaluated%> always evaluates to true in a %<consteval%> function",
     "pattern": "'std::is_constant_evaluated' always evaluates to true in a 'consteval' function",
-    "replacement": ""
+    "replacement": "'std::is_constant_evaluated' 在 'consteval' 函数中总是会被计算为 true"
   },
   {
     "id": "suggest explicit braces around empty body in %<do%> statement",
@@ -21187,12 +21107,12 @@
   {
     "id": "%<auto{x}%> cannot be constrained",
     "pattern": "'auto\\{x\\}' cannot be constrained",
-    "replacement": "不能内联%<main%>函数"
+    "replacement": "'auto{x}' 不能被约束"
   },
   {
     "id": "%<auto{x}%> only available with %<-std=c++2b%> or %<-std=gnu++2b%>",
     "pattern": "'auto\\{x\\}' only available with '-std=c\\+\\+2b' or '-std=gnu\\+\\+2b'",
-    "replacement": "C++0x auto 只在 -std=c++0x 或 -std=gnu++0x 下可用"
+    "replacement": "'auto{x}' 仅在 '-std=c++2b' 或 '-std=gnu++2b' 下可用"
   },
   {
     "id": "template type parameters must use the keyword %<class%> or %<typename%>",
@@ -21502,7 +21422,7 @@
   {
     "id": "%qD is not lvalue expression nor array section in %qs clause",
     "pattern": "'(.+?)' is not lvalue expression nor array section in '(.+?)' clause",
-    "replacement": "%qD在子句%qs中不是一个变量"
+    "replacement": "'$1' 既不是左值表达式，也不是 '$2' 子句的数组段"
   },
   {
     "id": "template %qE in clause %qs",
@@ -21537,7 +21457,7 @@
   {
     "id": "%<filter%> expression must be integral",
     "pattern": "'filter' expression must be integral",
-    "replacement": "num_threads 表达式必须是整型的"
+    "replacement": "'filter' 表达式必须是整数"
   },
   {
     "id": "%qs variable is neither a pointer nor reference to pointer",
@@ -21592,7 +21512,7 @@
   {
     "id": "the comparison reduces to %qE",
     "pattern": "the comparison reduces to '(.+?)'",
-    "replacement": "%qE实参太多"
+    "replacement": "比较规约为 '$1'"
   },
   {
     "id": "%qE evaluates to false",
@@ -21617,7 +21537,7 @@
   {
     "id": "%<__builtin_is_pointer_interconvertible_with_class%> needs a single argument",
     "pattern": "'__builtin_is_pointer_interconvertible_with_class' needs a single argument",
-    "replacement": ""
+    "replacement": "'__builtin_is_pointer_interconvertible_with_class' 需要一个实参"
   },
   {
     "id": "%<__builtin_is_pointer_interconvertible_with_class%> argument is not pointer to member",

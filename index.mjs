@@ -23,7 +23,7 @@ const sources = {
 
 export function replaceGccDiagnostics(
   /** @type {string} */ val,
-  /** @type {{ color: boolean, version: string } | undefined} */ options
+  /** @type {import(".").ReplaceOption} */ options
 ) {
   const DEFAULT_OPTIONS = {
     color: false,

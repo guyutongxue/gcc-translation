@@ -6,8 +6,8 @@
   },
   {
     "id": "-A<question>=<answer>\\tAssert the <answer> to <question>.  Putting '-' before <question> disables the <answer> to <question>.",
-    "pattern": "-A<question>=<answer>\\tAssert the <answer> to <question>\\.  Putting '-' before <question> disables the <answer> to <question>\\.",
-    "replacement": "-A<问题>=<答案>\\断言<问题>的<答案>。在<问题>前加一个 '-' 将禁用其<答案>。"
+    "pattern": "Assert the <answer> to <question>\\.  Putting '-' before <question> disables the <answer> to <question>\\.",
+    "replacement": "断言 <question> 的 <answer>。在 <question> 前加一个 '-' 将禁用其 <answer>。"
   },
   {
     "id": "Do not discard comments.",
@@ -21,13 +21,13 @@
   },
   {
     "id": "-D<macro>[=<val>]\\tDefine a <macro> with <val> as its value.  If just <macro> is given, <val> is taken to be 1.",
-    "pattern": "-D<macro>\\[=<val>\\]\\tDefine a <macro> with <val> as its value\\.  If just <macro> is given, <val> is taken to be 1\\.",
-    "replacement": "-D<宏>[=<值>]\\t将<宏>定义为<值>。如果只给出了<宏>，值将被定为 1。"
+    "pattern": "Define a <macro> with <val> as its value\\.  If just <macro> is given, <val> is taken to be 1\\.",
+    "replacement": "将 <macro> 定义为 <val>。如果只给出了 <macro>，值将被定为 1。"
   },
   {
     "id": "-F <dir>\\tAdd <dir> to the end of the main framework include path.",
-    "pattern": "-F <dir>\\tAdd <dir> to the end of the main framework include path\\.",
-    "replacement": "-F <目录>\\t将目录添加至主框架包含路径的末尾。"
+    "pattern": "Add <dir> to the end of the main framework include path\\.",
+    "replacement": "将 <dir> 添加至主框架包含路径的末尾。"
   },
   {
     "id": "Enable parsing GIMPLE.",
@@ -41,8 +41,8 @@
   },
   {
     "id": "-I <dir>\\tAdd <dir> to the end of the main include path.",
-    "pattern": "-I <dir>\\tAdd <dir> to the end of the main include path\\.",
-    "replacement": "-I <目录>\\t将<目录>添加至主包含路径末尾。"
+    "pattern": "Add <dir> to the end of the main include path\\.",
+    "replacement": "将 <dir> 添加至主包含路径末尾。"
   },
   {
     "id": "Generate make dependencies.",
@@ -56,8 +56,8 @@
   },
   {
     "id": "-MF <file>\\tWrite dependency output to the given file.",
-    "pattern": "-MF <file>\\tWrite dependency output to the given file\\.",
-    "replacement": "-MF <文件>\\t将依赖项输出到给定文件。"
+    "pattern": "Write dependency output to the given file\\.",
+    "replacement": "将依赖项输出到给定文件。"
   },
   {
     "id": "Treat missing header files as generated files.",
@@ -86,13 +86,13 @@
   },
   {
     "id": "-MQ <target>\\tAdd a target that may require quoting.",
-    "pattern": "-MQ <target>\\tAdd a target that may require quoting\\.",
-    "replacement": "-MQ <目标>\\t添加一个可能需要被括起的目标。"
+    "pattern": "Add a target that may require quoting\\.",
+    "replacement": "添加一个可能需要被括起的目标。"
   },
   {
     "id": "-MT <target>\\tAdd a target that does not require quoting.",
-    "pattern": "-MT <target>\\tAdd a target that does not require quoting\\.",
-    "replacement": "-MT <目标>\\t添加一个不被括起的目标。"
+    "pattern": "Add a target that does not require quoting\\.",
+    "replacement": "添加一个不被括起的目标。"
   },
   {
     "id": "Do not generate #line directives.",
@@ -101,13 +101,13 @@
   },
   {
     "id": "-U<macro>\\tUndefine <macro>.",
-    "pattern": "-U<macro>\\tUndefine <macro>\\.",
-    "replacement": "-U<宏>\\t取消定义<宏>。"
+    "pattern": "Undefine <macro>\\.",
+    "replacement": "取消定义 <macro>。"
   },
   {
     "id": "Warn if the NSObject attribute is applied to a non-typedef.",
     "pattern": "Warn if the NSObject attribute is applied to a non-typedef\\.",
-    "replacement": "应用 NSObject 特性到非类型定义时警告。"
+    "replacement": "应用 NSObject 特性到非 typedef 时警告。"
   },
   {
     "id": "Warn about things that will change when compiling with an ABI-compliant compiler.",
@@ -141,8 +141,8 @@
   },
   {
     "id": "-Waligned-new=[none|global|all]\\tWarn even if 'new' uses a class member allocation function.",
-    "pattern": "-Waligned-new=\\[none\\|global\\|all\\]\\tWarn even if 'new' uses a class member allocation function\\.",
-    "replacement": "-Waligned-new=\\[none\\|global\\|all\\]\\t即使 'new' 使用类成员分配函数也给出警告。"
+    "pattern": "Warn even if 'new' uses a class member allocation function\\.",
+    "replacement": "即使 'new' 使用类成员分配函数也给出警告。"
   },
   {
     "id": "Enable most warning messages.",
@@ -152,12 +152,12 @@
   {
     "id": "Warn on any use of alloca.",
     "pattern": "Warn on any use of alloca\\.",
-    "replacement": "使用任何 alloca 时给出警告。"
+    "replacement": "当使用任何 alloca 时给出警告。"
   },
   {
     "id": "-Walloc-size-larger-than=<bytes>\\tWarn for calls to allocation functions that attempt to allocate objects larger than the specified number of bytes.",
-    "pattern": "-Walloc-size-larger-than=<bytes>\\tWarn for calls to allocation functions that attempt to allocate objects larger than the specified number of bytes\\.",
-    "replacement": "-Walloc-size-larger-than=<字节>\\t为调用分配函数尝试分配大于指定字节数的对象时给出警告。"
+    "pattern": "Warn for calls to allocation functions that attempt to allocate objects larger than the specified number of bytes\\.",
+    "replacement": "对调用分配函数尝试分配大于指定字节数的对象时给出警告。"
   },
   {
     "id": "Disable Walloc-size-larger-than= warning.  Equivalent to Walloc-size-larger-than=<SIZE_MAX> or larger.",
@@ -171,8 +171,8 @@
   },
   {
     "id": "-Walloca-larger-than=<number>\\tWarn on unbounded uses of alloca, and on bounded uses of alloca whose bound can be larger than <number> bytes.",
-    "pattern": "-Walloca-larger-than=<number>\\tWarn on unbounded uses of alloca, and on bounded uses of alloca whose bound can be larger than <number> bytes\\.",
-    "replacement": "-Walloca-larger-than=<number>\\t当使用没有边界或边界大于 <number> 字节的 alloca 时给出警告。"
+    "pattern": "Warn on unbounded uses of alloca, and on bounded uses of alloca whose bound can be larger than <number> bytes\\.",
+    "replacement": "当使用没有边界或边界大于 <number> 字节的 alloca 时给出警告。"
   },
   {
     "id": "Disable Walloca-larger-than= warning.  Equivalent to Walloca-larger-than=<SIZE_MAX> or larger.",
@@ -206,8 +206,8 @@
   },
   {
     "id": "-Wbidi-chars=[none|unpaired|any|ucn] Warn about UTF-8 bidirectional control characters.",
-    "pattern": "-Wbidi-chars=\\[none\\|unpaired\\|any\\|ucn\\] Warn about UTF-8 bidirectional control characters\\.",
-    "replacement": "-Wbidi-chars=\\[none\\|unpaired\\|any\\|ucn\\]\\t给出 UTF-8 双向控制字符警告。"
+    "pattern": "Warn about UTF-8 bidirectional control characters\\.",
+    "replacement": "对 UTF-8 双向控制字符给出警告。"
   },
   {
     "id": "Warn about boolean expression compared with an integer value different from true/false.",
@@ -607,7 +607,7 @@
   {
     "id": "Warn about uses of std::initializer_list that can result in dangling pointers.",
     "pattern": "Warn about uses of std::initializer_list that can result in dangling pointers\\.",
-    "replacement": "当使用 std::initializer_list 导致悬空指针时给出警告。"
+    "replacement": "当使用 std::initializer_list 导致悬垂指针时给出警告。"
   },
   {
     "id": "Warn about nonsensical values of --param destructive-interference-size or constructive-interference-size.",
@@ -812,47 +812,47 @@
   {
     "id": "Warn about calls to strcmp and strncmp used in equality expressions that are necessarily true or false due to the length of one and size of the other argument.",
     "pattern": "Warn about calls to strcmp and strncmp used in equality expressions that are necessarily true or false due to the length of one and size of the other argument\\.",
-    "replacement": ""
+    "replacement": "当 strcmp 和 strncmp 被用于等式表达式，并且因为一个参数的长度和另一个参数的大小而导致结果必定为真或必定为假时给出警告。"
   },
   {
     "id": "Warn about buffer overflow in string manipulation functions like memcpy and strcpy.",
     "pattern": "Warn about buffer overflow in string manipulation functions like memcpy and strcpy\\.",
-    "replacement": ""
+    "replacement": "对 memcpy 和 strcpy 等字符串操作函数的缓冲区溢出给出警告。"
   },
   {
     "id": "Under the control of Object Size type, warn about buffer overflow in string manipulation functions like memcpy and strcpy.",
     "pattern": "Under the control of Object Size type, warn about buffer overflow in string manipulation functions like memcpy and strcpy\\.",
-    "replacement": ""
+    "replacement": "根据 Object Size 类型，对 memcpy 和 strcpy 等字符串操作函数的缓冲区溢出给出警告。"
   },
   {
     "id": "Warn about reading past the end of a source array in string manipulation functions like memchr and memcpy.",
     "pattern": "Warn about reading past the end of a source array in string manipulation functions like memchr and memcpy\\.",
-    "replacement": ""
+    "replacement": "当字符串操作函数 memchr 和 memcpy 中读取超出源数组的数据时给出警告。"
   },
   {
     "id": "Warn about truncation in string manipulation functions like strncat and strncpy.",
     "pattern": "Warn about truncation in string manipulation functions like strncat and strncpy\\.",
-    "replacement": ""
+    "replacement": "当字符串操作函数 strncat 和 strncpy 中发生截断时给出警告。"
   },
   {
     "id": "Warn about functions which might be candidates for format attributes.",
     "pattern": "Warn about functions which might be candidates for format attributes\\.",
-    "replacement": "当函数可能是 format 属性的备选时给出警告"
+    "replacement": "当函数可能是 format 特性的备选时给出警告。"
   },
   {
     "id": "Suggest that the override keyword be used when the declaration of a virtual function overrides another.",
     "pattern": "Suggest that the override keyword be used when the declaration of a virtual function overrides another\\.",
-    "replacement": ""
+    "replacement": "建议 override 关键字可以用于声明虚函数覆盖另一个虚函数。"
   },
   {
     "id": "Warn about enumerated switches, with no default, missing a case.",
     "pattern": "Warn about enumerated switches, with no default, missing a case\\.",
-    "replacement": "当使用枚举类型作为开关变量，没有提供 default 分支，但又缺少某个 case 时给出警告"
+    "replacement": "当使用枚举类型作为 switch 变量，没有提供 default 分支，但又缺少某个 case 时给出警告。"
   },
   {
     "id": "Warn about enumerated switches missing a \\\"default:\\\" statement.",
     "pattern": "Warn about enumerated switches missing a \"default:\" statement\\.",
-    "replacement": "当使用枚举类型作为开关变量，但没有提供“default”分支时给出警告"
+    "replacement": "当使用枚举类型作为 switch 变量，但没有提供 \"default:\" 分支时给出警告。"
   },
   {
     "id": "Warn about all enumerated switches missing a specific case.",
@@ -862,67 +862,67 @@
   {
     "id": "Warn about switches with boolean controlling expression.",
     "pattern": "Warn about switches with boolean controlling expression\\.",
-    "replacement": "对被截断的字符表达式给出警告"
+    "replacement": "当 switch 变量是布尔值表达式时给出警告。"
   },
   {
     "id": "Warn about switch values that are outside of the switch's type range.",
     "pattern": "Warn about switch values that are outside of the switch's type range\\.",
-    "replacement": ""
+    "replacement": "当 switch 变量的值超出 switch 的类型范围时给出警告。"
   },
   {
     "id": "Warn on primary template declaration.",
     "pattern": "Warn on primary template declaration\\.",
-    "replacement": "对于模板声明%q+D"
+    "replacement": "对主模板声明给出警告。"
   },
   {
     "id": "Warn about declarations of entities that may be missing attributes that related entities have been declared with.",
     "pattern": "Warn about declarations of entities that may be missing attributes that related entities have been declared with\\.",
-    "replacement": ""
+    "replacement": "当声明的实体可能缺少相关的特性时给出警告。"
   },
   {
     "id": "Warn about user-specified include directories that do not exist.",
     "pattern": "Warn about user-specified include directories that do not exist\\.",
-    "replacement": "当用户给定的包含目录不存在时给出警告"
+    "replacement": "当用户指定的包含目录不存在时给出警告。"
   },
   {
     "id": "Warn about function parameters declared without a type specifier in K&R-style functions.",
     "pattern": "Warn about function parameters declared without a type specifier in K&R-style functions\\.",
-    "replacement": "K&R 风格函数参数声明中未指定类型限定符时给出警告"
+    "replacement": "K&R 风格函数参数声明中未指定类型限定符时给出警告。"
   },
   {
     "id": "Warn about global functions without prototypes.",
     "pattern": "Warn about global functions without prototypes\\.",
-    "replacement": "全局函数没有原型时给出警告"
+    "replacement": "全局函数没有原型时给出警告。"
   },
   {
     "id": "Warn about use of multi-character character constants.",
     "pattern": "Warn about use of multi-character character constants\\.",
-    "replacement": "使用多字节字符集的字符常量时给出警告"
+    "replacement": "使用多字节字符集的字符常量时给出警告。"
   },
   {
     "id": "Warn about narrowing conversions within { } that are ill-formed in C++11.",
     "pattern": "Warn about narrowing conversions within \\{ \\} that are ill-formed in C\\+\\+11\\.",
-    "replacement": "警告关于 narrowing 转换在之内 {} 所不当形式的在中 C++11"
+    "replacement": "当在 C++11 中的 { } 内使用窄化转换时给出警告。"
   },
   {
     "id": "Warn about \\\"extern\\\" declarations not at file scope.",
     "pattern": "Warn about \"extern\" declarations not at file scope\\.",
-    "replacement": "当“extern”声明不在文件作用域时给出警告"
+    "replacement": "当 \"extern\" 声明不在文件作用域时给出警告。"
   },
   {
     "id": "Warn when a noexcept expression evaluates to false even though the expression can't actually throw.",
     "pattern": "Warn when a noexcept expression evaluates to false even though the expression can't actually throw\\.",
-    "replacement": "警告时 noexcept 运算式评估到假甚至虽然运算式无法实际的丢掷"
+    "replacement": "当表达式不能抛出异常，但 noexcept 表达式计算结果为 false 时给出警告。"
   },
   {
     "id": "Warn if C++17 noexcept function type will change the mangled name of a symbol.",
     "pattern": "Warn if C\\+\\+17 noexcept function type will change the mangled name of a symbol\\.",
-    "replacement": ""
+    "replacement": "对 C++17 noexcept 函数类型对重整符号名称的改变给出警告。"
   },
   {
     "id": "Warn when non-templatized friend functions are declared within a template.",
     "pattern": "Warn when non-templatized friend functions are declared within a template\\.",
-    "replacement": "在模板内声明未模板化的友元函数时给出警告"
+    "replacement": "当模板中声明非模板化的友元函数时给出警告。"
   },
   {
     "id": "Warn when a conversion function will never be called due to the type it converts to.",
@@ -932,242 +932,242 @@
   {
     "id": "Warn for unsafe raw memory writes to objects of class types.",
     "pattern": "Warn for unsafe raw memory writes to objects of class types\\.",
-    "replacement": ""
+    "replacement": "当对类类型的对象写入不安全的原始内存时给出警告。"
   },
   {
     "id": "Warn about non-virtual destructors.",
     "pattern": "Warn about non-virtual destructors\\.",
-    "replacement": "当析构函数不是虚函数时给出警告"
+    "replacement": "当析构函数不是虚函数时给出警告。"
   },
   {
     "id": "Warn about NULL being passed to argument slots marked as requiring non-NULL.",
     "pattern": "Warn about NULL being passed to argument slots marked as requiring non-NULL\\.",
-    "replacement": "当将 NULL 传递给需要非 NULL 的参数的函数时给出警告"
+    "replacement": "当将 NULL 传递给标记为需要非 NULL 的实参的函数时给出警告。"
   },
   {
     "id": "-Wnormalized=[none|id|nfc|nfkc]\\tWarn about non-normalized Unicode strings.",
-    "pattern": "-Wnormalized=\\[none\\|id\\|nfc\\|nfkc\\]\\tWarn about non-normalized Unicode strings\\.",
-    "replacement": "-Wnormalized=<id|nfc|nfkc>\\t对未归一化的 Unicode 字符串给出警告"
+    "pattern": "Warn about non-normalized Unicode strings\\.",
+    "replacement": "对未归一化的 Unicode 字符串给出警告。"
   },
   {
     "id": "Warn if a class interface has no superclass.  Root classes may use an attribute to suppress this warning.",
     "pattern": "Warn if a class interface has no superclass\\.  Root classes may use an attribute to suppress this warning\\.",
-    "replacement": ""
+    "replacement": "当类接口没有超类时给出警告。根类可以使用属性来忽略此警告。"
   },
   {
     "id": "Warn if a C-style cast is used in a program.",
     "pattern": "Warn if a C-style cast is used in a program\\.",
-    "replacement": "程序使用 C 风格的类型转换时给出警告"
+    "replacement": "程序使用 C 风格的类型转换时给出警告。"
   },
   {
     "id": "Warn for obsolescent usage in a declaration.",
     "pattern": "Warn for obsolescent usage in a declaration\\.",
-    "replacement": "对声明中的过时用法给出警告"
+    "replacement": "对声明中的过时用法给出警告。"
   },
   {
     "id": "Warn if an old-style parameter definition is used.",
     "pattern": "Warn if an old-style parameter definition is used\\.",
-    "replacement": "使用旧式形参定义时给出警告"
+    "replacement": "使用旧式形参定义时给出警告。"
   },
   {
     "id": "Warn about potentially suboptimal choices related to OpenACC parallelism.",
     "pattern": "Warn about potentially suboptimal choices related to OpenACC parallelism\\.",
-    "replacement": ""
+    "replacement": "对 OpenACC 并行性的潜在负优化给出警告。"
   },
   {
     "id": "Warn if a simd directive is overridden by the vectorizer cost model.",
     "pattern": "Warn if a simd directive is overridden by the vectorizer cost model\\.",
-    "replacement": ""
+    "replacement": "当向量化成本模型覆盖 simd 命令时给出警告。"
   },
   {
     "id": "Warn if a string is longer than the maximum portable length specified by the standard.",
     "pattern": "Warn if a string is longer than the maximum portable length specified by the standard\\.",
-    "replacement": "当字符串长度超过标准规定的可移植的最大长度时给出警告"
+    "replacement": "当字符串长度超过标准规定的可移植的最大长度时给出警告。"
   },
   {
     "id": "Warn about overloaded virtual function names.",
     "pattern": "Warn about overloaded virtual function names\\.",
-    "replacement": "重载虚函数名时给出警告"
+    "replacement": "重载虚函数名时给出警告。"
   },
   {
     "id": "Warn about overriding initializers without side effects.",
     "pattern": "Warn about overriding initializers without side effects\\.",
-    "replacement": "覆盖无副作用的初始值设定时给出警告"
+    "replacement": "当覆盖没有副作用的初始化器时给出警告。"
   },
   {
     "id": "Warn about overriding initializers with side effects.",
     "pattern": "Warn about overriding initializers with side effects\\.",
-    "replacement": "覆盖无副作用的初始值设定时给出警告"
+    "replacement": "当覆盖有副作用的初始化器时给出警告。"
   },
   {
     "id": "Warn about packed bit-fields whose offset changed in GCC 4.4.",
     "pattern": "Warn about packed bit-fields whose offset changed in GCC 4\\.4\\.",
-    "replacement": "当紧实位段的偏移量因 GCC 4.4 而改变时给出警告"
+    "replacement": "对 GCC 4.4 中改变的对齐位偏移量给出警告。"
   },
   {
     "id": "Warn about possibly missing parentheses.",
     "pattern": "Warn about possibly missing parentheses\\.",
-    "replacement": "可能缺少括号的情况下给出警告"
+    "replacement": "当可能缺少括号时给出警告。"
   },
   {
     "id": "Warn about calling std::move on a local object in a return statement preventing copy elision.",
     "pattern": "Warn about calling std::move on a local object in a return statement preventing copy elision\\.",
-    "replacement": ""
+    "replacement": "当在返回语句中调用 std::move 使得复制消除被禁用时给出警告。"
   },
   {
     "id": "Warn when converting the type of pointers to member functions.",
     "pattern": "Warn when converting the type of pointers to member functions\\.",
-    "replacement": "当改变成员函数指针的类型时给出警告"
+    "replacement": "当转换指向成员函数的指针类型时给出警告。"
   },
   {
     "id": "Warn about function pointer arithmetic.",
     "pattern": "Warn about function pointer arithmetic\\.",
-    "replacement": "当在算术表达式中使用函数指针时给出警告"
+    "replacement": "当在算术表达式中使用函数指针时给出警告。"
   },
   {
     "id": "Warn when a pointer differs in signedness in an assignment.",
     "pattern": "Warn when a pointer differs in signedness in an assignment\\.",
-    "replacement": "赋值时如指针符号不一致则给出警告"
+    "replacement": "当赋值时指针符号不一致时给出警告。"
   },
   {
     "id": "Warn when a pointer is compared with a zero character constant.",
     "pattern": "Warn when a pointer is compared with a zero character constant\\.",
-    "replacement": "使用多字节字符集的字符常量时给出警告"
+    "replacement": "当指针与零字符常量比较时给出警告。"
   },
   {
     "id": "Warn when a pointer is cast to an integer of a different size.",
     "pattern": "Warn when a pointer is cast to an integer of a different size\\.",
-    "replacement": "将一个指针转换为大小不同的整数时给出警告"
+    "replacement": "当指针转换为不同大小的整数时给出警告。"
   },
   {
     "id": "Warn about misuses of pragmas.",
     "pattern": "Warn about misuses of pragmas\\.",
-    "replacement": "对错误使用的 pragma 加以警告"
+    "replacement": "当使用错误的 pragma 时给出警告。"
   },
   {
     "id": "Warn if constructor or destructors with priorities from 0 to 100 are used.",
     "pattern": "Warn if constructor or destructors with priorities from 0 to 100 are used\\.",
-    "replacement": ""
+    "replacement": "当使用优先级从 0 到 100 的构造函数或析构函数时给出警告。"
   },
   {
     "id": "Warn if a property for an Objective-C object has no assign semantics specified.",
     "pattern": "Warn if a property for an Objective-C object has no assign semantics specified\\.",
-    "replacement": "警告如果内容用于 Objective-C 对象没有任何指派语意指定的"
+    "replacement": "当 Objective-C 对象没有指定赋值语义时给出警告。"
   },
   {
     "id": "Warn if inherited methods are unimplemented.",
     "pattern": "Warn if inherited methods are unimplemented\\.",
-    "replacement": "当继承来的方法未被实现时给出警告"
+    "replacement": "当继承的方法没有实现时给出警告。"
   },
   {
     "id": "Warn for placement new expressions with undefined behavior.",
     "pattern": "Warn for placement new expressions with undefined behavior\\.",
-    "replacement": ""
+    "replacement": "当布置 new 表达式带有未定义行为时给出警告。"
   },
   {
     "id": "Warn about multiple declarations of the same object.",
     "pattern": "Warn about multiple declarations of the same object\\.",
-    "replacement": "对同一个对象多次声明时给出警告"
+    "replacement": "当重复声明同一对象时给出警告。"
   },
   {
     "id": "Warn about redundant calls to std::move.",
     "pattern": "Warn about redundant calls to std::move\\.",
-    "replacement": ""
+    "replacement": "对冗余的 std::move 调用给出警告。"
   },
   {
     "id": "Warn about uses of register storage specifier.",
     "pattern": "Warn about uses of register storage specifier\\.",
-    "replacement": "对错误使用的 pragma 加以警告"
+    "replacement": "当使用 register 存储说明符时给出警告。"
   },
   {
     "id": "Warn when the compiler reorders code.",
     "pattern": "Warn when the compiler reorders code\\.",
-    "replacement": "编译器将代码重新排序时给出警告"
+    "replacement": "当编译器将代码重新排序时给出警告。"
   },
   {
     "id": "Warn whenever a function's return type defaults to \\\"int\\\" (C), or about inconsistent return types (C++).",
     "pattern": "Warn whenever a function's return type defaults to \"int\" \\(C\\), or about inconsistent return types \\(C\\+\\+\\)\\.",
-    "replacement": "当 C 函数的返回值默认为“int”，或者 C++ 函数的返回类型不一致时给出警告"
+    "replacement": "当 C 函数的返回值类型被默认设置为 \"int\"，或者 C++ 函数的返回类型不一致时给出警告。"
   },
   {
     "id": "Warn on suspicious constructs involving reverse scalar storage order.",
     "pattern": "Warn on suspicious constructs involving reverse scalar storage order\\.",
-    "replacement": ""
+    "replacement": "对可疑的反向标量存储顺序构造给出警告。"
   },
   {
     "id": "Warn if a selector has multiple methods.",
     "pattern": "Warn if a selector has multiple methods\\.",
-    "replacement": "当选择子有多个方法时给出警告"
+    "replacement": "当选择器有多个方法时给出警告。"
   },
   {
     "id": "Warn about possible violations of sequence point rules.",
     "pattern": "Warn about possible violations of sequence point rules\\.",
-    "replacement": "当可能违反定序点规则时给出警告"
+    "replacement": "当可能违反定序点规则时给出警告。"
   },
   {
     "id": "Warn if a local declaration hides an instance variable.",
     "pattern": "Warn if a local declaration hides an instance variable\\.",
-    "replacement": "%qE的局部声明隐藏了实例变量"
+    "replacement": "当局部声明隐藏了变量实例时给出警告。"
   },
   {
     "id": "Warn if left shift of a signed value overflows.",
     "pattern": "Warn if left shift of a signed value overflows\\.",
-    "replacement": ""
+    "replacement": "当左移有符号数溢出时给出警告。"
   },
   {
     "id": "Warn if shift count is negative.",
     "pattern": "Warn if shift count is negative\\.",
-    "replacement": "右移次数为负"
+    "replacement": "当移位次数为负时给出警告。"
   },
   {
     "id": "Warn if shift count >= width of type.",
     "pattern": "Warn if shift count >= width of type\\.",
-    "replacement": "右移次数大于或等于类型宽度"
+    "replacement": "当移位次数大于等于类型宽度时给出警告。"
   },
   {
     "id": "Warn if left shifting a negative value.",
     "pattern": "Warn if left shifting a negative value\\.",
-    "replacement": "右移次数为负"
+    "replacement": "当左移次数为负时给出警告。"
   },
   {
     "id": "Warn if conversion of the result of arithmetic might change the value even though converting the operands cannot.",
     "pattern": "Warn if conversion of the result of arithmetic might change the value even though converting the operands cannot\\.",
-    "replacement": ""
+    "replacement": "当算术结果的转换可能改变值（即使操作数已经转换）时给出警告。"
   },
   {
     "id": "Warn about signed-unsigned comparisons.",
     "pattern": "Warn about signed-unsigned comparisons\\.",
-    "replacement": "在有符号和无符号数间进行比较时给出警告"
+    "replacement": "在有符号和无符号数间进行比较时给出警告。"
   },
   {
     "id": "Warn for implicit type conversions between signed and unsigned integers.",
     "pattern": "Warn for implicit type conversions between signed and unsigned integers\\.",
-    "replacement": "为有符号和无符号整数间的隐式类型转换给出警告"
+    "replacement": "为有符号和无符号整数间的隐式类型转换给出警告。"
   },
   {
     "id": "Warn when overload promotes from unsigned to signed.",
     "pattern": "Warn when overload promotes from unsigned to signed\\.",
-    "replacement": "当重载将无符号数提升为有符号数时给出警告"
+    "replacement": "当重载将无符号数提升为有符号数时给出警告。"
   },
   {
     "id": "Warn about uncasted NULL used as sentinel.",
     "pattern": "Warn about uncasted NULL used as sentinel\\.",
-    "replacement": "将未作转换的 NULL 用作哨兵时给出警告"
+    "replacement": "将未作转换的 NULL 用作哨位时给出警告。"
   },
   {
     "id": "Warn about unprototyped function declarations.",
     "pattern": "Warn about unprototyped function declarations\\.",
-    "replacement": "使用了非原型的函数声明时给出警告"
+    "replacement": "使用了非原型的函数声明时给出警告。"
   },
   {
     "id": "Warn if type signatures of candidate methods do not match exactly.",
     "pattern": "Warn if type signatures of candidate methods do not match exactly\\.",
-    "replacement": "当备选方法的类型签字不完全匹配时给出警告"
+    "replacement": "当备选方法的类型签名不完全匹配时给出警告。"
   },
   {
     "id": "Warn when __sync_fetch_and_nand and __sync_nand_and_fetch built-in functions are used.",
     "pattern": "Warn when __sync_fetch_and_nand and __sync_nand_and_fetch built-in functions are used\\.",
-    "replacement": "当 __sync_fetch_and_nand 和 __sync_nand_and_fetch 内建函数被使用时给出警告"
+    "replacement": "当 __sync_fetch_and_nand 和 __sync_nand_and_fetch 内建函数被使用时给出警告。"
   },
   {
     "id": "Deprecated.  This switch has no effect.",
@@ -1177,187 +1177,187 @@
   {
     "id": "Warn if a comparison always evaluates to true or false.",
     "pattern": "Warn if a comparison always evaluates to true or false\\.",
-    "replacement": "当逻辑操作结果似乎总为真或假时给出警告"
+    "replacement": "当比较总是求值为 true 或 false 时给出警告。"
   },
   {
     "id": "Warn if a throw expression will always result in a call to terminate().",
     "pattern": "Warn if a throw expression will always result in a call to terminate\\(\\)\\.",
-    "replacement": ""
+    "replacement": "当 throw 表达式总是会导致 terminate() 被调用时给出警告。"
   },
   {
     "id": "Warn about features not present in traditional C.",
     "pattern": "Warn about features not present in traditional C\\.",
-    "replacement": "使用了传统 C 不支持的特性时给出警告"
+    "replacement": "使用了传统 C 不支持的特性时给出警告。"
   },
   {
     "id": "Warn of prototypes causing type conversions different from what would happen in the absence of prototype.",
     "pattern": "Warn of prototypes causing type conversions different from what would happen in the absence of prototype\\.",
-    "replacement": "原型导致的类型转换与无原型时的类型转换不同时给出警告"
+    "replacement": "当原型导致类型转换与无原型时的类型转换不同时给出警告。"
   },
   {
     "id": "Warn if trigraphs are encountered that might affect the meaning of the program.",
     "pattern": "Warn if trigraphs are encountered that might affect the meaning of the program\\.",
-    "replacement": "当三字母序列可能影响程序意义时给出警告"
+    "replacement": "当三标符可能影响程序意义时给出警告。"
   },
   {
     "id": "Warn about @selector()s without previously declared methods.",
     "pattern": "Warn about @selector\\(\\)s without previously declared methods\\.",
-    "replacement": "当使用 @selector() 却不作事先声明时给出警告"
+    "replacement": "当使用 @selector() 却不作事先声明时给出警告。"
   },
   {
     "id": "Warn if an undefined macro is used in an #if directive.",
     "pattern": "Warn if an undefined macro is used in an #if directive\\.",
-    "replacement": "当 #if 指令中用到未定义的宏时给出警告"
+    "replacement": "当 #if 指令中用到未定义的宏时给出警告。"
   },
   {
     "id": "Warn about unrecognized pragmas.",
     "pattern": "Warn about unrecognized pragmas\\.",
-    "replacement": "对无法识别的 pragma 加以警告"
+    "replacement": "对无法识别的 pragma 给出警告。"
   },
   {
     "id": "Warn about unsuffixed float constants.",
     "pattern": "Warn about unsuffixed float constants\\.",
-    "replacement": "对不带后缀的浮点常量给出警告"
+    "replacement": "对不带后缀的浮点常量给出警告。"
   },
   {
     "id": "Warn when typedefs locally defined in a function are not used.",
     "pattern": "Warn when typedefs locally defined in a function are not used\\.",
-    "replacement": "当定义在主文件中的宏未被使用时给出警告"
+    "replacement": "当在函数内部定义的 typedef 未使用时给出警告。"
   },
   {
     "id": "Warn about macros defined in the main file that are not used.",
     "pattern": "Warn about macros defined in the main file that are not used\\.",
-    "replacement": "当定义在主文件中的宏未被使用时给出警告"
+    "replacement": "当定义在主文件中的宏未被使用时给出警告。"
   },
   {
     "id": "Warn if a caller of a function, marked with attribute warn_unused_result, does not use its return value.",
     "pattern": "Warn if a caller of a function, marked with attribute warn_unused_result, does not use its return value\\.",
-    "replacement": "当一个带有 warn_unused_result 属性的函数的调用者未使用前者的返回值时给出警告"
+    "replacement": "当调用带有 warn_unused_result 特性的函数却未使用其返回值时给出警告"
   },
   {
     "id": "Warn when a const variable is unused.",
     "pattern": "Warn when a const variable is unused\\.",
-    "replacement": "有未使用的变量时警告"
+    "replacement": "当 const 变量未使用时给出警告。"
   },
   {
     "id": "Warn about using variadic macros.",
     "pattern": "Warn about using variadic macros\\.",
-    "replacement": "当定义在主文件中的宏未被使用时给出警告"
+    "replacement": "对变长实参宏的使用给出警告。"
   },
   {
     "id": "Warn about questionable usage of the macros used to retrieve variable arguments.",
     "pattern": "Warn about questionable usage of the macros used to retrieve variable arguments\\.",
-    "replacement": ""
+    "replacement": "对使用变长实参宏来检索变量的可疑使用给出警告。"
   },
   {
     "id": "Warn about the most vexing parse syntactic ambiguity.",
     "pattern": "Warn about the most vexing parse syntactic ambiguity\\.",
-    "replacement": ""
+    "replacement": "对“最烦人的分析”这一语法导致的歧义给出警告。"
   },
   {
     "id": "Warn if a variable length array is used.",
     "pattern": "Warn if a variable length array is used\\.",
-    "replacement": "使用变长数组时警告"
+    "replacement": "当使用变长数组（VLA）时给出警告。"
   },
   {
     "id": "-Wvla-larger-than=<number>\\tWarn on unbounded uses of variable-length arrays, and on bounded uses of variable-length arrays whose bound can be larger than <number> bytes.",
-    "pattern": "-Wvla-larger-than=<number>\\tWarn on unbounded uses of variable-length arrays, and on bounded uses of variable-length arrays whose bound can be larger than <number> bytes\\.",
-    "replacement": "-Wlarger-than=<N>\\t当目标文件大于 N 字节时给出警告"
+    "pattern": "Warn on unbounded uses of variable-length arrays, and on bounded uses of variable-length arrays whose bound can be larger than <number> bytes\\.",
+    "replacement": "当变长数组（VLA）未指明大小，或其大小大于 <number> 字节时给出警告。"
   },
   {
     "id": "Disable Wvla-larger-than= warning.  Equivalent to Wvla-larger-than=<SIZE_MAX> or larger.",
     "pattern": "Disable Wvla-larger-than= warning\\.  Equivalent to Wvla-larger-than=<SIZE_MAX> or larger\\.",
-    "replacement": ""
+    "replacement": "禁用 Wvla-larger-than= warning。等价于 Wvla-larger-than=<SIZE_MAX> 或更大。"
   },
   {
     "id": "Warn about mismatched declarations of VLA parameters.",
     "pattern": "Warn about mismatched declarations of VLA parameters\\.",
-    "replacement": "对同一个对象多次声明时给出警告"
+    "replacement": "当 VLA 形参声明不匹配时给出警告。"
   },
   {
     "id": "Warn about deprecated uses of volatile qualifier.",
     "pattern": "Warn about deprecated uses of volatile qualifier\\.",
-    "replacement": "遇到已弃用的‘vector long ...’AltiVec 类型时给出警告"
+    "replacement": "对弃用的 volatile 限定符使用给出警告。"
   },
   {
     "id": "Warn when a register variable is declared volatile.",
     "pattern": "Warn when a register variable is declared volatile\\.",
-    "replacement": "当一个寄存器变量被声明为 volatile 时给出警告"
+    "replacement": "对声明为 volatile 的寄存器变量给出警告。"
   },
   {
     "id": "Warn on direct virtual inheritance.",
     "pattern": "Warn on direct virtual inheritance\\.",
-    "replacement": ""
+    "replacement": "当直接虚继承时给出警告。"
   },
   {
     "id": "Warn if a virtual base has a non-trivial move assignment operator.",
     "pattern": "Warn if a virtual base has a non-trivial move assignment operator\\.",
-    "replacement": "%qT 有虚拟基底，缺省移动指派运算符无法产生"
+    "replacement": "当虚基类有非平凡移动赋值运算符时给出警告。"
   },
   {
     "id": "In C++, nonzero means warn about deprecated conversion from string literals to 'char *'.  In C, similar warning, except that the conversion is of course not deprecated by the ISO C standard.",
     "pattern": "In C\\+\\+, nonzero means warn about deprecated conversion from string literals to 'char \\*'\\.  In C, similar warning, except that the conversion is of course not deprecated by the ISO C standard\\.",
-    "replacement": "在 C++ 中，非零值表示将字面字符串转换为‘char *’时给出警告。在 C 中，给出相似的警告，但这种类型转换是符合 ISO C 标准的。"
+    "replacement": "若非零值，在 C++ 中，对字面字符串到 'char *' 的弃用转换给出警告。在 C 中，给出相似的警告，尽管这种类型转换在 ISO C 标准下未被弃用。"
   },
   {
     "id": "Warn when a literal '0' is used as null pointer.",
     "pattern": "Warn when a literal '0' is used as null pointer\\.",
-    "replacement": "有未使用的标号时警告"
+    "replacement": "当使用字面值 '0' 作为空指针时给出警告。"
   },
   {
     "id": "Warn about useless casts.",
     "pattern": "Warn about useless casts\\.",
-    "replacement": "当类型转换丢失限定信息时给出警告"
+    "replacement": "对无用的转换给出警告。"
   },
   {
     "id": "Warn if a class type has a base or a field whose type uses the anonymous namespace or depends on a type with no linkage.",
     "pattern": "Warn if a class type has a base or a field whose type uses the anonymous namespace or depends on a type with no linkage\\.",
-    "replacement": ""
+    "replacement": "当类类型的基类或字段类型使用了匿名命名空间或依赖于无连接类型时给出警告。"
   },
   {
     "id": "Warn when a declaration has duplicate const, volatile, restrict or _Atomic specifier.",
     "pattern": "Warn when a declaration has duplicate const, volatile, restrict or _Atomic specifier\\.",
-    "replacement": "当声明未指定类型时给出警告"
+    "replacement": "当声明中出现重复的 const、volatile、restrict 或 _Atomic 限定符时给出警告。"
   },
   {
     "id": "Warn when an argument passed to a restrict-qualified parameter aliases with another argument.",
     "pattern": "Warn when an argument passed to a restrict-qualified parameter aliases with another argument\\.",
-    "replacement": ""
+    "replacement": "当传递给 restrict 限定形参的实参是其他实参的别名时给出警告。"
   },
   {
     "id": "A synonym for -std=c89 (for C) or -std=c++98 (for C++).",
     "pattern": "A synonym for -std=c89 \\(for C\\) or -std=c\\+\\+98 \\(for C\\+\\+\\)\\.",
-    "replacement": "-std=c89 (对 C 来说) 或 -std=c++98 (对 C++ 来说)的同义词"
+    "replacement": "-std=c89 的同义词（C) 或 -std=c++98 的同义词（C++）。"
   },
   {
     "id": "The version of the C++ ABI used for -Wabi warnings and link compatibility aliases.",
     "pattern": "The version of the C\\+\\+ ABI used for -Wabi warnings and link compatibility aliases\\.",
-    "replacement": "用于 -Wabi 警告和链接兼容性别名的 C++ ABI 版本。"
+    "replacement": "-Wabi 警告和链接兼容别名的 C++ ABI 版本。"
   },
   {
     "id": "Enforce class member access control semantics.",
     "pattern": "Enforce class member access control semantics\\.",
-    "replacement": "执行类成员访问控制语义"
+    "replacement": "强制执行类成员访问控制语义。"
   },
   {
     "id": "-fada-spec-parent=unit\\tDump Ada specs as child units of given parent.",
-    "pattern": "-fada-spec-parent=unit\\tDump Ada specs as child units of given parent\\.",
-    "replacement": ""
+    "pattern": "Dump Ada specs as child units of given parent\\.",
+    "replacement": "将 Ada 语义输出为给定父单元的子单元。"
   },
   {
     "id": "Support C++17 allocation of over-aligned types.",
     "pattern": "Support C\\+\\+17 allocation of over-aligned types\\.",
-    "replacement": ""
+    "replacement": "支持 C++17 超对齐类型的分配。"
   },
   {
     "id": "-faligned-new=<N>\\tUse C++17 over-aligned type allocation for alignments greater than N.",
-    "pattern": "-faligned-new=<N>\\tUse C\\+\\+17 over-aligned type allocation for alignments greater than N\\.",
-    "replacement": ""
+    "pattern": "Use C\\+\\+17 over-aligned type allocation for alignments greater than N\\.",
+    "replacement": "对于大于 N 的对齐大小使用 C++17 超对齐类型分配。"
   },
   {
     "id": "Allow variadic functions without named parameter.",
     "pattern": "Allow variadic functions without named parameter\\.",
-    "replacement": "可变参数函数必须使用基础的 AAPCS 变种"
+    "replacement": "允许不带具名形参的可变实参函数。"
   },
   {
     "id": "No longer supported.",
@@ -1367,162 +1367,162 @@
   {
     "id": "Recognize the \\\"asm\\\" keyword.",
     "pattern": "Recognize the \"asm\" keyword\\.",
-    "replacement": "识别“asm”关键字。"
+    "replacement": "识别 \"asm\" 关键字。"
   },
   {
     "id": "Recognize built-in functions.",
     "pattern": "Recognize built-in functions\\.",
-    "replacement": "识别内建函数"
+    "replacement": "识别内建函数。"
   },
   {
     "id": "Where shorter, use canonicalized paths to systems headers.",
     "pattern": "Where shorter, use canonicalized paths to systems headers\\.",
-    "replacement": ""
+    "replacement": "若系统头文件的规范路径更短，则使用它。"
   },
   {
     "id": "Enable the char8_t fundamental type and use it as the type for UTF-8 string and character literals.",
     "pattern": "Enable the char8_t fundamental type and use it as the type for UTF-8 string and character literals\\.",
-    "replacement": ""
+    "replacement": "启用 char8_t 基本类型并将其用作 UTF-8 字符串和字符字面值的类型。"
   },
   {
     "id": "Removed in GCC 8.  This switch has no effect.",
     "pattern": "Removed in GCC 8\\.  This switch has no effect\\.",
-    "replacement": "已弃用。此开关不起作用。"
+    "replacement": "GCC 8 中移除。此开关不起作用。"
   },
   {
     "id": "Enable support for C++ concepts.",
     "pattern": "Enable support for C\\+\\+ concepts\\.",
-    "replacement": "启用支持用于 GNU transactional 内存"
+    "replacement": "启用 C++ 概念。"
   },
   {
     "id": "Enable certain features present in the Concepts TS.",
     "pattern": "Enable certain features present in the Concepts TS\\.",
-    "replacement": "使用了传统 C 不支持的特性时给出警告"
+    "replacement": "启用 Concepts TS 中的一些特性。"
   },
   {
     "id": "Specify maximum error replay depth during recursive diagnosis of a constraint satisfaction failure.",
     "pattern": "Specify maximum error replay depth during recursive diagnosis of a constraint satisfaction failure\\.",
-    "replacement": ""
+    "replacement": "指定约束满足失败时显示递归诊断信息的最大深度。"
   },
   {
     "id": "Allow the arguments of the '?' operator to have different types.",
     "pattern": "Allow the arguments of the '\\?' operator to have different types\\.",
-    "replacement": "允许‘?’运算符的参数有不同的类型"
+    "replacement": "允许 '?' 运算符的实参类型不同。"
   },
   {
     "id": "-fconst-string-class=<name>\\tUse class <name> for constant strings.",
-    "pattern": "-fconst-string-class=<name>\\tUse class <name> for constant strings\\.",
-    "replacement": "-fconst-string-class=<名字>\\t使用名字作为常量字符串类的名称"
+    "pattern": "Use class <name> for constant strings\\.",
+    "replacement": "使用类 <name> 作为字符串常量。"
   },
   {
     "id": "-fconstexpr-depth=<number>\\tSpecify maximum constexpr recursion depth.",
-    "pattern": "-fconstexpr-depth=<number>\\tSpecify maximum constexpr recursion depth\\.",
-    "replacement": "-ftemplate-depth=<N>\\t指定模板实例化的最大深度"
+    "pattern": "Specify maximum constexpr recursion depth\\.",
+    "replacement": "指定 constexpr 递归的最大深度。"
   },
   {
     "id": "-fconstexpr-cache-depth=<number>\\tSpecify maximum constexpr recursion cache depth.",
-    "pattern": "-fconstexpr-cache-depth=<number>\\tSpecify maximum constexpr recursion cache depth\\.",
-    "replacement": "-ftemplate-depth=<N>\\t指定模板实例化的最大深度"
+    "pattern": "Specify maximum constexpr recursion cache depth\\.",
+    "replacement": "指定 constexpr 递归的最大缓存深度。"
   },
   {
     "id": "Allow IEC559 floating point exceptions in constant expressions.",
     "pattern": "Allow IEC559 floating point exceptions in constant expressions\\.",
-    "replacement": "常量表达式中的 Lambda 表达式"
+    "replacement": "允许在常量表达式中使用 IEC559 浮点异常。"
   },
   {
     "id": "-fconstexpr-loop-limit=<number>\\tSpecify maximum constexpr loop iteration count.",
-    "pattern": "-fconstexpr-loop-limit=<number>\\tSpecify maximum constexpr loop iteration count\\.",
-    "replacement": "-ftemplate-depth=<N>\\t指定模板实例化的最大深度"
+    "pattern": "Specify maximum constexpr loop iteration count\\.",
+    "replacement": "指定 constexpr 循环的最大迭代次数。"
   },
   {
     "id": "-fconstexpr-ops-limit=<number>\\tSpecify maximum number of constexpr operations during a single constexpr evaluation.",
-    "pattern": "-fconstexpr-ops-limit=<number>\\tSpecify maximum number of constexpr operations during a single constexpr evaluation\\.",
-    "replacement": "-ftemplate-depth=<N>\\t指定模板实例化的最大深度"
+    "pattern": "Specify maximum number of constexpr operations during a single constexpr evaluation\\.",
+    "replacement": "指定在单个 constexpr 求值期间进行的 constexpr 运算最多次数。"
   },
   {
     "id": "Enable C++ coroutines (experimental).",
     "pattern": "Enable C\\+\\+ coroutines \\(experimental\\)\\.",
-    "replacement": ""
+    "replacement": "启用 C++ 协程（实验性）。"
   },
   {
     "id": "Emit debug annotations during preprocessing.",
     "pattern": "Emit debug annotations during preprocessing\\.",
-    "replacement": "启用传统预处理"
+    "replacement": "在预处理期间输出调试注释。"
   },
   {
     "id": "Factor complex constructors and destructors to favor space over speed.",
     "pattern": "Factor complex constructors and destructors to favor space over speed\\.",
-    "replacement": "当所有构造函数和析构函数都是私有时给出警告"
+    "replacement": "将复杂的构造和析构分解为优先节约空间而不是提升速度。"
   },
   {
     "id": "Print hierarchical comparisons when template types are mismatched.",
     "pattern": "Print hierarchical comparisons when template types are mismatched\\.",
-    "replacement": ""
+    "replacement": "当模板类型不匹配时，打印层次化比较。"
   },
   {
     "id": "Preprocess directives only.",
     "pattern": "Preprocess directives only\\.",
-    "replacement": "仅预处理指示。"
+    "replacement": "仅对预处理指令做预处理。"
   },
   {
     "id": "Permit '$' as an identifier character.",
     "pattern": "Permit '\\$' as an identifier character\\.",
-    "replacement": "允许‘$’作为标识符的一部分"
+    "replacement": "允许 '$' 作为标识符的一部分。"
   },
   {
     "id": "-fmacro-prefix-map=<old>=<new>\\tMap one directory name to another in __FILE__, __BASE_FILE__, and __builtin_FILE().",
-    "pattern": "-fmacro-prefix-map=<old>=<new>\\tMap one directory name to another in __FILE__, __BASE_FILE__, and __builtin_FILE\\(\\)\\.",
-    "replacement": "在调试信息中将一个目录名映射到另一个"
+    "pattern": "Map one directory name to another in __FILE__, __BASE_FILE__, and __builtin_FILE\\(\\)\\.",
+    "replacement": "在 __FILE__、__BASE_FILE__ 和 __builtin_FILE() 中映射一个目录名称。"
   },
   {
     "id": "Write all declarations as Ada code transitively.",
     "pattern": "Write all declarations as Ada code transitively\\.",
-    "replacement": ""
+    "replacement": "将所有声明过渡地写入 Ada 代码中。"
   },
   {
     "id": "Write all declarations as Ada code for the given file only.",
     "pattern": "Write all declarations as Ada code for the given file only\\.",
-    "replacement": ""
+    "replacement": "仅将给定文件的声明写入 Ada 代码中。"
   },
   {
     "id": "Do not elide common elements in template comparisons.",
     "pattern": "Do not elide common elements in template comparisons\\.",
-    "replacement": "展开宏时不丢弃注释"
+    "replacement": "不在模板比较中消除共同元素。"
   },
   {
     "id": "Generate code to check exception specifications.",
     "pattern": "Generate code to check exception specifications\\.",
-    "replacement": "生成检查异常规范的代码"
+    "replacement": "为检查异常说明生成代码。"
   },
   {
     "id": "-fexec-charset=<cset>\\tConvert all strings and character constants to character set <cset>.",
-    "pattern": "-fexec-charset=<cset>\\tConvert all strings and character constants to character set <cset>\\.",
-    "replacement": "-fexec-charset=<字符集>\\t将所有字符串和字符常量转换到字符集"
+    "pattern": "Convert all strings and character constants to character set <cset>\\.",
+    "replacement": "将所有字符串和字符常量转换到字符集 <cset>。"
   },
   {
     "id": "Permit universal character names (\\\\u and \\\\U) in identifiers.",
     "pattern": "Permit universal character names \\(\\\\u and \\\\U\\) in identifiers\\.",
-    "replacement": "允许标识符中出现 Unicode 字符名(\\\\u 和 \\\\U)"
+    "replacement": "允许标识符中出现 Unicode 字符名（\\u 和 \\U）。"
   },
   {
     "id": "-finput-charset=<cset>\\tSpecify the default character set for source files.",
-    "pattern": "-finput-charset=<cset>\\tSpecify the default character set for source files\\.",
-    "replacement": "-finput-charset=<字符集>\\t指定源代码的默认字符集"
+    "pattern": "Specify the default character set for source files\\.",
+    "replacement": "指定源代码的默认字符集。"
   },
   {
     "id": "Support dynamic initialization of thread-local variables in a different translation unit.",
     "pattern": "Support dynamic initialization of thread-local variables in a different translation unit\\.",
-    "replacement": ""
+    "replacement": "在不同的翻译单元中支持动态初始化线程局部变量。"
   },
   {
     "id": "Fold calls to simple inline functions.",
     "pattern": "Fold calls to simple inline functions\\.",
-    "replacement": "内部函数"
+    "replacement": "折叠调用简单的内联函数。"
   },
   {
     "id": "Do not assume that standard C libraries and \\\"main\\\" exist.",
     "pattern": "Do not assume that standard C libraries and \"main\" exist\\.",
-    "replacement": "不假定标准 C 库和“main”存在"
+    "replacement": "不假定 C 标准库和 \"main\" 存在。"
   },
   {
     "id": "Recognize GNU-defined keywords.",
@@ -1532,157 +1532,157 @@
   {
     "id": "Generate code for GNU runtime environment.",
     "pattern": "Generate code for GNU runtime environment\\.",
-    "replacement": "为 GNU 运行时环境生成代码"
+    "replacement": "为 GNU 运行时环境生成代码。"
   },
   {
     "id": "Use traditional GNU semantics for inline functions.",
     "pattern": "Use traditional GNU semantics for inline functions\\.",
-    "replacement": "为内联函数使用传统的 GNU 语义"
+    "replacement": "对内联函数使用传统的 GNU 语义。"
   },
   {
     "id": "Assume normal C execution environment.",
     "pattern": "Assume normal C execution environment\\.",
-    "replacement": "假定一般的 C 执行环境"
+    "replacement": "假定一般的 C 执行环境。"
   },
   {
     "id": "Export functions even if they can be inlined.",
     "pattern": "Export functions even if they can be inlined\\.",
-    "replacement": "导出被内联的函数"
+    "replacement": "导出被内联的函数。"
   },
   {
     "id": "Make inline functions constexpr by default.",
     "pattern": "Make inline functions constexpr by default\\.",
-    "replacement": "使“char”类型默认为无符号。"
+    "replacement": "默认将内联函数设置为 constexpr。"
   },
   {
     "id": "Emit implicit instantiations of inline templates.",
     "pattern": "Emit implicit instantiations of inline templates\\.",
-    "replacement": "允许内联模板隐式实例化"
+    "replacement": "触发内联模板的隐式实例化。"
   },
   {
     "id": "Emit implicit instantiations of templates.",
     "pattern": "Emit implicit instantiations of templates\\.",
-    "replacement": "允许模板隐式实例化"
+    "replacement": "触发模板的隐式实例化。"
   },
   {
     "id": "Implement C++17 inheriting constructor semantics.",
     "pattern": "Implement C\\+\\+17 inheriting constructor semantics\\.",
-    "replacement": ""
+    "replacement": "实现 C++17 的继承构造函数语义。"
   },
   {
     "id": "Don't emit dllexported inline functions unless needed.",
     "pattern": "Don't emit dllexported inline functions unless needed\\.",
-    "replacement": "除非必需，不生成 DLL 导出的内联函数"
+    "replacement": "除非必需，否则不生成 DLL 导出的内联函数。"
   },
   {
     "id": "Allow implicit conversions between vectors with differing numbers of subparts and/or differing element types.",
     "pattern": "Allow implicit conversions between vectors with differing numbers of subparts and/or differing element types\\.",
-    "replacement": "允许具有不同元素数量和/或元素类型的向量间的转换"
+    "replacement": "允许在各个子部分数量和元素类型不同的向量之间进行隐式转换。"
   },
   {
     "id": "Enable C++ modules-ts (experimental).",
     "pattern": "Enable C\\+\\+ modules-ts \\(experimental\\)\\.",
-    "replacement": ""
+    "replacement": "启用 C++ 模块 TS（实验性）。"
   },
   {
     "id": "Enable C++ header module (experimental).",
     "pattern": "Enable C\\+\\+ header module \\(experimental\\)\\.",
-    "replacement": ""
+    "replacement": "启用 C++ 头文件模块（实验性）。"
   },
   {
     "id": "Member functions defined within their class are inline in module purview.",
     "pattern": "Member functions defined within their class are inline in module purview\\.",
-    "replacement": ""
+    "replacement": "在模块范围内定义在类中的成员函数是内联的。"
   },
   {
     "id": "Only emit Compiled Module Interface.",
     "pattern": "Only emit Compiled Module Interface\\.",
-    "replacement": ""
+    "replacement": "只生成已编译模块接口（CMI）。"
   },
   {
     "id": "Mapper for module to CMI files.",
     "pattern": "Mapper for module to CMI files\\.",
-    "replacement": ""
+    "replacement": "模块到 CMI 文件的映射器。"
   },
   {
     "id": "Enable lazy module importing.",
     "pattern": "Enable lazy module importing\\.",
-    "replacement": "删除死存储"
+    "replacement": "启用懒模块导入。"
   },
   {
     "id": "Warn about macros that have conflicting header units definitions.",
     "pattern": "Warn about macros that have conflicting header units definitions\\.",
-    "replacement": "对隐式函数声明给出警告"
+    "replacement": "警告具有冲突的头文件单元定义的宏。"
   },
   {
     "id": "Note #include directives translated to import declarations.",
     "pattern": "Note #include directives translated to import declarations\\.",
-    "replacement": ""
+    "replacement": "标记该 #include 指令被转换为导入声明。"
   },
   {
     "id": "Note #include directives not translated to import declarations, and not known to be textual.",
     "pattern": "Note #include directives not translated to import declarations, and not known to be textual\\.",
-    "replacement": ""
+    "replacement": "标记该 #include 指令不被转换为导入声明，并且不被认为是文本。"
   },
   {
     "id": "Note a #include translation of a specific header.",
     "pattern": "Note a #include translation of a specific header\\.",
-    "replacement": ""
+    "replacement": "标记某个特定头文件的 #include 转换。"
   },
   {
     "id": "Note Compiled Module Interface pathnames.",
     "pattern": "Note Compiled Module Interface pathnames\\.",
-    "replacement": ""
+    "replacement": "标记已编译模块接口（CMI）路径。"
   },
   {
     "id": "Note Compiled Module Interface pathname of a specific module or header-unit.",
     "pattern": "Note Compiled Module Interface pathname of a specific module or header-unit\\.",
-    "replacement": ""
+    "replacement": "标记某个特定模块或头文件单元的已编译模块接口（CMI）路径。"
   },
   {
     "id": "fmax-include-depth=<number> Set the maximum depth of the nested #include.",
-    "pattern": "fmax-include-depth=<number> Set the maximum depth of the nested #include\\.",
-    "replacement": ""
+    "pattern": "Set the maximum depth of the nested #include\\.",
+    "replacement": "设置嵌套 #include 的最大深度。"
   },
   {
     "id": "Don't warn about uses of Microsoft extensions.",
     "pattern": "Don't warn about uses of Microsoft extensions\\.",
-    "replacement": "使用微软扩展时不给出警告"
+    "replacement": "当使用微软扩展时不给出警告。"
   },
   {
     "id": "Implement resolution of DR 150 for matching of template template arguments.",
     "pattern": "Implement resolution of DR 150 for matching of template template arguments\\.",
-    "replacement": ""
+    "replacement": "实现 DR 150 的模板模板实参匹配方案。"
   },
   {
     "id": "Generate code for NeXT (Apple Mac OS X) runtime environment.",
     "pattern": "Generate code for NeXT \\(Apple Mac OS X\\) runtime environment\\.",
-    "replacement": "为 NeXT (苹果 Mac OS X) 运行时环境生成代码"
+    "replacement": "为 NeXT (苹果 Mac OS X) 运行时环境生成代码。"
   },
   {
     "id": "Assume that receivers of Objective-C messages may be nil.",
     "pattern": "Assume that receivers of Objective-C messages may be nil\\.",
-    "replacement": "假定 Objective-C 消息的接受者可能是 nil"
+    "replacement": "假定 Objective-C 消息的接受者可能是 nil。"
   },
   {
     "id": "Allow access to instance variables as if they were local declarations within instance method implementations.",
     "pattern": "Allow access to instance variables as if they were local declarations within instance method implementations\\.",
-    "replacement": ""
+    "replacement": "允许在实例方法实现中访问实例变量，将其视为带有实例方法实现的局部声明。"
   },
   {
     "id": "-fvisibility=[private|protected|public|package]\\tSet the default symbol visibility.",
-    "pattern": "-fvisibility=\\[private\\|protected\\|public\\|package\\]\\tSet the default symbol visibility\\.",
-    "replacement": "-fvisibility=[default|internal|hidden|protected]\\t设置符号的默认可见性"
+    "pattern": "Set the default symbol visibility\\.",
+    "replacement": "设置符号的默认可见性。"
   },
   {
     "id": "Treat a throw() exception specification as noexcept to improve code size.",
     "pattern": "Treat a throw\\(\\) exception specification as noexcept to improve code size\\.",
-    "replacement": "对待丢掷() 异常规格作为 noexcept 到改善编码大小"
+    "replacement": "将 throw() 异常说明视为 noexcept，以改进代码大小。"
   },
   {
     "id": "Specify which ABI to use for Objective-C family code and meta-data generation.",
     "pattern": "Specify which ABI to use for Objective-C family code and meta-data generation\\.",
-    "replacement": "指定该项 ABI 以使用用于 Objective-C 家族编码和元数据产生。"
+    "replacement": "指定用于 Objective-C 家族代码和元数据生成的 ABI。"
   },
   {
     "id": "Generate special Objective-C methods to initialize/destroy non-POD C++ ivars, if needed.",
@@ -3430,6 +3430,11 @@
     "replacement": "%qD在此声明"
   },
   {
+    "id": "%<return_value%> declared here",
+    "pattern": "'return_value' declared here",
+    "replacement": "%qD在此声明"
+  },
+  {
     "id": "no member named %qE in %qT",
     "pattern": "no member named '(.+?)' in '(.+?)'",
     "replacement": "没有名为%q#T的类模板，在%q#T中 "
@@ -4348,11 +4353,6 @@
     "id": "concept %qE has multiple template parameter lists",
     "pattern": "concept '(.+?)' has multiple template parameter lists",
     "replacement": "在模板参数列表中定义了%q#T"
-  },
-  {
-    "id": "use %qD directly instead",
-    "pattern": "use '(.+?)' directly instead",
-    "replacement": "改用 #include"
   },
   {
     "id": "overridden function is %q#D",

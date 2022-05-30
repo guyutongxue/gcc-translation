@@ -3,5 +3,10 @@
     "id": "",
     "pattern": "\n                              ",
     "replacement": " "
+  },
+  {
+    "id": "",
+    "pattern": "-\n                              ",
+    "replacement": "-"
   }
 ]

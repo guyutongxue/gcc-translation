@@ -1,7 +1,11 @@
 {
-    "name": "gcc-translation",
+    "name": "@gytx/gcc-translation",
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
     "version": "0.0.3",
-    "main": "index.js",
+    "main": "index.mjs",
     "type": "module",
     "types": "index.d.ts",
     "license": "CC-BY-NC-ND-4.0",

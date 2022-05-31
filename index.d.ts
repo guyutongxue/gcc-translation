@@ -3,4 +3,4 @@ export interface ReplaceOption {
     version: string;
 };
 
-export function replaceGccDiagnostics(val: string, options?: Partial<ReplaceOption>): string;
+export async function replaceGccDiagnostics(val: string, options?: Partial<ReplaceOption>): Promise<string>;

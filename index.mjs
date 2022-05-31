@@ -1,29 +1,55 @@
 // @ts-check
 "use strict";
 
-import * as path from "node:path";
-import * as fs from "node:fs";
-import { fileURLToPath } from "node:url";
+const ASSERTION = (() => {
+  // @ts-ignore
+  if (import.meta.env) {
+    // Vite
+    return undefined;
+  } else {
+    // Node
+    return  {
+      assert: {
+        type: "json",
+      },
+    };
+  }
+})();
 
-/** @type {Record<string, string[]>} */
-const sources = {
-  "11.2.0": [
-    "11.2.0.json",
-    "c-family_c-common.json",
-    "cp_constranit.json",
-    "cp_error.json",
-  ],
-  "12.1.0": [
-    "help_spaces.json",
-    "12.1.0.json",
-    "c-family_c-common.json",
-    "cp_error.json",
-  ],
-};
+function loadSource(/** @type {string} */ version) {
+  const sources = [];
+  switch (version) {
+    case "11.2.0": {
+      sources.push(
+        import("./src/11.2.0.json", ASSERTION),
+        import("./src/c-family_c-common.json", ASSERTION),
+        import("./src/cp_constranit.json", ASSERTION),
+        import("./src/cp_error.json", ASSERTION)
+      );
+      break;
+    }
+    case "12.1.0": {
+      sources.push(
+        import("./src/help_spaces.json", ASSERTION),
+        import("./src/12.1.0.json", ASSERTION),
+        import("./src/c-family_c-common.json", ASSERTION),
+        import("./src/cp_error.json", ASSERTION)
+      );
+      break;
+    }
+  }
+  return Promise.all(sources).then((v) =>
+    v.flatMap((source) =>
+      source.default.sort((a, b) => {
+        return b.pattern.length - a.pattern.length;
+      })
+    )
+  );
+}
 
-export function replaceGccDiagnostics(
+export async function replaceGccDiagnostics(
   /** @type {string} */ val,
-  /** @type {import(".").ReplaceOption} */ options
+  /** @type {Partial<import(".").ReplaceOption> | undefined} */ options
 ) {
   const DEFAULT_OPTIONS = {
     color: false,
@@ -38,15 +64,7 @@ export function replaceGccDiagnostics(
     };
   }
 
-  const translation = sources[options.version].flatMap((filename) => {
-    const text = fs.readFileSync(
-      path.join(fileURLToPath(import.meta.url), "../src", filename),
-      "utf-8"
-    );
-    return JSON.parse(text).sort((a, b) => {
-      return b.pattern.length - a.pattern.length;
-    });
-  });
+  const translation = await loadSource(options.version);
   if (options.color === true) {
     val = val.replace(/'\x1b\[01m\x1b\[K(.+?)\x1b\[m\x1b\[K'/g, "'$1'");
   }

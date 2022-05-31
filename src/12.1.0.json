@@ -17267,7 +17267,7 @@
   {
     "id": "expected %qs keyword before dependent template name",
     "pattern": "expected '(.+?)' keyword before dependent template name",
-    "replacement": "预期在依赖模板名前使用 '$1' 关键字"
+    "replacement": "预期在待决模板名前使用 '$1' 关键字"
   },
   {
     "id": "scope %qT before %<~%> is not a class-name",

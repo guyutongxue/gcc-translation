@@ -1,39 +1,26 @@
-// @ts-check
-"use strict";
+export interface ReplaceOption {
+  color: boolean;
+  version: string;
+}
 
-const ASSERTION = (() => {
-  // @ts-ignore
-  if (import.meta.env) {
-    // Vite
-    return undefined;
-  } else {
-    // Node
-    return  {
-      assert: {
-        type: "json",
-      },
-    };
-  }
-})();
-
-function loadSource(/** @type {string} */ version) {
+function loadSource(version: string) {
   const sources = [];
   switch (version) {
     case "11.2.0": {
       sources.push(
-        import("./src/11.2.0.json", ASSERTION),
-        import("./src/c-family_c-common.json", ASSERTION),
-        import("./src/cp_constranit.json", ASSERTION),
-        import("./src/cp_error.json", ASSERTION)
+        import("./data/11.2.0.json"),
+        import("./data/c-family_c-common.json"),
+        import("./data/cp_constranit.json"),
+        import("./data/cp_error.json")
       );
       break;
     }
     case "12.1.0": {
       sources.push(
-        import("./src/help_spaces.json", ASSERTION),
-        import("./src/12.1.0.json", ASSERTION),
-        import("./src/c-family_c-common.json", ASSERTION),
-        import("./src/cp_error.json", ASSERTION)
+        import("./data/help_spaces.json"),
+        import("./data/12.1.0.json"),
+        import("./data/c-family_c-common.json"),
+        import("./data/cp_error.json")
       );
       break;
     }
@@ -48,21 +35,17 @@ function loadSource(/** @type {string} */ version) {
 }
 
 export async function replaceGccDiagnostics(
-  /** @type {string} */ val,
-  /** @type {Partial<import(".").ReplaceOption> | undefined} */ options
+  val: string,
+  opt: Partial<ReplaceOption> = {}
 ) {
   const DEFAULT_OPTIONS = {
     color: false,
     version: "11.2.0",
   };
-  if (typeof options === "undefined") {
-    options = DEFAULT_OPTIONS;
-  } else {
-    options = {
-      ...DEFAULT_OPTIONS,
-      ...options,
-    };
-  }
+  const options = {
+    ...DEFAULT_OPTIONS,
+    ...opt,
+  };
 
   const translation = await loadSource(options.version);
   if (options.color === true) {

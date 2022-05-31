@@ -1,5 +1,5 @@
 import * as fs from "node:fs";
-import { replaceGccDiagnostics } from "../index.mjs";
+import { replaceGccDiagnostics } from "../dist/index.js";
 
 const diag = fs.readFileSync("./color.txt", "utf8");
 
